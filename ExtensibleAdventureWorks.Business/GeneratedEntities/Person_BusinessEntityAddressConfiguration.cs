@@ -38,6 +38,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Person_Address).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.AddressId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_Address_AddressID
             HasRequired(a => a.Person_AddressType).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.AddressTypeId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_AddressType_AddressTypeID
             HasRequired(a => a.Person_BusinessEntity).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

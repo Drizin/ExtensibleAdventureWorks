@@ -46,6 +46,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.EmployeeId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_Employee_EmployeeID
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.ShipMethodId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
             HasRequired(a => a.Purchasing_Vendor).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.VendorId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_Vendor_VendorID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

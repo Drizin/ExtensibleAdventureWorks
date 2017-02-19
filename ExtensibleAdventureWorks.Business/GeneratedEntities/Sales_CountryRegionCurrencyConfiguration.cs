@@ -35,6 +35,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Sales_CountryRegionCurrencies).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_Currency).WithMany(b => b.Sales_CountryRegionCurrencies).HasForeignKey(c => c.CurrencyCode).WillCascadeOnDelete(false); // FK_CountryRegionCurrency_Currency_CurrencyCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -46,6 +46,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PostalCode).HasColumnName(@"PostalCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(15).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.AdditionalContactInfo).HasColumnName(@"AdditionalContactInfo").HasColumnType("xml").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

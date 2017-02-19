@@ -36,6 +36,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Sales_SpecialOfferProducts).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_SpecialOfferProduct_Product_ProductID
             HasRequired(a => a.Sales_SpecialOffer).WithMany(b => b.Sales_SpecialOfferProducts).HasForeignKey(c => c.SpecialOfferId).WillCascadeOnDelete(false); // FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

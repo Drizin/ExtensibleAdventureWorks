@@ -40,6 +40,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_StateProvince).WithMany(b => b.Person_Addresses).HasForeignKey(c => c.StateProvinceId).WillCascadeOnDelete(false); // FK_Address_StateProvince_StateProvinceID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

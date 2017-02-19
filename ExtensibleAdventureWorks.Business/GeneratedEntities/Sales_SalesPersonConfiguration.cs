@@ -41,6 +41,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_SalesPersons).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_SalesPerson_SalesTerritory_TerritoryID
             HasRequired(a => a.HumanResources_Employee).WithOptional(b => b.Sales_SalesPerson).WillCascadeOnDelete(false); // FK_SalesPerson_Employee_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -45,6 +45,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.EMailTelephoneNumber).HasColumnName(@"EMailTelephoneNumber").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

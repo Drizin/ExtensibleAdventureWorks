@@ -44,6 +44,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Production_Product).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductVendor_Product_ProductID
             HasRequired(a => a.Production_UnitMeasure).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.UnitMeasureCode).WillCascadeOnDelete(false); // FK_ProductVendor_UnitMeasure_UnitMeasureCode
             HasRequired(a => a.Purchasing_Vendor).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_ProductVendor_Vendor_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
