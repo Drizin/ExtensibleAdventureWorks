@@ -33,6 +33,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.StartTime).HasColumnName(@"StartTime").HasColumnType("time").IsRequired();
             Property(x => x.EndTime).HasColumnName(@"EndTime").HasColumnType("time").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

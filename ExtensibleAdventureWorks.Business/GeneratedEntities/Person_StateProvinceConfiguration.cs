@@ -40,6 +40,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Person_StateProvinces).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_StateProvince_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_SalesTerritory).WithMany(b => b.Person_StateProvinces).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_StateProvince_SalesTerritory_TerritoryID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -41,6 +41,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Edu46Loc46CountryRegion).HasColumnName(@"Edu.Loc.CountryRegion").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
             Property(x => x.Edu46Loc46State).HasColumnName(@"Edu.Loc.State").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
             Property(x => x.Edu46Loc46City).HasColumnName(@"Edu.Loc.City").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

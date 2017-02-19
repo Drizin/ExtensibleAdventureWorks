@@ -44,6 +44,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Location).WithMany(b => b.Production_WorkOrderRoutings).HasForeignKey(c => c.LocationId).WillCascadeOnDelete(false); // FK_WorkOrderRouting_Location_LocationID
             HasRequired(a => a.Production_WorkOrder).WithMany(b => b.Production_WorkOrderRoutings).HasForeignKey(c => c.WorkOrderId).WillCascadeOnDelete(false); // FK_WorkOrderRouting_WorkOrder_WorkOrderID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

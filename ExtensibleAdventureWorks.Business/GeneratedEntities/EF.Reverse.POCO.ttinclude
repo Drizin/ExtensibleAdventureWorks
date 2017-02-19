@@ -302,6 +302,7 @@ foreach(Table tbl in from t in tables.Where(t => !t.IsMapping && t.HasPrimaryKey
 <# } #>
 <#if(MakeClassesPartial) {#>
 
+            modelBuilder.LoadEntityFrameworkExtensions();
             OnModelCreatingPartial(modelBuilder);
 <#}#>
         }
@@ -1112,6 +1113,7 @@ foreach (string s in tbl.MappingConfiguration)
             <#=s#>
 <# } #>
 <#if(MakeClassesPartial) {#>
+            this.ConfigureExtensions();
             InitializePartial();
 <#}#>        }
 <#if(MakeClassesPartial) {#>

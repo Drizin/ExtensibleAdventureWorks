@@ -37,6 +37,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Production_Culture).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.CultureId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_Culture_CultureID
             HasRequired(a => a.Production_ProductDescription).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.ProductDescriptionId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
             HasRequired(a => a.Production_ProductModel).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.ProductModelId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

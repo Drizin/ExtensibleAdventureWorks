@@ -36,6 +36,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Sales_SalesPerson).WithMany(b => b.Sales_SalesPersonQuotaHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

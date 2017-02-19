@@ -45,6 +45,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.Production_Documents).HasForeignKey(c => c.Owner).WillCascadeOnDelete(false); // FK_Document_Employee_Owner
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

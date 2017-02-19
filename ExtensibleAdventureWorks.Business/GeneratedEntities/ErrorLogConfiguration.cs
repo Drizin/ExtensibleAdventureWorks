@@ -37,6 +37,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ErrorProcedure).HasColumnName(@"ErrorProcedure").HasColumnType("nvarchar").IsOptional().HasMaxLength(126);
             Property(x => x.ErrorLine).HasColumnName(@"ErrorLine").HasColumnType("int").IsOptional();
             Property(x => x.ErrorMessage).HasColumnName(@"ErrorMessage").HasColumnType("nvarchar").IsRequired().HasMaxLength(4000);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

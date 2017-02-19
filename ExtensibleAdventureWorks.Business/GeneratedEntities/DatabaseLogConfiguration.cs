@@ -36,6 +36,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Object).HasColumnName(@"Object").HasColumnType("nvarchar").IsOptional().HasMaxLength(128);
             Property(x => x.Tsql).HasColumnName(@"TSQL").HasColumnType("nvarchar(max)").IsRequired();
             Property(x => x.XmlEvent).HasColumnName(@"XmlEvent").HasColumnType("xml").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

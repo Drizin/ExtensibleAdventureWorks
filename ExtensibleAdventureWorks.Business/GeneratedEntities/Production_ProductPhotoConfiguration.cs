@@ -34,6 +34,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.LargePhoto).HasColumnName(@"LargePhoto").HasColumnType("varbinary").IsOptional();
             Property(x => x.LargePhotoFileName).HasColumnName(@"LargePhotoFileName").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
