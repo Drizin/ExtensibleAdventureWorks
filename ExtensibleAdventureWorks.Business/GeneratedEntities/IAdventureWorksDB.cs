@@ -14,7 +14,7 @@
 namespace ExtensibleAdventureWorks.Business.Entities
 {
 
-    public interface IAdventureWorksDB : System.IDisposable
+    public partial interface IAdventureWorksDB : System.IDisposable
     {
         System.Data.Entity.DbSet<AwBuildVersion> AwBuildVersions { get; set; } // AWBuildVersion
         System.Data.Entity.DbSet<DatabaseLog> DatabaseLogs { get; set; } // DatabaseLog
