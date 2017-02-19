@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomEntities\OpeningHour.cs" />
+    <Compile Include="CustomEntities\TaxAuditor.cs" />
     <Compile Include="Entities\AdventureWorksDB.cs" />
     <Compile Include="GeneratedEntities\Database1.cs">
       <AutoGen>True</AutoGen>
