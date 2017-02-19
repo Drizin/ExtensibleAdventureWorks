@@ -39,6 +39,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.GroupName).HasColumnName(@"GroupName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.StartDate).HasColumnName(@"StartDate").HasColumnType("date").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.EndDate).HasColumnName(@"EndDate").HasColumnType("date").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

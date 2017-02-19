@@ -32,6 +32,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.DatabaseVersion).HasColumnName(@"Database Version").HasColumnType("nvarchar").IsRequired().HasMaxLength(25);
             Property(x => x.VersionDate).HasColumnName(@"VersionDate").HasColumnType("datetime").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

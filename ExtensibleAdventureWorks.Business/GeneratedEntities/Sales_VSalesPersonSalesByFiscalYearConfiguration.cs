@@ -35,6 +35,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.C2002).HasColumnName(@"2002").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.C2003).HasColumnName(@"2003").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.C2004).HasColumnName(@"2004").HasColumnType("money").IsOptional().HasPrecision(19,4);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

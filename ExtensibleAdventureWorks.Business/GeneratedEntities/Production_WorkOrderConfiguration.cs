@@ -42,6 +42,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasOptional(a => a.Production_ScrapReason).WithMany(b => b.Production_WorkOrders).HasForeignKey(c => c.ScrapReasonId).WillCascadeOnDelete(false); // FK_WorkOrder_ScrapReason_ScrapReasonID
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_WorkOrders).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_WorkOrder_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

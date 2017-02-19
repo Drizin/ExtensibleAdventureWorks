@@ -47,6 +47,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_Person).WithOptional(b => b.HumanResources_Employee).WillCascadeOnDelete(false); // FK_Employee_Person_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

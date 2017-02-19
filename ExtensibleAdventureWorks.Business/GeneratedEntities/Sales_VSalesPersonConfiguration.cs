@@ -50,6 +50,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.SalesQuota).HasColumnName(@"SalesQuota").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.SalesYtd).HasColumnName(@"SalesYTD").HasColumnType("money").IsRequired().HasPrecision(19,4).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.SalesLastYear).HasColumnName(@"SalesLastYear").HasColumnType("money").IsRequired().HasPrecision(19,4).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

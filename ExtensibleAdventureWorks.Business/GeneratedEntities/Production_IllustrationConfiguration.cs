@@ -31,6 +31,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.IllustrationId).HasColumnName(@"IllustrationID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Diagram).HasColumnName(@"Diagram").HasColumnType("xml").IsOptional();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

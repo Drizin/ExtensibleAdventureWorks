@@ -42,6 +42,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.ProductAssembly).WithMany(b => b.ProductAssembly).HasForeignKey(c => c.ProductAssemblyId).WillCascadeOnDelete(false); // FK_BillOfMaterials_Product_ProductAssemblyID
             HasRequired(a => a.Component).WithMany(b => b.Component).HasForeignKey(c => c.ComponentId).WillCascadeOnDelete(false); // FK_BillOfMaterials_Product_ComponentID
             HasRequired(a => a.Production_UnitMeasure).WithMany(b => b.Production_BillOfMaterials).HasForeignKey(c => c.UnitMeasureCode).WillCascadeOnDelete(false); // FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

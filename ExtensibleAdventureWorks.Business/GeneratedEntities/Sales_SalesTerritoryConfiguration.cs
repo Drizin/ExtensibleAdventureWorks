@@ -41,6 +41,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Sales_SalesTerritories).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_SalesTerritory_CountryRegion_CountryRegionCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

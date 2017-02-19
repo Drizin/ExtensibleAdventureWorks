@@ -34,6 +34,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ExpMonth).HasColumnName(@"ExpMonth").HasColumnType("tinyint").IsRequired();
             Property(x => x.ExpYear).HasColumnName(@"ExpYear").HasColumnType("smallint").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

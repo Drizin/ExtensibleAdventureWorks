@@ -36,6 +36,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_Person).WithMany(b => b.Person_PersonPhones).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_PersonPhone_Person_BusinessEntityID
             HasRequired(a => a.Person_PhoneNumberType).WithMany(b => b.Person_PersonPhones).HasForeignKey(c => c.PhoneNumberTypeId).WillCascadeOnDelete(false); // FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -43,6 +43,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Purchasing_PurchaseOrderDetails).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_PurchaseOrderDetail_Product_ProductID
             HasRequired(a => a.Purchasing_PurchaseOrderHeader).WithMany(b => b.Purchasing_PurchaseOrderDetails).HasForeignKey(c => c.PurchaseOrderId).WillCascadeOnDelete(false); // FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

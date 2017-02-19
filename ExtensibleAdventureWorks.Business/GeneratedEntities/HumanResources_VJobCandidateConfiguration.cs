@@ -44,6 +44,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.EMail).HasColumnName(@"EMail").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.WebSite).HasColumnName(@"WebSite").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

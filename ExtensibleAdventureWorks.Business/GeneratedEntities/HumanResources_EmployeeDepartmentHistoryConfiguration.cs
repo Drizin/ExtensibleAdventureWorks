@@ -39,6 +39,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.HumanResources_Department).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.DepartmentId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Department_DepartmentID
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
             HasRequired(a => a.HumanResources_Shift).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.ShiftId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Shift_ShiftID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

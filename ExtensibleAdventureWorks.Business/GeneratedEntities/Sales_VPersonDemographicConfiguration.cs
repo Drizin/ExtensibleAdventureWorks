@@ -41,6 +41,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Occupation).HasColumnName(@"Occupation").HasColumnType("nvarchar").IsOptional().HasMaxLength(30);
             Property(x => x.HomeOwnerFlag).HasColumnName(@"HomeOwnerFlag").HasColumnType("bit").IsOptional();
             Property(x => x.NumberCarsOwned).HasColumnName(@"NumberCarsOwned").HasColumnType("int").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
