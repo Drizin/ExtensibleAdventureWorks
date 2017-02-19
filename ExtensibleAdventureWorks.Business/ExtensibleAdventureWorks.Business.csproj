@@ -64,6 +64,11 @@
     <Compile Include="GeneratedEntities\AwBuildVersionConfiguration.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
+    <Compile Include="GeneratedEntities\Database1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneratedEntities\DatabaseLog.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
@@ -74,12 +79,6 @@
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
     <Compile Include="GeneratedEntities\ErrorLogConfiguration.cs">
-      <DependentUpon>Database.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedEntities\FakeAdventureWorksDB.cs">
-      <DependentUpon>Database.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GeneratedEntities\FakeDbSet.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
     <Compile Include="GeneratedEntities\HumanResources_Department.cs">
@@ -626,6 +625,18 @@
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ModelExtensions.cs" />
+    <Compile Include="Modules\OpeningHours\AdventureWorksDB.cs" />
+    <Compile Include="Modules\OpeningHours\custom_OpeningHour.cs" />
+    <Compile Include="Modules\OpeningHours\custom_OpeningHourConfiguration.cs" />
+    <Compile Include="Modules\OpeningHours\IAdventureWorksDB.cs" />
+    <Compile Include="Modules\OpeningHours\OpeningHoursModule.cs" />
+    <Compile Include="Modules\OpeningHours\Sales_Store.cs" />
+    <Compile Include="Modules\TaxAuditor\AdventureWorksDB.cs" />
+    <Compile Include="Modules\TaxAuditor\custom_TaxAuditor.cs" />
+    <Compile Include="Modules\TaxAuditor\custom_TaxAuditorConfiguration.cs" />
+    <Compile Include="Modules\TaxAuditor\IAdventureWorksDB.cs" />
+    <Compile Include="Modules\TaxAuditor\Sales_Store.cs" />
+    <Compile Include="Modules\TaxAuditor\TaxAuditorModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
