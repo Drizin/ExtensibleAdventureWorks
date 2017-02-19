@@ -7,7 +7,7 @@
 // Do not make changes directly to this file - edit the template instead.
 //
 // The following connection settings were used to generate this file:
-//     Configuration file:     "App.config"
+//     Configuration file:     "ExtensibleAdventureWorks.Business\App.config"
 //     Connection String Name: "DefaultConnection"
 //     Connection String:      "Data Source=(local);Initial Catalog=AdventureWorks2008;Persist Security Info=True;User ID=adventureworks;password=**zapped**;;MultipleActiveResultSets=True"
 // ------------------------------------------------------------------------------------------------
@@ -420,7 +420,8 @@ namespace ExtensibleAdventureWorks.Business.Entities
             modelBuilder.Configurations.Add(new Sales_VStoreWithContactConfiguration());
             modelBuilder.Configurations.Add(new Sales_VStoreWithDemographicConfiguration());
 
-            OnModelCreatingPartial(modelBuilder);
+            modelBuilder.LoadEntityFrameworkExtensions();
+			OnModelCreatingPartial(modelBuilder);
         }
 
         public static System.Data.Entity.DbModelBuilder CreateModel(System.Data.Entity.DbModelBuilder modelBuilder, string schema)
@@ -5636,6 +5637,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.DatabaseVersion).HasColumnName(@"Database Version").HasColumnType("nvarchar").IsRequired().HasMaxLength(25);
             Property(x => x.VersionDate).HasColumnName(@"VersionDate").HasColumnType("datetime").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5663,6 +5665,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Object).HasColumnName(@"Object").HasColumnType("nvarchar").IsOptional().HasMaxLength(128);
             Property(x => x.Tsql).HasColumnName(@"TSQL").HasColumnType("nvarchar(max)").IsRequired();
             Property(x => x.XmlEvent).HasColumnName(@"XmlEvent").HasColumnType("xml").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5691,6 +5694,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ErrorProcedure).HasColumnName(@"ErrorProcedure").HasColumnType("nvarchar").IsOptional().HasMaxLength(126);
             Property(x => x.ErrorLine).HasColumnName(@"ErrorLine").HasColumnType("int").IsOptional();
             Property(x => x.ErrorMessage).HasColumnName(@"ErrorMessage").HasColumnType("nvarchar").IsRequired().HasMaxLength(4000);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5714,6 +5718,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.GroupName).HasColumnName(@"GroupName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5752,6 +5757,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_Person).WithOptional(b => b.HumanResources_Employee).WillCascadeOnDelete(false); // FK_Employee_Person_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5782,6 +5788,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.HumanResources_Department).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.DepartmentId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Department_DepartmentID
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
             HasRequired(a => a.HumanResources_Shift).WithMany(b => b.HumanResources_EmployeeDepartmentHistories).HasForeignKey(c => c.ShiftId).WillCascadeOnDelete(false); // FK_EmployeeDepartmentHistory_Shift_ShiftID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5809,6 +5816,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.HumanResources_EmployeePayHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_EmployeePayHistory_Employee_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5835,6 +5843,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasOptional(a => a.HumanResources_Employee).WithMany(b => b.HumanResources_JobCandidates).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_JobCandidate_Employee_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5859,6 +5868,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.StartTime).HasColumnName(@"StartTime").HasColumnType("time").IsRequired();
             Property(x => x.EndTime).HasColumnName(@"EndTime").HasColumnType("time").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5896,6 +5906,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PostalCode).HasColumnName(@"PostalCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(15).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.AdditionalContactInfo).HasColumnName(@"AdditionalContactInfo").HasColumnType("xml").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5925,6 +5936,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Department).HasColumnName(@"Department").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.GroupName).HasColumnName(@"GroupName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.StartDate).HasColumnName(@"StartDate").HasColumnType("date").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5955,6 +5967,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.GroupName).HasColumnName(@"GroupName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.StartDate).HasColumnName(@"StartDate").HasColumnType("date").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.EndDate).HasColumnName(@"EndDate").HasColumnType("date").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -5990,6 +6003,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.EMail).HasColumnName(@"EMail").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.WebSite).HasColumnName(@"WebSite").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6022,6 +6036,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Edu46Loc46CountryRegion).HasColumnName(@"Edu.Loc.CountryRegion").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
             Property(x => x.Edu46Loc46State).HasColumnName(@"Edu.Loc.State").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
             Property(x => x.Edu46Loc46City).HasColumnName(@"Edu.Loc.City").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6052,6 +6067,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Emp46Loc46CountryRegion).HasColumnName(@"Emp.Loc.CountryRegion").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.Emp46Loc46State).HasColumnName(@"Emp.Loc.State").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.Emp46Loc46City).HasColumnName(@"Emp.Loc.City").HasColumnType("nvarchar(max)").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6083,6 +6099,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_StateProvince).WithMany(b => b.Person_Addresses).HasForeignKey(c => c.StateProvinceId).WillCascadeOnDelete(false); // FK_Address_StateProvince_StateProvinceID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6106,6 +6123,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6128,6 +6146,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.BusinessEntityId).HasColumnName(@"BusinessEntityID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6157,6 +6176,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Person_Address).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.AddressId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_Address_AddressID
             HasRequired(a => a.Person_AddressType).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.AddressTypeId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_AddressType_AddressTypeID
             HasRequired(a => a.Person_BusinessEntity).WithMany(b => b.Person_BusinessEntityAddresses).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6186,6 +6206,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Person_BusinessEntity).WithMany(b => b.Person_BusinessEntityContacts).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_BusinessEntityContact_BusinessEntity_BusinessEntityID
             HasRequired(a => a.Person_ContactType).WithMany(b => b.Person_BusinessEntityContacts).HasForeignKey(c => c.ContactTypeId).WillCascadeOnDelete(false); // FK_BusinessEntityContact_ContactType_ContactTypeID
             HasRequired(a => a.Person_Person).WithMany(b => b.Person_BusinessEntityContacts).HasForeignKey(c => c.PersonId).WillCascadeOnDelete(false); // FK_BusinessEntityContact_Person_PersonID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6208,6 +6229,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ContactTypeId).HasColumnName(@"ContactTypeID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6230,6 +6252,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.CountryRegionCode).HasColumnName(@"CountryRegionCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(3).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6257,6 +6280,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_Person).WithMany(b => b.Person_EmailAddresses).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_EmailAddress_Person_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6284,6 +6308,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_Person).WithOptional(b => b.Person_Password).WillCascadeOnDelete(false); // FK_Password_Person_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6319,6 +6344,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_BusinessEntity).WithOptional(b => b.Person_Person).WillCascadeOnDelete(false); // FK_Person_BusinessEntity_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6346,6 +6372,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_Person).WithMany(b => b.Person_PersonPhones).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_PersonPhone_Person_BusinessEntityID
             HasRequired(a => a.Person_PhoneNumberType).WithMany(b => b.Person_PersonPhones).HasForeignKey(c => c.PhoneNumberTypeId).WillCascadeOnDelete(false); // FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6368,6 +6395,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PhoneNumberTypeId).HasColumnName(@"PhoneNumberTypeID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6399,6 +6427,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Person_StateProvinces).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_StateProvince_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_SalesTerritory).WithMany(b => b.Person_StateProvinces).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_StateProvince_SalesTerritory_TerritoryID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6435,6 +6464,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.EMailTelephoneNumber).HasColumnName(@"EMailTelephoneNumber").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6461,6 +6491,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.TerritoryId).HasColumnName(@"TerritoryID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionCode).HasColumnName(@"CountryRegionCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(3).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6494,6 +6525,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.ProductAssembly).WithMany(b => b.ProductAssembly).HasForeignKey(c => c.ProductAssemblyId).WillCascadeOnDelete(false); // FK_BillOfMaterials_Product_ProductAssemblyID
             HasRequired(a => a.Component).WithMany(b => b.Component).HasForeignKey(c => c.ComponentId).WillCascadeOnDelete(false); // FK_BillOfMaterials_Product_ComponentID
             HasRequired(a => a.Production_UnitMeasure).WithMany(b => b.Production_BillOfMaterials).HasForeignKey(c => c.UnitMeasureCode).WillCascadeOnDelete(false); // FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6516,6 +6548,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.CultureId).HasColumnName(@"CultureID").HasColumnType("nchar").IsRequired().IsFixedLength().HasMaxLength(6).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6552,6 +6585,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.Production_Documents).HasForeignKey(c => c.Owner).WillCascadeOnDelete(false); // FK_Document_Employee_Owner
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6574,6 +6608,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.IllustrationId).HasColumnName(@"IllustrationID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Diagram).HasColumnName(@"Diagram").HasColumnType("xml").IsOptional();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6598,6 +6633,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.CostRate).HasColumnName(@"CostRate").HasColumnType("smallmoney").IsRequired().HasPrecision(10,4);
             Property(x => x.Availability).HasColumnName(@"Availability").HasColumnType("decimal").IsRequired().HasPrecision(8,2);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6648,6 +6684,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.Production_ProductSubcategory).WithMany(b => b.Production_Products).HasForeignKey(c => c.ProductSubcategoryId).WillCascadeOnDelete(false); // FK_Product_ProductSubcategory_ProductSubcategoryID
             HasOptional(a => a.Production_UnitMeasure_SizeUnitMeasureCode).WithMany(b => b.SizeUnitMeasureCode).HasForeignKey(c => c.SizeUnitMeasureCode).WillCascadeOnDelete(false); // FK_Product_UnitMeasure_SizeUnitMeasureCode
             HasOptional(a => a.Production_UnitMeasure_WeightUnitMeasureCode).WithMany(b => b.WeightUnitMeasureCode).HasForeignKey(c => c.WeightUnitMeasureCode).WillCascadeOnDelete(false); // FK_Product_UnitMeasure_WeightUnitMeasureCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6671,6 +6708,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6698,6 +6736,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductCostHistories).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductCostHistory_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6721,6 +6760,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Description).HasColumnName(@"Description").HasColumnType("nvarchar").IsRequired().HasMaxLength(400);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6747,6 +6787,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Document).WithMany(b => b.Production_ProductDocuments).HasForeignKey(c => c.DocumentNode).WillCascadeOnDelete(false); // FK_ProductDocument_Document_DocumentNode
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductDocuments).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductDocument_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6777,6 +6818,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Location).WithMany(b => b.Production_ProductInventories).HasForeignKey(c => c.LocationId).WillCascadeOnDelete(false); // FK_ProductInventory_Location_LocationID
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductInventories).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductInventory_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6804,6 +6846,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductListPriceHistories).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductListPriceHistory_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6829,6 +6872,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Instructions).HasColumnName(@"Instructions").HasColumnType("xml").IsOptional();
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6855,6 +6899,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Illustration).WithMany(b => b.Production_ProductModelIllustrations).HasForeignKey(c => c.IllustrationId).WillCascadeOnDelete(false); // FK_ProductModelIllustration_Illustration_IllustrationID
             HasRequired(a => a.Production_ProductModel).WithMany(b => b.Production_ProductModelIllustrations).HasForeignKey(c => c.ProductModelId).WillCascadeOnDelete(false); // FK_ProductModelIllustration_ProductModel_ProductModelID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6883,6 +6928,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Production_Culture).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.CultureId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_Culture_CultureID
             HasRequired(a => a.Production_ProductDescription).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.ProductDescriptionId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
             HasRequired(a => a.Production_ProductModel).WithMany(b => b.Production_ProductModelProductDescriptionCultures).HasForeignKey(c => c.ProductModelId).WillCascadeOnDelete(false); // FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6908,6 +6954,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.LargePhoto).HasColumnName(@"LargePhoto").HasColumnType("varbinary").IsOptional();
             Property(x => x.LargePhotoFileName).HasColumnName(@"LargePhotoFileName").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6935,6 +6982,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductProductPhotoes).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductProductPhoto_Product_ProductID
             HasRequired(a => a.Production_ProductPhoto).WithMany(b => b.Production_ProductProductPhotoes).HasForeignKey(c => c.ProductPhotoId).WillCascadeOnDelete(false); // FK_ProductProductPhoto_ProductPhoto_ProductPhotoID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6965,6 +7013,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_ProductReviews).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductReview_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -6992,6 +7041,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_ProductCategory).WithMany(b => b.Production_ProductSubcategories).HasForeignKey(c => c.ProductCategoryId).WillCascadeOnDelete(false); // FK_ProductSubcategory_ProductCategory_ProductCategoryID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7014,6 +7064,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ScrapReasonId).HasColumnName(@"ScrapReasonID").HasColumnType("smallint").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7045,6 +7096,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_TransactionHistories).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_TransactionHistory_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7073,6 +7125,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Quantity).HasColumnName(@"Quantity").HasColumnType("int").IsRequired();
             Property(x => x.ActualCost).HasColumnName(@"ActualCost").HasColumnType("money").IsRequired().HasPrecision(19,4);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7095,6 +7148,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.UnitMeasureCode).HasColumnName(@"UnitMeasureCode").HasColumnType("nchar").IsRequired().IsFixedLength().HasMaxLength(3).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7119,6 +7173,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ProductModel).HasColumnName(@"ProductModel").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CultureId).HasColumnName(@"CultureID").HasColumnType("nchar").IsRequired().IsFixedLength().HasMaxLength(6).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Description).HasColumnName(@"Description").HasColumnType("nvarchar").IsRequired().HasMaxLength(400).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7163,6 +7218,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.RiderExperience).HasColumnName(@"RiderExperience").HasColumnType("nvarchar").IsOptional().HasMaxLength(1024);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7193,6 +7249,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Step).HasColumnName(@"Step").HasColumnType("nvarchar").IsOptional().HasMaxLength(1024);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7226,6 +7283,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasOptional(a => a.Production_ScrapReason).WithMany(b => b.Production_WorkOrders).HasForeignKey(c => c.ScrapReasonId).WillCascadeOnDelete(false); // FK_WorkOrder_ScrapReason_ScrapReasonID
             HasRequired(a => a.Production_Product).WithMany(b => b.Production_WorkOrders).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_WorkOrder_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7261,6 +7319,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Location).WithMany(b => b.Production_WorkOrderRoutings).HasForeignKey(c => c.LocationId).WillCascadeOnDelete(false); // FK_WorkOrderRouting_Location_LocationID
             HasRequired(a => a.Production_WorkOrder).WithMany(b => b.Production_WorkOrderRoutings).HasForeignKey(c => c.WorkOrderId).WillCascadeOnDelete(false); // FK_WorkOrderRouting_WorkOrder_WorkOrderID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7296,6 +7355,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Production_Product).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ProductVendor_Product_ProductID
             HasRequired(a => a.Production_UnitMeasure).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.UnitMeasureCode).WillCascadeOnDelete(false); // FK_ProductVendor_UnitMeasure_UnitMeasureCode
             HasRequired(a => a.Purchasing_Vendor).WithMany(b => b.Purchasing_ProductVendors).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_ProductVendor_Vendor_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7330,6 +7390,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Purchasing_PurchaseOrderDetails).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_PurchaseOrderDetail_Product_ProductID
             HasRequired(a => a.Purchasing_PurchaseOrderHeader).WithMany(b => b.Purchasing_PurchaseOrderDetails).HasForeignKey(c => c.PurchaseOrderId).WillCascadeOnDelete(false); // FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7367,6 +7428,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.HumanResources_Employee).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.EmployeeId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_Employee_EmployeeID
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.ShipMethodId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
             HasRequired(a => a.Purchasing_Vendor).WithMany(b => b.Purchasing_PurchaseOrderHeaders).HasForeignKey(c => c.VendorId).WillCascadeOnDelete(false); // FK_PurchaseOrderHeader_Vendor_VendorID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7392,6 +7454,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ShipRate).HasColumnName(@"ShipRate").HasColumnType("money").IsRequired().HasPrecision(19,4);
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7422,6 +7485,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_BusinessEntity).WithOptional(b => b.Purchasing_Vendor).WillCascadeOnDelete(false); // FK_Vendor_BusinessEntity_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7450,6 +7514,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.StateProvinceName).HasColumnName(@"StateProvinceName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.PostalCode).HasColumnName(@"PostalCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(15).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7481,6 +7546,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PhoneNumberType).HasColumnName(@"PhoneNumberType").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.EmailAddress).HasColumnName(@"EmailAddress").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.EmailPromotion).HasColumnName(@"EmailPromotion").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7507,6 +7573,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Sales_CountryRegionCurrencies).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
             HasRequired(a => a.Sales_Currency).WithMany(b => b.Sales_CountryRegionCurrencies).HasForeignKey(c => c.CurrencyCode).WillCascadeOnDelete(false); // FK_CountryRegionCurrency_Currency_CurrencyCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7532,6 +7599,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ExpMonth).HasColumnName(@"ExpMonth").HasColumnType("tinyint").IsRequired();
             Property(x => x.ExpYear).HasColumnName(@"ExpYear").HasColumnType("smallint").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7554,6 +7622,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.CurrencyCode).HasColumnName(@"CurrencyCode").HasColumnType("nchar").IsRequired().IsFixedLength().HasMaxLength(3).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7584,6 +7653,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_Currency_FromCurrencyCode).WithMany(b => b.FromCurrencyCode).HasForeignKey(c => c.FromCurrencyCode).WillCascadeOnDelete(false); // FK_CurrencyRate_Currency_FromCurrencyCode
             HasRequired(a => a.Sales_Currency_ToCurrencyCode).WithMany(b => b.ToCurrencyCode).HasForeignKey(c => c.ToCurrencyCode).WillCascadeOnDelete(false); // FK_CurrencyRate_Currency_ToCurrencyCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7615,6 +7685,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.Person_Person).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.PersonId).WillCascadeOnDelete(false); // FK_Customer_Person_PersonID
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_Customer_SalesTerritory_TerritoryID
             HasOptional(a => a.Sales_Store).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.StoreId).WillCascadeOnDelete(false); // FK_Customer_Store_StoreID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7641,6 +7712,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_Person).WithMany(b => b.Sales_PersonCreditCards).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_PersonCreditCard_Person_BusinessEntityID
             HasRequired(a => a.Sales_CreditCard).WithMany(b => b.Sales_PersonCreditCards).HasForeignKey(c => c.CreditCardId).WillCascadeOnDelete(false); // FK_PersonCreditCard_CreditCard_CreditCardID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7675,6 +7747,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_SalesOrderHeader).WithMany(b => b.Sales_SalesOrderDetails).HasForeignKey(c => c.SalesOrderId); // FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
             HasRequired(a => a.Sales_SpecialOfferProduct).WithMany(b => b.Sales_SalesOrderDetails).HasForeignKey(c => new { c.SpecialOfferId, c.ProductId }).WillCascadeOnDelete(false); // FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7730,6 +7803,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Sales_SalesOrderHeaders).HasForeignKey(c => c.ShipMethodId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_ShipMethod_ShipMethodID
             HasRequired(a => a.Sales_Customer).WithMany(b => b.Sales_SalesOrderHeaders).HasForeignKey(c => c.CustomerId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_Customer_CustomerID
             HasRequired(a => a.ShipToAddress).WithMany(b => b.ShipToAddress).HasForeignKey(c => c.ShipToAddressId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_Address_ShipToAddressID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7756,6 +7830,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_SalesOrderHeader).WithMany(b => b.Sales_SalesOrderHeaderSalesReasons).HasForeignKey(c => c.SalesOrderId); // FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID
             HasRequired(a => a.Sales_SalesReason).WithMany(b => b.Sales_SalesOrderHeaderSalesReasons).HasForeignKey(c => c.SalesReasonId).WillCascadeOnDelete(false); // FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7788,6 +7863,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_SalesPersons).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_SalesPerson_SalesTerritory_TerritoryID
             HasRequired(a => a.HumanResources_Employee).WithOptional(b => b.Sales_SalesPerson).WillCascadeOnDelete(false); // FK_SalesPerson_Employee_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7815,6 +7891,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Sales_SalesPerson).WithMany(b => b.Sales_SalesPersonQuotaHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7838,6 +7915,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ReasonType).HasColumnName(@"ReasonType").HasColumnType("nvarchar").IsRequired().HasMaxLength(50);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7867,6 +7945,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_StateProvince).WithMany(b => b.Sales_SalesTaxRates).HasForeignKey(c => c.StateProvinceId).WillCascadeOnDelete(false); // FK_SalesTaxRate_StateProvince_StateProvinceID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7899,6 +7978,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Person_CountryRegion).WithMany(b => b.Sales_SalesTerritories).HasForeignKey(c => c.CountryRegionCode).WillCascadeOnDelete(false); // FK_SalesTerritory_CountryRegion_CountryRegionCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7928,6 +8008,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_SalesPerson).WithMany(b => b.Sales_SalesTerritoryHistories).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID
             HasRequired(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_SalesTerritoryHistories).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_SalesTerritoryHistory_SalesTerritory_TerritoryID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7956,6 +8037,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Sales_ShoppingCartItems).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_ShoppingCartItem_Product_ProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -7986,6 +8068,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.MaxQty).HasColumnName(@"MaxQty").HasColumnType("int").IsOptional();
             Property(x => x.Rowguid).HasColumnName(@"rowguid").HasColumnType("uniqueidentifier").IsRequired();
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8013,6 +8096,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Production_Product).WithMany(b => b.Sales_SpecialOfferProducts).HasForeignKey(c => c.ProductId).WillCascadeOnDelete(false); // FK_SpecialOfferProduct_Product_ProductID
             HasRequired(a => a.Sales_SpecialOffer).WithMany(b => b.Sales_SpecialOfferProducts).HasForeignKey(c => c.SpecialOfferId).WillCascadeOnDelete(false); // FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8042,6 +8126,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasOptional(a => a.Sales_SalesPerson).WithMany(b => b.Sales_Stores).HasForeignKey(c => c.SalesPersonId).WillCascadeOnDelete(false); // FK_Store_SalesPerson_SalesPersonID
             HasRequired(a => a.Person_BusinessEntity).WithOptional(b => b.Sales_Store).WillCascadeOnDelete(false); // FK_Store_BusinessEntity_BusinessEntityID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8079,6 +8164,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PostalCode).HasColumnName(@"PostalCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(15).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Demographics).HasColumnName(@"Demographics").HasColumnType("xml").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8111,6 +8197,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Occupation).HasColumnName(@"Occupation").HasColumnType("nvarchar").IsOptional().HasMaxLength(30);
             Property(x => x.HomeOwnerFlag).HasColumnName(@"HomeOwnerFlag").HasColumnType("bit").IsOptional();
             Property(x => x.NumberCarsOwned).HasColumnName(@"NumberCarsOwned").HasColumnType("int").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8152,6 +8239,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.SalesQuota).HasColumnName(@"SalesQuota").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.SalesYtd).HasColumnName(@"SalesYTD").HasColumnType("money").IsRequired().HasPrecision(19,4).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.SalesLastYear).HasColumnName(@"SalesLastYear").HasColumnType("money").IsRequired().HasPrecision(19,4).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8178,6 +8266,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.C2002).HasColumnName(@"2002").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.C2003).HasColumnName(@"2003").HasColumnType("money").IsOptional().HasPrecision(19,4);
             Property(x => x.C2004).HasColumnName(@"2004").HasColumnType("money").IsOptional().HasPrecision(19,4);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8206,6 +8295,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.StateProvinceName).HasColumnName(@"StateProvinceName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.PostalCode).HasColumnName(@"PostalCode").HasColumnType("nvarchar").IsRequired().HasMaxLength(15).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CountryRegionName).HasColumnName(@"CountryRegionName").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8237,6 +8327,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.PhoneNumberType).HasColumnName(@"PhoneNumberType").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.EmailAddress).HasColumnName(@"EmailAddress").HasColumnType("nvarchar").IsOptional().HasMaxLength(50);
             Property(x => x.EmailPromotion).HasColumnName(@"EmailPromotion").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
@@ -8268,6 +8359,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Brands).HasColumnName(@"Brands").HasColumnType("nvarchar").IsOptional().HasMaxLength(30);
             Property(x => x.Internet).HasColumnName(@"Internet").HasColumnType("nvarchar").IsOptional().HasMaxLength(30);
             Property(x => x.NumberEmployees).HasColumnName(@"NumberEmployees").HasColumnType("int").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
