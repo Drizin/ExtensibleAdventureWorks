@@ -257,6 +257,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             modelBuilder.Configurations.Add(new Sales_VStoreWithContactConfiguration());
             modelBuilder.Configurations.Add(new Sales_VStoreWithDemographicConfiguration());
 
+            modelBuilder.LoadEntityFrameworkExtensions();
             OnModelCreatingPartial(modelBuilder);
         }
 

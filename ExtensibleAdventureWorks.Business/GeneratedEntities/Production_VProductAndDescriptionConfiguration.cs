@@ -33,6 +33,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.ProductModel).HasColumnName(@"ProductModel").HasColumnType("nvarchar").IsRequired().HasMaxLength(50).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.CultureId).HasColumnName(@"CultureID").HasColumnType("nchar").IsRequired().IsFixedLength().HasMaxLength(6).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
             Property(x => x.Description).HasColumnName(@"Description").HasColumnType("nvarchar").IsRequired().HasMaxLength(400).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

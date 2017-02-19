@@ -37,6 +37,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Quantity).HasColumnName(@"Quantity").HasColumnType("int").IsRequired();
             Property(x => x.ActualCost).HasColumnName(@"ActualCost").HasColumnType("money").IsRequired().HasPrecision(19,4);
             Property(x => x.ModifiedDate).HasColumnName(@"ModifiedDate").HasColumnType("datetime").IsRequired();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

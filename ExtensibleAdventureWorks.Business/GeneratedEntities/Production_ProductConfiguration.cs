@@ -59,6 +59,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.Production_ProductSubcategory).WithMany(b => b.Production_Products).HasForeignKey(c => c.ProductSubcategoryId).WillCascadeOnDelete(false); // FK_Product_ProductSubcategory_ProductSubcategoryID
             HasOptional(a => a.Production_UnitMeasure_SizeUnitMeasureCode).WithMany(b => b.SizeUnitMeasureCode).HasForeignKey(c => c.SizeUnitMeasureCode).WillCascadeOnDelete(false); // FK_Product_UnitMeasure_SizeUnitMeasureCode
             HasOptional(a => a.Production_UnitMeasure_WeightUnitMeasureCode).WithMany(b => b.WeightUnitMeasureCode).HasForeignKey(c => c.WeightUnitMeasureCode).WillCascadeOnDelete(false); // FK_Product_UnitMeasure_WeightUnitMeasureCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

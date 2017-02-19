@@ -43,6 +43,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_SalesOrderHeader).WithMany(b => b.Sales_SalesOrderDetails).HasForeignKey(c => c.SalesOrderId); // FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
             HasRequired(a => a.Sales_SpecialOfferProduct).WithMany(b => b.Sales_SalesOrderDetails).HasForeignKey(c => new { c.SpecialOfferId, c.ProductId }).WillCascadeOnDelete(false); // FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -35,6 +35,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Person_Person).WithMany(b => b.Sales_PersonCreditCards).HasForeignKey(c => c.BusinessEntityId).WillCascadeOnDelete(false); // FK_PersonCreditCard_Person_BusinessEntityID
             HasRequired(a => a.Sales_CreditCard).WithMany(b => b.Sales_PersonCreditCards).HasForeignKey(c => c.CreditCardId).WillCascadeOnDelete(false); // FK_PersonCreditCard_CreditCard_CreditCardID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

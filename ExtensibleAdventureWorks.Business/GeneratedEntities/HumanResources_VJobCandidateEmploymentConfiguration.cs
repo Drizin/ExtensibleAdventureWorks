@@ -39,6 +39,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             Property(x => x.Emp46Loc46CountryRegion).HasColumnName(@"Emp.Loc.CountryRegion").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.Emp46Loc46State).HasColumnName(@"Emp.Loc.State").HasColumnType("nvarchar(max)").IsOptional();
             Property(x => x.Emp46Loc46City).HasColumnName(@"Emp.Loc.City").HasColumnType("nvarchar(max)").IsOptional();
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

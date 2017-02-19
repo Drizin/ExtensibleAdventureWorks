@@ -64,6 +64,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasRequired(a => a.Purchasing_ShipMethod).WithMany(b => b.Sales_SalesOrderHeaders).HasForeignKey(c => c.ShipMethodId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_ShipMethod_ShipMethodID
             HasRequired(a => a.Sales_Customer).WithMany(b => b.Sales_SalesOrderHeaders).HasForeignKey(c => c.CustomerId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_Customer_CustomerID
             HasRequired(a => a.ShipToAddress).WithMany(b => b.ShipToAddress).HasForeignKey(c => c.ShipToAddressId).WillCascadeOnDelete(false); // FK_SalesOrderHeader_Address_ShipToAddressID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

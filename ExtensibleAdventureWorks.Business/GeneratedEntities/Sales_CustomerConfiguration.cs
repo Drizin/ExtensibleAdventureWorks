@@ -40,6 +40,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             HasOptional(a => a.Person_Person).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.PersonId).WillCascadeOnDelete(false); // FK_Customer_Person_PersonID
             HasOptional(a => a.Sales_SalesTerritory).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.TerritoryId).WillCascadeOnDelete(false); // FK_Customer_SalesTerritory_TerritoryID
             HasOptional(a => a.Sales_Store).WithMany(b => b.Sales_Customers).HasForeignKey(c => c.StoreId).WillCascadeOnDelete(false); // FK_Customer_Store_StoreID
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();

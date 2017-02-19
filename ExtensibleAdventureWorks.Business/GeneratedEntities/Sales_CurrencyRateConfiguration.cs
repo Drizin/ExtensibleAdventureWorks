@@ -39,6 +39,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
             // Foreign keys
             HasRequired(a => a.Sales_Currency_FromCurrencyCode).WithMany(b => b.FromCurrencyCode).HasForeignKey(c => c.FromCurrencyCode).WillCascadeOnDelete(false); // FK_CurrencyRate_Currency_FromCurrencyCode
             HasRequired(a => a.Sales_Currency_ToCurrencyCode).WithMany(b => b.ToCurrencyCode).HasForeignKey(c => c.ToCurrencyCode).WillCascadeOnDelete(false); // FK_CurrencyRate_Currency_ToCurrencyCode
+            this.ConfigureExtensions();
             InitializePartial();
         }
         partial void InitializePartial();
