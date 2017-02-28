@@ -2623,7 +2623,7 @@ SELECT  SERVERPROPERTY('Edition') AS Edition,
                         dataAnnotation = string.Format("[ForeignKey(\"{0}\")] ", string.Join(", ", fkCols.Select(x => x.col.NameHumanCase).Distinct().ToArray()));
 
                     var fkd = new PropertyAndComments();
-                    fkd.Definition = string.Format("{0}public virtual {1} {2} {3}{4}", dataAnnotation, pkTableHumanCaseWithSuffix, pkPropName, "{ get; set; }", includeComments != CommentsStyle.None ? " // " + foreignKey.ConstraintName : string.Empty);
+                    fkd.Definition = string.Format("{0}public virtual _{1} {2} {3}{4}", dataAnnotation, pkTableHumanCaseWithSuffix, pkPropName, "{ get; set; }", includeComments != CommentsStyle.None ? " // " + foreignKey.ConstraintName : string.Empty);
                     fkd.Comments = string.Format("Parent {0} pointed by [{1}].({2}) ({3})", pkTableHumanCase, fkTable.Name, string.Join(", ", fkCols.Select(x => "[" + x.col.NameHumanCase + "]").Distinct().ToArray()), foreignKey.ConstraintName);
                     fkCol.col.EntityFk.Add(fkd);
 
@@ -3121,7 +3121,7 @@ SELECT  SERVERPROPERTY('Edition') AS Edition,
             {
                 get
                 {
-                    return NameHumanCase + Suffix;
+                    return "_" + NameHumanCase + Suffix;
                 }
             }
             public void ResetNavigationProperties()

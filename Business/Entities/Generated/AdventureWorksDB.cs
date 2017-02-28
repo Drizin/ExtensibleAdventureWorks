@@ -35,97 +35,97 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     public partial interface IAdventureWorksDB : System.IDisposable
     {
-        System.Data.Entity.DbSet<AwBuildVersion> AwBuildVersions { get; set; } // AWBuildVersion
-        System.Data.Entity.DbSet<DatabaseLog> DatabaseLogs { get; set; } // DatabaseLog
-        System.Data.Entity.DbSet<ErrorLog> ErrorLogs { get; set; } // ErrorLog
-        System.Data.Entity.DbSet<HumanResources_Department> HumanResources_Departments { get; set; } // Department
-        System.Data.Entity.DbSet<HumanResources_Employee> HumanResources_Employees { get; set; } // Employee
-        System.Data.Entity.DbSet<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory
-        System.Data.Entity.DbSet<HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } // EmployeePayHistory
-        System.Data.Entity.DbSet<HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } // JobCandidate
-        System.Data.Entity.DbSet<HumanResources_Shift> HumanResources_Shifts { get; set; } // Shift
-        System.Data.Entity.DbSet<HumanResources_VEmployee> HumanResources_VEmployees { get; set; } // vEmployee
-        System.Data.Entity.DbSet<HumanResources_VEmployeeDepartment> HumanResources_VEmployeeDepartments { get; set; } // vEmployeeDepartment
-        System.Data.Entity.DbSet<HumanResources_VEmployeeDepartmentHistory> HumanResources_VEmployeeDepartmentHistories { get; set; } // vEmployeeDepartmentHistory
-        System.Data.Entity.DbSet<HumanResources_VJobCandidate> HumanResources_VJobCandidates { get; set; } // vJobCandidate
-        System.Data.Entity.DbSet<HumanResources_VJobCandidateEducation> HumanResources_VJobCandidateEducations { get; set; } // vJobCandidateEducation
-        System.Data.Entity.DbSet<HumanResources_VJobCandidateEmployment> HumanResources_VJobCandidateEmployments { get; set; } // vJobCandidateEmployment
-        System.Data.Entity.DbSet<Person_Address> Person_Addresses { get; set; } // Address
-        System.Data.Entity.DbSet<Person_AddressType> Person_AddressTypes { get; set; } // AddressType
-        System.Data.Entity.DbSet<Person_BusinessEntity> Person_BusinessEntities { get; set; } // BusinessEntity
-        System.Data.Entity.DbSet<Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } // BusinessEntityAddress
-        System.Data.Entity.DbSet<Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } // BusinessEntityContact
-        System.Data.Entity.DbSet<Person_ContactType> Person_ContactTypes { get; set; } // ContactType
-        System.Data.Entity.DbSet<Person_CountryRegion> Person_CountryRegions { get; set; } // CountryRegion
-        System.Data.Entity.DbSet<Person_EmailAddress> Person_EmailAddresses { get; set; } // EmailAddress
-        System.Data.Entity.DbSet<Person_Password> Person_Passwords { get; set; } // Password
-        System.Data.Entity.DbSet<Person_Person> Person_People { get; set; } // Person
-        System.Data.Entity.DbSet<Person_PersonPhone> Person_PersonPhones { get; set; } // PersonPhone
-        System.Data.Entity.DbSet<Person_PhoneNumberType> Person_PhoneNumberTypes { get; set; } // PhoneNumberType
-        System.Data.Entity.DbSet<Person_StateProvince> Person_StateProvinces { get; set; } // StateProvince
-        System.Data.Entity.DbSet<Person_VAdditionalContactInfo> Person_VAdditionalContactInfoes { get; set; } // vAdditionalContactInfo
-        System.Data.Entity.DbSet<Person_VStateProvinceCountryRegion> Person_VStateProvinceCountryRegions { get; set; } // vStateProvinceCountryRegion
-        System.Data.Entity.DbSet<Production_BillOfMaterial> Production_BillOfMaterials { get; set; } // BillOfMaterials
-        System.Data.Entity.DbSet<Production_Culture> Production_Cultures { get; set; } // Culture
-        System.Data.Entity.DbSet<Production_Document> Production_Documents { get; set; } // Document
-        System.Data.Entity.DbSet<Production_Illustration> Production_Illustrations { get; set; } // Illustration
-        System.Data.Entity.DbSet<Production_Location> Production_Locations { get; set; } // Location
-        System.Data.Entity.DbSet<Production_Product> Production_Products { get; set; } // Product
-        System.Data.Entity.DbSet<Production_ProductCategory> Production_ProductCategories { get; set; } // ProductCategory
-        System.Data.Entity.DbSet<Production_ProductCostHistory> Production_ProductCostHistories { get; set; } // ProductCostHistory
-        System.Data.Entity.DbSet<Production_ProductDescription> Production_ProductDescriptions { get; set; } // ProductDescription
-        System.Data.Entity.DbSet<Production_ProductDocument> Production_ProductDocuments { get; set; } // ProductDocument
-        System.Data.Entity.DbSet<Production_ProductInventory> Production_ProductInventories { get; set; } // ProductInventory
-        System.Data.Entity.DbSet<Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } // ProductListPriceHistory
-        System.Data.Entity.DbSet<Production_ProductModel> Production_ProductModels { get; set; } // ProductModel
-        System.Data.Entity.DbSet<Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } // ProductModelIllustration
-        System.Data.Entity.DbSet<Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } // ProductModelProductDescriptionCulture
-        System.Data.Entity.DbSet<Production_ProductPhoto> Production_ProductPhotoes { get; set; } // ProductPhoto
-        System.Data.Entity.DbSet<Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } // ProductProductPhoto
-        System.Data.Entity.DbSet<Production_ProductReview> Production_ProductReviews { get; set; } // ProductReview
-        System.Data.Entity.DbSet<Production_ProductSubcategory> Production_ProductSubcategories { get; set; } // ProductSubcategory
-        System.Data.Entity.DbSet<Production_ScrapReason> Production_ScrapReasons { get; set; } // ScrapReason
-        System.Data.Entity.DbSet<Production_TransactionHistory> Production_TransactionHistories { get; set; } // TransactionHistory
-        System.Data.Entity.DbSet<Production_TransactionHistoryArchive> Production_TransactionHistoryArchives { get; set; } // TransactionHistoryArchive
-        System.Data.Entity.DbSet<Production_UnitMeasure> Production_UnitMeasures { get; set; } // UnitMeasure
-        System.Data.Entity.DbSet<Production_VProductAndDescription> Production_VProductAndDescriptions { get; set; } // vProductAndDescription
-        System.Data.Entity.DbSet<Production_VProductModelCatalogDescription> Production_VProductModelCatalogDescriptions { get; set; } // vProductModelCatalogDescription
-        System.Data.Entity.DbSet<Production_VProductModelInstruction> Production_VProductModelInstructions { get; set; } // vProductModelInstructions
-        System.Data.Entity.DbSet<Production_WorkOrder> Production_WorkOrders { get; set; } // WorkOrder
-        System.Data.Entity.DbSet<Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } // WorkOrderRouting
-        System.Data.Entity.DbSet<Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } // ProductVendor
-        System.Data.Entity.DbSet<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } // PurchaseOrderDetail
-        System.Data.Entity.DbSet<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader
-        System.Data.Entity.DbSet<Purchasing_ShipMethod> Purchasing_ShipMethods { get; set; } // ShipMethod
-        System.Data.Entity.DbSet<Purchasing_Vendor> Purchasing_Vendors { get; set; } // Vendor
-        System.Data.Entity.DbSet<Purchasing_VVendorWithAddress> Purchasing_VVendorWithAddresses { get; set; } // vVendorWithAddresses
-        System.Data.Entity.DbSet<Purchasing_VVendorWithContact> Purchasing_VVendorWithContacts { get; set; } // vVendorWithContacts
-        System.Data.Entity.DbSet<Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } // CountryRegionCurrency
-        System.Data.Entity.DbSet<Sales_CreditCard> Sales_CreditCards { get; set; } // CreditCard
-        System.Data.Entity.DbSet<Sales_Currency> Sales_Currencies { get; set; } // Currency
-        System.Data.Entity.DbSet<Sales_CurrencyRate> Sales_CurrencyRates { get; set; } // CurrencyRate
-        System.Data.Entity.DbSet<Sales_Customer> Sales_Customers { get; set; } // Customer
-        System.Data.Entity.DbSet<Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } // PersonCreditCard
-        System.Data.Entity.DbSet<Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } // SalesOrderDetail
-        System.Data.Entity.DbSet<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } // SalesOrderHeader
-        System.Data.Entity.DbSet<Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } // SalesOrderHeaderSalesReason
-        System.Data.Entity.DbSet<Sales_SalesPerson> Sales_SalesPersons { get; set; } // SalesPerson
-        System.Data.Entity.DbSet<Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } // SalesPersonQuotaHistory
-        System.Data.Entity.DbSet<Sales_SalesReason> Sales_SalesReasons { get; set; } // SalesReason
-        System.Data.Entity.DbSet<Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } // SalesTaxRate
-        System.Data.Entity.DbSet<Sales_SalesTerritory> Sales_SalesTerritories { get; set; } // SalesTerritory
-        System.Data.Entity.DbSet<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } // SalesTerritoryHistory
-        System.Data.Entity.DbSet<Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } // ShoppingCartItem
-        System.Data.Entity.DbSet<Sales_SpecialOffer> Sales_SpecialOffers { get; set; } // SpecialOffer
-        System.Data.Entity.DbSet<Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } // SpecialOfferProduct
-        System.Data.Entity.DbSet<Sales_Store> Sales_Stores { get; set; } // Store
-        System.Data.Entity.DbSet<Sales_VIndividualCustomer> Sales_VIndividualCustomers { get; set; } // vIndividualCustomer
-        System.Data.Entity.DbSet<Sales_VPersonDemographic> Sales_VPersonDemographics { get; set; } // vPersonDemographics
-        System.Data.Entity.DbSet<Sales_VSalesPerson> Sales_VSalesPersons { get; set; } // vSalesPerson
-        System.Data.Entity.DbSet<Sales_VSalesPersonSalesByFiscalYear> Sales_VSalesPersonSalesByFiscalYears { get; set; } // vSalesPersonSalesByFiscalYears
-        System.Data.Entity.DbSet<Sales_VStoreWithAddress> Sales_VStoreWithAddresses { get; set; } // vStoreWithAddresses
-        System.Data.Entity.DbSet<Sales_VStoreWithContact> Sales_VStoreWithContacts { get; set; } // vStoreWithContacts
-        System.Data.Entity.DbSet<Sales_VStoreWithDemographic> Sales_VStoreWithDemographics { get; set; } // vStoreWithDemographics
+        System.Data.Entity.DbSet<_AwBuildVersion> AwBuildVersions { get; set; } // AWBuildVersion
+        System.Data.Entity.DbSet<_DatabaseLog> DatabaseLogs { get; set; } // DatabaseLog
+        System.Data.Entity.DbSet<_ErrorLog> ErrorLogs { get; set; } // ErrorLog
+        System.Data.Entity.DbSet<_HumanResources_Department> HumanResources_Departments { get; set; } // Department
+        System.Data.Entity.DbSet<_HumanResources_Employee> HumanResources_Employees { get; set; } // Employee
+        System.Data.Entity.DbSet<_HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory
+        System.Data.Entity.DbSet<_HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } // EmployeePayHistory
+        System.Data.Entity.DbSet<_HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } // JobCandidate
+        System.Data.Entity.DbSet<_HumanResources_Shift> HumanResources_Shifts { get; set; } // Shift
+        System.Data.Entity.DbSet<_HumanResources_VEmployee> HumanResources_VEmployees { get; set; } // vEmployee
+        System.Data.Entity.DbSet<_HumanResources_VEmployeeDepartment> HumanResources_VEmployeeDepartments { get; set; } // vEmployeeDepartment
+        System.Data.Entity.DbSet<_HumanResources_VEmployeeDepartmentHistory> HumanResources_VEmployeeDepartmentHistories { get; set; } // vEmployeeDepartmentHistory
+        System.Data.Entity.DbSet<_HumanResources_VJobCandidate> HumanResources_VJobCandidates { get; set; } // vJobCandidate
+        System.Data.Entity.DbSet<_HumanResources_VJobCandidateEducation> HumanResources_VJobCandidateEducations { get; set; } // vJobCandidateEducation
+        System.Data.Entity.DbSet<_HumanResources_VJobCandidateEmployment> HumanResources_VJobCandidateEmployments { get; set; } // vJobCandidateEmployment
+        System.Data.Entity.DbSet<_Person_Address> Person_Addresses { get; set; } // Address
+        System.Data.Entity.DbSet<_Person_AddressType> Person_AddressTypes { get; set; } // AddressType
+        System.Data.Entity.DbSet<_Person_BusinessEntity> Person_BusinessEntities { get; set; } // BusinessEntity
+        System.Data.Entity.DbSet<_Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } // BusinessEntityAddress
+        System.Data.Entity.DbSet<_Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } // BusinessEntityContact
+        System.Data.Entity.DbSet<_Person_ContactType> Person_ContactTypes { get; set; } // ContactType
+        System.Data.Entity.DbSet<_Person_CountryRegion> Person_CountryRegions { get; set; } // CountryRegion
+        System.Data.Entity.DbSet<_Person_EmailAddress> Person_EmailAddresses { get; set; } // EmailAddress
+        System.Data.Entity.DbSet<_Person_Password> Person_Passwords { get; set; } // Password
+        System.Data.Entity.DbSet<_Person_Person> Person_People { get; set; } // Person
+        System.Data.Entity.DbSet<_Person_PersonPhone> Person_PersonPhones { get; set; } // PersonPhone
+        System.Data.Entity.DbSet<_Person_PhoneNumberType> Person_PhoneNumberTypes { get; set; } // PhoneNumberType
+        System.Data.Entity.DbSet<_Person_StateProvince> Person_StateProvinces { get; set; } // StateProvince
+        System.Data.Entity.DbSet<_Person_VAdditionalContactInfo> Person_VAdditionalContactInfoes { get; set; } // vAdditionalContactInfo
+        System.Data.Entity.DbSet<_Person_VStateProvinceCountryRegion> Person_VStateProvinceCountryRegions { get; set; } // vStateProvinceCountryRegion
+        System.Data.Entity.DbSet<_Production_BillOfMaterial> Production_BillOfMaterials { get; set; } // BillOfMaterials
+        System.Data.Entity.DbSet<_Production_Culture> Production_Cultures { get; set; } // Culture
+        System.Data.Entity.DbSet<_Production_Document> Production_Documents { get; set; } // Document
+        System.Data.Entity.DbSet<_Production_Illustration> Production_Illustrations { get; set; } // Illustration
+        System.Data.Entity.DbSet<_Production_Location> Production_Locations { get; set; } // Location
+        System.Data.Entity.DbSet<_Production_Product> Production_Products { get; set; } // Product
+        System.Data.Entity.DbSet<_Production_ProductCategory> Production_ProductCategories { get; set; } // ProductCategory
+        System.Data.Entity.DbSet<_Production_ProductCostHistory> Production_ProductCostHistories { get; set; } // ProductCostHistory
+        System.Data.Entity.DbSet<_Production_ProductDescription> Production_ProductDescriptions { get; set; } // ProductDescription
+        System.Data.Entity.DbSet<_Production_ProductDocument> Production_ProductDocuments { get; set; } // ProductDocument
+        System.Data.Entity.DbSet<_Production_ProductInventory> Production_ProductInventories { get; set; } // ProductInventory
+        System.Data.Entity.DbSet<_Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } // ProductListPriceHistory
+        System.Data.Entity.DbSet<_Production_ProductModel> Production_ProductModels { get; set; } // ProductModel
+        System.Data.Entity.DbSet<_Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } // ProductModelIllustration
+        System.Data.Entity.DbSet<_Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } // ProductModelProductDescriptionCulture
+        System.Data.Entity.DbSet<_Production_ProductPhoto> Production_ProductPhotoes { get; set; } // ProductPhoto
+        System.Data.Entity.DbSet<_Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } // ProductProductPhoto
+        System.Data.Entity.DbSet<_Production_ProductReview> Production_ProductReviews { get; set; } // ProductReview
+        System.Data.Entity.DbSet<_Production_ProductSubcategory> Production_ProductSubcategories { get; set; } // ProductSubcategory
+        System.Data.Entity.DbSet<_Production_ScrapReason> Production_ScrapReasons { get; set; } // ScrapReason
+        System.Data.Entity.DbSet<_Production_TransactionHistory> Production_TransactionHistories { get; set; } // TransactionHistory
+        System.Data.Entity.DbSet<_Production_TransactionHistoryArchive> Production_TransactionHistoryArchives { get; set; } // TransactionHistoryArchive
+        System.Data.Entity.DbSet<_Production_UnitMeasure> Production_UnitMeasures { get; set; } // UnitMeasure
+        System.Data.Entity.DbSet<_Production_VProductAndDescription> Production_VProductAndDescriptions { get; set; } // vProductAndDescription
+        System.Data.Entity.DbSet<_Production_VProductModelCatalogDescription> Production_VProductModelCatalogDescriptions { get; set; } // vProductModelCatalogDescription
+        System.Data.Entity.DbSet<_Production_VProductModelInstruction> Production_VProductModelInstructions { get; set; } // vProductModelInstructions
+        System.Data.Entity.DbSet<_Production_WorkOrder> Production_WorkOrders { get; set; } // WorkOrder
+        System.Data.Entity.DbSet<_Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } // WorkOrderRouting
+        System.Data.Entity.DbSet<_Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } // ProductVendor
+        System.Data.Entity.DbSet<_Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } // PurchaseOrderDetail
+        System.Data.Entity.DbSet<_Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader
+        System.Data.Entity.DbSet<_Purchasing_ShipMethod> Purchasing_ShipMethods { get; set; } // ShipMethod
+        System.Data.Entity.DbSet<_Purchasing_Vendor> Purchasing_Vendors { get; set; } // Vendor
+        System.Data.Entity.DbSet<_Purchasing_VVendorWithAddress> Purchasing_VVendorWithAddresses { get; set; } // vVendorWithAddresses
+        System.Data.Entity.DbSet<_Purchasing_VVendorWithContact> Purchasing_VVendorWithContacts { get; set; } // vVendorWithContacts
+        System.Data.Entity.DbSet<_Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } // CountryRegionCurrency
+        System.Data.Entity.DbSet<_Sales_CreditCard> Sales_CreditCards { get; set; } // CreditCard
+        System.Data.Entity.DbSet<_Sales_Currency> Sales_Currencies { get; set; } // Currency
+        System.Data.Entity.DbSet<_Sales_CurrencyRate> Sales_CurrencyRates { get; set; } // CurrencyRate
+        System.Data.Entity.DbSet<_Sales_Customer> Sales_Customers { get; set; } // Customer
+        System.Data.Entity.DbSet<_Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } // PersonCreditCard
+        System.Data.Entity.DbSet<_Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } // SalesOrderDetail
+        System.Data.Entity.DbSet<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } // SalesOrderHeader
+        System.Data.Entity.DbSet<_Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } // SalesOrderHeaderSalesReason
+        System.Data.Entity.DbSet<_Sales_SalesPerson> Sales_SalesPersons { get; set; } // SalesPerson
+        System.Data.Entity.DbSet<_Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } // SalesPersonQuotaHistory
+        System.Data.Entity.DbSet<_Sales_SalesReason> Sales_SalesReasons { get; set; } // SalesReason
+        System.Data.Entity.DbSet<_Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } // SalesTaxRate
+        System.Data.Entity.DbSet<_Sales_SalesTerritory> Sales_SalesTerritories { get; set; } // SalesTerritory
+        System.Data.Entity.DbSet<_Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } // SalesTerritoryHistory
+        System.Data.Entity.DbSet<_Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } // ShoppingCartItem
+        System.Data.Entity.DbSet<_Sales_SpecialOffer> Sales_SpecialOffers { get; set; } // SpecialOffer
+        System.Data.Entity.DbSet<_Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } // SpecialOfferProduct
+        System.Data.Entity.DbSet<_Sales_Store> Sales_Stores { get; set; } // Store
+        System.Data.Entity.DbSet<_Sales_VIndividualCustomer> Sales_VIndividualCustomers { get; set; } // vIndividualCustomer
+        System.Data.Entity.DbSet<_Sales_VPersonDemographic> Sales_VPersonDemographics { get; set; } // vPersonDemographics
+        System.Data.Entity.DbSet<_Sales_VSalesPerson> Sales_VSalesPersons { get; set; } // vSalesPerson
+        System.Data.Entity.DbSet<_Sales_VSalesPersonSalesByFiscalYear> Sales_VSalesPersonSalesByFiscalYears { get; set; } // vSalesPersonSalesByFiscalYears
+        System.Data.Entity.DbSet<_Sales_VStoreWithAddress> Sales_VStoreWithAddresses { get; set; } // vStoreWithAddresses
+        System.Data.Entity.DbSet<_Sales_VStoreWithContact> Sales_VStoreWithContacts { get; set; } // vStoreWithContacts
+        System.Data.Entity.DbSet<_Sales_VStoreWithDemographic> Sales_VStoreWithDemographics { get; set; } // vStoreWithDemographics
 
         int SaveChanges();
         System.Threading.Tasks.Task<int> SaveChangesAsync();
@@ -184,97 +184,97 @@ namespace ExtensibleAdventureWorks.Business.Entities
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
     public partial class AdventureWorksDB : System.Data.Entity.DbContext, IAdventureWorksDB
     {
-        public System.Data.Entity.DbSet<AwBuildVersion> AwBuildVersions { get; set; } // AWBuildVersion
-        public System.Data.Entity.DbSet<DatabaseLog> DatabaseLogs { get; set; } // DatabaseLog
-        public System.Data.Entity.DbSet<ErrorLog> ErrorLogs { get; set; } // ErrorLog
-        public System.Data.Entity.DbSet<HumanResources_Department> HumanResources_Departments { get; set; } // Department
-        public System.Data.Entity.DbSet<HumanResources_Employee> HumanResources_Employees { get; set; } // Employee
-        public System.Data.Entity.DbSet<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory
-        public System.Data.Entity.DbSet<HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } // EmployeePayHistory
-        public System.Data.Entity.DbSet<HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } // JobCandidate
-        public System.Data.Entity.DbSet<HumanResources_Shift> HumanResources_Shifts { get; set; } // Shift
-        public System.Data.Entity.DbSet<HumanResources_VEmployee> HumanResources_VEmployees { get; set; } // vEmployee
-        public System.Data.Entity.DbSet<HumanResources_VEmployeeDepartment> HumanResources_VEmployeeDepartments { get; set; } // vEmployeeDepartment
-        public System.Data.Entity.DbSet<HumanResources_VEmployeeDepartmentHistory> HumanResources_VEmployeeDepartmentHistories { get; set; } // vEmployeeDepartmentHistory
-        public System.Data.Entity.DbSet<HumanResources_VJobCandidate> HumanResources_VJobCandidates { get; set; } // vJobCandidate
-        public System.Data.Entity.DbSet<HumanResources_VJobCandidateEducation> HumanResources_VJobCandidateEducations { get; set; } // vJobCandidateEducation
-        public System.Data.Entity.DbSet<HumanResources_VJobCandidateEmployment> HumanResources_VJobCandidateEmployments { get; set; } // vJobCandidateEmployment
-        public System.Data.Entity.DbSet<Person_Address> Person_Addresses { get; set; } // Address
-        public System.Data.Entity.DbSet<Person_AddressType> Person_AddressTypes { get; set; } // AddressType
-        public System.Data.Entity.DbSet<Person_BusinessEntity> Person_BusinessEntities { get; set; } // BusinessEntity
-        public System.Data.Entity.DbSet<Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } // BusinessEntityAddress
-        public System.Data.Entity.DbSet<Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } // BusinessEntityContact
-        public System.Data.Entity.DbSet<Person_ContactType> Person_ContactTypes { get; set; } // ContactType
-        public System.Data.Entity.DbSet<Person_CountryRegion> Person_CountryRegions { get; set; } // CountryRegion
-        public System.Data.Entity.DbSet<Person_EmailAddress> Person_EmailAddresses { get; set; } // EmailAddress
-        public System.Data.Entity.DbSet<Person_Password> Person_Passwords { get; set; } // Password
-        public System.Data.Entity.DbSet<Person_Person> Person_People { get; set; } // Person
-        public System.Data.Entity.DbSet<Person_PersonPhone> Person_PersonPhones { get; set; } // PersonPhone
-        public System.Data.Entity.DbSet<Person_PhoneNumberType> Person_PhoneNumberTypes { get; set; } // PhoneNumberType
-        public System.Data.Entity.DbSet<Person_StateProvince> Person_StateProvinces { get; set; } // StateProvince
-        public System.Data.Entity.DbSet<Person_VAdditionalContactInfo> Person_VAdditionalContactInfoes { get; set; } // vAdditionalContactInfo
-        public System.Data.Entity.DbSet<Person_VStateProvinceCountryRegion> Person_VStateProvinceCountryRegions { get; set; } // vStateProvinceCountryRegion
-        public System.Data.Entity.DbSet<Production_BillOfMaterial> Production_BillOfMaterials { get; set; } // BillOfMaterials
-        public System.Data.Entity.DbSet<Production_Culture> Production_Cultures { get; set; } // Culture
-        public System.Data.Entity.DbSet<Production_Document> Production_Documents { get; set; } // Document
-        public System.Data.Entity.DbSet<Production_Illustration> Production_Illustrations { get; set; } // Illustration
-        public System.Data.Entity.DbSet<Production_Location> Production_Locations { get; set; } // Location
-        public System.Data.Entity.DbSet<Production_Product> Production_Products { get; set; } // Product
-        public System.Data.Entity.DbSet<Production_ProductCategory> Production_ProductCategories { get; set; } // ProductCategory
-        public System.Data.Entity.DbSet<Production_ProductCostHistory> Production_ProductCostHistories { get; set; } // ProductCostHistory
-        public System.Data.Entity.DbSet<Production_ProductDescription> Production_ProductDescriptions { get; set; } // ProductDescription
-        public System.Data.Entity.DbSet<Production_ProductDocument> Production_ProductDocuments { get; set; } // ProductDocument
-        public System.Data.Entity.DbSet<Production_ProductInventory> Production_ProductInventories { get; set; } // ProductInventory
-        public System.Data.Entity.DbSet<Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } // ProductListPriceHistory
-        public System.Data.Entity.DbSet<Production_ProductModel> Production_ProductModels { get; set; } // ProductModel
-        public System.Data.Entity.DbSet<Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } // ProductModelIllustration
-        public System.Data.Entity.DbSet<Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } // ProductModelProductDescriptionCulture
-        public System.Data.Entity.DbSet<Production_ProductPhoto> Production_ProductPhotoes { get; set; } // ProductPhoto
-        public System.Data.Entity.DbSet<Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } // ProductProductPhoto
-        public System.Data.Entity.DbSet<Production_ProductReview> Production_ProductReviews { get; set; } // ProductReview
-        public System.Data.Entity.DbSet<Production_ProductSubcategory> Production_ProductSubcategories { get; set; } // ProductSubcategory
-        public System.Data.Entity.DbSet<Production_ScrapReason> Production_ScrapReasons { get; set; } // ScrapReason
-        public System.Data.Entity.DbSet<Production_TransactionHistory> Production_TransactionHistories { get; set; } // TransactionHistory
-        public System.Data.Entity.DbSet<Production_TransactionHistoryArchive> Production_TransactionHistoryArchives { get; set; } // TransactionHistoryArchive
-        public System.Data.Entity.DbSet<Production_UnitMeasure> Production_UnitMeasures { get; set; } // UnitMeasure
-        public System.Data.Entity.DbSet<Production_VProductAndDescription> Production_VProductAndDescriptions { get; set; } // vProductAndDescription
-        public System.Data.Entity.DbSet<Production_VProductModelCatalogDescription> Production_VProductModelCatalogDescriptions { get; set; } // vProductModelCatalogDescription
-        public System.Data.Entity.DbSet<Production_VProductModelInstruction> Production_VProductModelInstructions { get; set; } // vProductModelInstructions
-        public System.Data.Entity.DbSet<Production_WorkOrder> Production_WorkOrders { get; set; } // WorkOrder
-        public System.Data.Entity.DbSet<Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } // WorkOrderRouting
-        public System.Data.Entity.DbSet<Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } // ProductVendor
-        public System.Data.Entity.DbSet<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } // PurchaseOrderDetail
-        public System.Data.Entity.DbSet<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader
-        public System.Data.Entity.DbSet<Purchasing_ShipMethod> Purchasing_ShipMethods { get; set; } // ShipMethod
-        public System.Data.Entity.DbSet<Purchasing_Vendor> Purchasing_Vendors { get; set; } // Vendor
-        public System.Data.Entity.DbSet<Purchasing_VVendorWithAddress> Purchasing_VVendorWithAddresses { get; set; } // vVendorWithAddresses
-        public System.Data.Entity.DbSet<Purchasing_VVendorWithContact> Purchasing_VVendorWithContacts { get; set; } // vVendorWithContacts
-        public System.Data.Entity.DbSet<Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } // CountryRegionCurrency
-        public System.Data.Entity.DbSet<Sales_CreditCard> Sales_CreditCards { get; set; } // CreditCard
-        public System.Data.Entity.DbSet<Sales_Currency> Sales_Currencies { get; set; } // Currency
-        public System.Data.Entity.DbSet<Sales_CurrencyRate> Sales_CurrencyRates { get; set; } // CurrencyRate
-        public System.Data.Entity.DbSet<Sales_Customer> Sales_Customers { get; set; } // Customer
-        public System.Data.Entity.DbSet<Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } // PersonCreditCard
-        public System.Data.Entity.DbSet<Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } // SalesOrderDetail
-        public System.Data.Entity.DbSet<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } // SalesOrderHeader
-        public System.Data.Entity.DbSet<Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } // SalesOrderHeaderSalesReason
-        public System.Data.Entity.DbSet<Sales_SalesPerson> Sales_SalesPersons { get; set; } // SalesPerson
-        public System.Data.Entity.DbSet<Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } // SalesPersonQuotaHistory
-        public System.Data.Entity.DbSet<Sales_SalesReason> Sales_SalesReasons { get; set; } // SalesReason
-        public System.Data.Entity.DbSet<Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } // SalesTaxRate
-        public System.Data.Entity.DbSet<Sales_SalesTerritory> Sales_SalesTerritories { get; set; } // SalesTerritory
-        public System.Data.Entity.DbSet<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } // SalesTerritoryHistory
-        public System.Data.Entity.DbSet<Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } // ShoppingCartItem
-        public System.Data.Entity.DbSet<Sales_SpecialOffer> Sales_SpecialOffers { get; set; } // SpecialOffer
-        public System.Data.Entity.DbSet<Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } // SpecialOfferProduct
-        public System.Data.Entity.DbSet<Sales_Store> Sales_Stores { get; set; } // Store
-        public System.Data.Entity.DbSet<Sales_VIndividualCustomer> Sales_VIndividualCustomers { get; set; } // vIndividualCustomer
-        public System.Data.Entity.DbSet<Sales_VPersonDemographic> Sales_VPersonDemographics { get; set; } // vPersonDemographics
-        public System.Data.Entity.DbSet<Sales_VSalesPerson> Sales_VSalesPersons { get; set; } // vSalesPerson
-        public System.Data.Entity.DbSet<Sales_VSalesPersonSalesByFiscalYear> Sales_VSalesPersonSalesByFiscalYears { get; set; } // vSalesPersonSalesByFiscalYears
-        public System.Data.Entity.DbSet<Sales_VStoreWithAddress> Sales_VStoreWithAddresses { get; set; } // vStoreWithAddresses
-        public System.Data.Entity.DbSet<Sales_VStoreWithContact> Sales_VStoreWithContacts { get; set; } // vStoreWithContacts
-        public System.Data.Entity.DbSet<Sales_VStoreWithDemographic> Sales_VStoreWithDemographics { get; set; } // vStoreWithDemographics
+        public System.Data.Entity.DbSet<_AwBuildVersion> AwBuildVersions { get; set; } // AWBuildVersion
+        public System.Data.Entity.DbSet<_DatabaseLog> DatabaseLogs { get; set; } // DatabaseLog
+        public System.Data.Entity.DbSet<_ErrorLog> ErrorLogs { get; set; } // ErrorLog
+        public System.Data.Entity.DbSet<_HumanResources_Department> HumanResources_Departments { get; set; } // Department
+        public System.Data.Entity.DbSet<_HumanResources_Employee> HumanResources_Employees { get; set; } // Employee
+        public System.Data.Entity.DbSet<_HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } // EmployeeDepartmentHistory
+        public System.Data.Entity.DbSet<_HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } // EmployeePayHistory
+        public System.Data.Entity.DbSet<_HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } // JobCandidate
+        public System.Data.Entity.DbSet<_HumanResources_Shift> HumanResources_Shifts { get; set; } // Shift
+        public System.Data.Entity.DbSet<_HumanResources_VEmployee> HumanResources_VEmployees { get; set; } // vEmployee
+        public System.Data.Entity.DbSet<_HumanResources_VEmployeeDepartment> HumanResources_VEmployeeDepartments { get; set; } // vEmployeeDepartment
+        public System.Data.Entity.DbSet<_HumanResources_VEmployeeDepartmentHistory> HumanResources_VEmployeeDepartmentHistories { get; set; } // vEmployeeDepartmentHistory
+        public System.Data.Entity.DbSet<_HumanResources_VJobCandidate> HumanResources_VJobCandidates { get; set; } // vJobCandidate
+        public System.Data.Entity.DbSet<_HumanResources_VJobCandidateEducation> HumanResources_VJobCandidateEducations { get; set; } // vJobCandidateEducation
+        public System.Data.Entity.DbSet<_HumanResources_VJobCandidateEmployment> HumanResources_VJobCandidateEmployments { get; set; } // vJobCandidateEmployment
+        public System.Data.Entity.DbSet<_Person_Address> Person_Addresses { get; set; } // Address
+        public System.Data.Entity.DbSet<_Person_AddressType> Person_AddressTypes { get; set; } // AddressType
+        public System.Data.Entity.DbSet<_Person_BusinessEntity> Person_BusinessEntities { get; set; } // BusinessEntity
+        public System.Data.Entity.DbSet<_Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } // BusinessEntityAddress
+        public System.Data.Entity.DbSet<_Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } // BusinessEntityContact
+        public System.Data.Entity.DbSet<_Person_ContactType> Person_ContactTypes { get; set; } // ContactType
+        public System.Data.Entity.DbSet<_Person_CountryRegion> Person_CountryRegions { get; set; } // CountryRegion
+        public System.Data.Entity.DbSet<_Person_EmailAddress> Person_EmailAddresses { get; set; } // EmailAddress
+        public System.Data.Entity.DbSet<_Person_Password> Person_Passwords { get; set; } // Password
+        public System.Data.Entity.DbSet<_Person_Person> Person_People { get; set; } // Person
+        public System.Data.Entity.DbSet<_Person_PersonPhone> Person_PersonPhones { get; set; } // PersonPhone
+        public System.Data.Entity.DbSet<_Person_PhoneNumberType> Person_PhoneNumberTypes { get; set; } // PhoneNumberType
+        public System.Data.Entity.DbSet<_Person_StateProvince> Person_StateProvinces { get; set; } // StateProvince
+        public System.Data.Entity.DbSet<_Person_VAdditionalContactInfo> Person_VAdditionalContactInfoes { get; set; } // vAdditionalContactInfo
+        public System.Data.Entity.DbSet<_Person_VStateProvinceCountryRegion> Person_VStateProvinceCountryRegions { get; set; } // vStateProvinceCountryRegion
+        public System.Data.Entity.DbSet<_Production_BillOfMaterial> Production_BillOfMaterials { get; set; } // BillOfMaterials
+        public System.Data.Entity.DbSet<_Production_Culture> Production_Cultures { get; set; } // Culture
+        public System.Data.Entity.DbSet<_Production_Document> Production_Documents { get; set; } // Document
+        public System.Data.Entity.DbSet<_Production_Illustration> Production_Illustrations { get; set; } // Illustration
+        public System.Data.Entity.DbSet<_Production_Location> Production_Locations { get; set; } // Location
+        public System.Data.Entity.DbSet<_Production_Product> Production_Products { get; set; } // Product
+        public System.Data.Entity.DbSet<_Production_ProductCategory> Production_ProductCategories { get; set; } // ProductCategory
+        public System.Data.Entity.DbSet<_Production_ProductCostHistory> Production_ProductCostHistories { get; set; } // ProductCostHistory
+        public System.Data.Entity.DbSet<_Production_ProductDescription> Production_ProductDescriptions { get; set; } // ProductDescription
+        public System.Data.Entity.DbSet<_Production_ProductDocument> Production_ProductDocuments { get; set; } // ProductDocument
+        public System.Data.Entity.DbSet<_Production_ProductInventory> Production_ProductInventories { get; set; } // ProductInventory
+        public System.Data.Entity.DbSet<_Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } // ProductListPriceHistory
+        public System.Data.Entity.DbSet<_Production_ProductModel> Production_ProductModels { get; set; } // ProductModel
+        public System.Data.Entity.DbSet<_Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } // ProductModelIllustration
+        public System.Data.Entity.DbSet<_Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } // ProductModelProductDescriptionCulture
+        public System.Data.Entity.DbSet<_Production_ProductPhoto> Production_ProductPhotoes { get; set; } // ProductPhoto
+        public System.Data.Entity.DbSet<_Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } // ProductProductPhoto
+        public System.Data.Entity.DbSet<_Production_ProductReview> Production_ProductReviews { get; set; } // ProductReview
+        public System.Data.Entity.DbSet<_Production_ProductSubcategory> Production_ProductSubcategories { get; set; } // ProductSubcategory
+        public System.Data.Entity.DbSet<_Production_ScrapReason> Production_ScrapReasons { get; set; } // ScrapReason
+        public System.Data.Entity.DbSet<_Production_TransactionHistory> Production_TransactionHistories { get; set; } // TransactionHistory
+        public System.Data.Entity.DbSet<_Production_TransactionHistoryArchive> Production_TransactionHistoryArchives { get; set; } // TransactionHistoryArchive
+        public System.Data.Entity.DbSet<_Production_UnitMeasure> Production_UnitMeasures { get; set; } // UnitMeasure
+        public System.Data.Entity.DbSet<_Production_VProductAndDescription> Production_VProductAndDescriptions { get; set; } // vProductAndDescription
+        public System.Data.Entity.DbSet<_Production_VProductModelCatalogDescription> Production_VProductModelCatalogDescriptions { get; set; } // vProductModelCatalogDescription
+        public System.Data.Entity.DbSet<_Production_VProductModelInstruction> Production_VProductModelInstructions { get; set; } // vProductModelInstructions
+        public System.Data.Entity.DbSet<_Production_WorkOrder> Production_WorkOrders { get; set; } // WorkOrder
+        public System.Data.Entity.DbSet<_Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } // WorkOrderRouting
+        public System.Data.Entity.DbSet<_Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } // ProductVendor
+        public System.Data.Entity.DbSet<_Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } // PurchaseOrderDetail
+        public System.Data.Entity.DbSet<_Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } // PurchaseOrderHeader
+        public System.Data.Entity.DbSet<_Purchasing_ShipMethod> Purchasing_ShipMethods { get; set; } // ShipMethod
+        public System.Data.Entity.DbSet<_Purchasing_Vendor> Purchasing_Vendors { get; set; } // Vendor
+        public System.Data.Entity.DbSet<_Purchasing_VVendorWithAddress> Purchasing_VVendorWithAddresses { get; set; } // vVendorWithAddresses
+        public System.Data.Entity.DbSet<_Purchasing_VVendorWithContact> Purchasing_VVendorWithContacts { get; set; } // vVendorWithContacts
+        public System.Data.Entity.DbSet<_Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } // CountryRegionCurrency
+        public System.Data.Entity.DbSet<_Sales_CreditCard> Sales_CreditCards { get; set; } // CreditCard
+        public System.Data.Entity.DbSet<_Sales_Currency> Sales_Currencies { get; set; } // Currency
+        public System.Data.Entity.DbSet<_Sales_CurrencyRate> Sales_CurrencyRates { get; set; } // CurrencyRate
+        public System.Data.Entity.DbSet<_Sales_Customer> Sales_Customers { get; set; } // Customer
+        public System.Data.Entity.DbSet<_Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } // PersonCreditCard
+        public System.Data.Entity.DbSet<_Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } // SalesOrderDetail
+        public System.Data.Entity.DbSet<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } // SalesOrderHeader
+        public System.Data.Entity.DbSet<_Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } // SalesOrderHeaderSalesReason
+        public System.Data.Entity.DbSet<_Sales_SalesPerson> Sales_SalesPersons { get; set; } // SalesPerson
+        public System.Data.Entity.DbSet<_Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } // SalesPersonQuotaHistory
+        public System.Data.Entity.DbSet<_Sales_SalesReason> Sales_SalesReasons { get; set; } // SalesReason
+        public System.Data.Entity.DbSet<_Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } // SalesTaxRate
+        public System.Data.Entity.DbSet<_Sales_SalesTerritory> Sales_SalesTerritories { get; set; } // SalesTerritory
+        public System.Data.Entity.DbSet<_Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } // SalesTerritoryHistory
+        public System.Data.Entity.DbSet<_Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } // ShoppingCartItem
+        public System.Data.Entity.DbSet<_Sales_SpecialOffer> Sales_SpecialOffers { get; set; } // SpecialOffer
+        public System.Data.Entity.DbSet<_Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } // SpecialOfferProduct
+        public System.Data.Entity.DbSet<_Sales_Store> Sales_Stores { get; set; } // Store
+        public System.Data.Entity.DbSet<_Sales_VIndividualCustomer> Sales_VIndividualCustomers { get; set; } // vIndividualCustomer
+        public System.Data.Entity.DbSet<_Sales_VPersonDemographic> Sales_VPersonDemographics { get; set; } // vPersonDemographics
+        public System.Data.Entity.DbSet<_Sales_VSalesPerson> Sales_VSalesPersons { get; set; } // vSalesPerson
+        public System.Data.Entity.DbSet<_Sales_VSalesPersonSalesByFiscalYear> Sales_VSalesPersonSalesByFiscalYears { get; set; } // vSalesPersonSalesByFiscalYears
+        public System.Data.Entity.DbSet<_Sales_VStoreWithAddress> Sales_VStoreWithAddresses { get; set; } // vStoreWithAddresses
+        public System.Data.Entity.DbSet<_Sales_VStoreWithContact> Sales_VStoreWithContacts { get; set; } // vStoreWithContacts
+        public System.Data.Entity.DbSet<_Sales_VStoreWithDemographic> Sales_VStoreWithDemographics { get; set; } // vStoreWithDemographics
 
         static AdventureWorksDB()
         {
@@ -330,194 +330,194 @@ namespace ExtensibleAdventureWorks.Business.Entities
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Configurations.Add(new AwBuildVersionConfiguration());
-            modelBuilder.Configurations.Add(new DatabaseLogConfiguration());
-            modelBuilder.Configurations.Add(new ErrorLogConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_DepartmentConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeDepartmentHistoryConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_EmployeePayHistoryConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_JobCandidateConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_ShiftConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeDepartmentConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeDepartmentHistoryConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateEducationConfiguration());
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateEmploymentConfiguration());
-            modelBuilder.Configurations.Add(new Person_AddressConfiguration());
-            modelBuilder.Configurations.Add(new Person_AddressTypeConfiguration());
-            modelBuilder.Configurations.Add(new Person_BusinessEntityConfiguration());
-            modelBuilder.Configurations.Add(new Person_BusinessEntityAddressConfiguration());
-            modelBuilder.Configurations.Add(new Person_BusinessEntityContactConfiguration());
-            modelBuilder.Configurations.Add(new Person_ContactTypeConfiguration());
-            modelBuilder.Configurations.Add(new Person_CountryRegionConfiguration());
-            modelBuilder.Configurations.Add(new Person_EmailAddressConfiguration());
-            modelBuilder.Configurations.Add(new Person_PasswordConfiguration());
-            modelBuilder.Configurations.Add(new Person_PersonConfiguration());
-            modelBuilder.Configurations.Add(new Person_PersonPhoneConfiguration());
-            modelBuilder.Configurations.Add(new Person_PhoneNumberTypeConfiguration());
-            modelBuilder.Configurations.Add(new Person_StateProvinceConfiguration());
-            modelBuilder.Configurations.Add(new Person_VAdditionalContactInfoConfiguration());
-            modelBuilder.Configurations.Add(new Person_VStateProvinceCountryRegionConfiguration());
-            modelBuilder.Configurations.Add(new Production_BillOfMaterialConfiguration());
-            modelBuilder.Configurations.Add(new Production_CultureConfiguration());
-            modelBuilder.Configurations.Add(new Production_DocumentConfiguration());
-            modelBuilder.Configurations.Add(new Production_IllustrationConfiguration());
-            modelBuilder.Configurations.Add(new Production_LocationConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductCategoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductCostHistoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductDescriptionConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductDocumentConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductInventoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductListPriceHistoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductModelConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductModelIllustrationConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductModelProductDescriptionCultureConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductPhotoConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductProductPhotoConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductReviewConfiguration());
-            modelBuilder.Configurations.Add(new Production_ProductSubcategoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_ScrapReasonConfiguration());
-            modelBuilder.Configurations.Add(new Production_TransactionHistoryConfiguration());
-            modelBuilder.Configurations.Add(new Production_TransactionHistoryArchiveConfiguration());
-            modelBuilder.Configurations.Add(new Production_UnitMeasureConfiguration());
-            modelBuilder.Configurations.Add(new Production_VProductAndDescriptionConfiguration());
-            modelBuilder.Configurations.Add(new Production_VProductModelCatalogDescriptionConfiguration());
-            modelBuilder.Configurations.Add(new Production_VProductModelInstructionConfiguration());
-            modelBuilder.Configurations.Add(new Production_WorkOrderConfiguration());
-            modelBuilder.Configurations.Add(new Production_WorkOrderRoutingConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_ProductVendorConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_PurchaseOrderDetailConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_PurchaseOrderHeaderConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_ShipMethodConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_VendorConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_VVendorWithAddressConfiguration());
-            modelBuilder.Configurations.Add(new Purchasing_VVendorWithContactConfiguration());
-            modelBuilder.Configurations.Add(new Sales_CountryRegionCurrencyConfiguration());
-            modelBuilder.Configurations.Add(new Sales_CreditCardConfiguration());
-            modelBuilder.Configurations.Add(new Sales_CurrencyConfiguration());
-            modelBuilder.Configurations.Add(new Sales_CurrencyRateConfiguration());
-            modelBuilder.Configurations.Add(new Sales_CustomerConfiguration());
-            modelBuilder.Configurations.Add(new Sales_PersonCreditCardConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesOrderDetailConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesOrderHeaderConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesOrderHeaderSalesReasonConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesPersonConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesPersonQuotaHistoryConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesReasonConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesTaxRateConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesTerritoryConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SalesTerritoryHistoryConfiguration());
-            modelBuilder.Configurations.Add(new Sales_ShoppingCartItemConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SpecialOfferConfiguration());
-            modelBuilder.Configurations.Add(new Sales_SpecialOfferProductConfiguration());
-            modelBuilder.Configurations.Add(new Sales_StoreConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VIndividualCustomerConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VPersonDemographicConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VSalesPersonConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VSalesPersonSalesByFiscalYearConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VStoreWithAddressConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VStoreWithContactConfiguration());
-            modelBuilder.Configurations.Add(new Sales_VStoreWithDemographicConfiguration());
+            modelBuilder.Configurations.Add(new _AwBuildVersionConfiguration());
+            modelBuilder.Configurations.Add(new _DatabaseLogConfiguration());
+            modelBuilder.Configurations.Add(new _ErrorLogConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_DepartmentConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeeConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeeDepartmentHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeePayHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_JobCandidateConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_ShiftConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeDepartmentConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeDepartmentHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateEducationConfiguration());
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateEmploymentConfiguration());
+            modelBuilder.Configurations.Add(new _Person_AddressConfiguration());
+            modelBuilder.Configurations.Add(new _Person_AddressTypeConfiguration());
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityConfiguration());
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityAddressConfiguration());
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityContactConfiguration());
+            modelBuilder.Configurations.Add(new _Person_ContactTypeConfiguration());
+            modelBuilder.Configurations.Add(new _Person_CountryRegionConfiguration());
+            modelBuilder.Configurations.Add(new _Person_EmailAddressConfiguration());
+            modelBuilder.Configurations.Add(new _Person_PasswordConfiguration());
+            modelBuilder.Configurations.Add(new _Person_PersonConfiguration());
+            modelBuilder.Configurations.Add(new _Person_PersonPhoneConfiguration());
+            modelBuilder.Configurations.Add(new _Person_PhoneNumberTypeConfiguration());
+            modelBuilder.Configurations.Add(new _Person_StateProvinceConfiguration());
+            modelBuilder.Configurations.Add(new _Person_VAdditionalContactInfoConfiguration());
+            modelBuilder.Configurations.Add(new _Person_VStateProvinceCountryRegionConfiguration());
+            modelBuilder.Configurations.Add(new _Production_BillOfMaterialConfiguration());
+            modelBuilder.Configurations.Add(new _Production_CultureConfiguration());
+            modelBuilder.Configurations.Add(new _Production_DocumentConfiguration());
+            modelBuilder.Configurations.Add(new _Production_IllustrationConfiguration());
+            modelBuilder.Configurations.Add(new _Production_LocationConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductCategoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductCostHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductDescriptionConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductDocumentConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductInventoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductListPriceHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductModelConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductModelIllustrationConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductModelProductDescriptionCultureConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductPhotoConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductProductPhotoConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductReviewConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ProductSubcategoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_ScrapReasonConfiguration());
+            modelBuilder.Configurations.Add(new _Production_TransactionHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _Production_TransactionHistoryArchiveConfiguration());
+            modelBuilder.Configurations.Add(new _Production_UnitMeasureConfiguration());
+            modelBuilder.Configurations.Add(new _Production_VProductAndDescriptionConfiguration());
+            modelBuilder.Configurations.Add(new _Production_VProductModelCatalogDescriptionConfiguration());
+            modelBuilder.Configurations.Add(new _Production_VProductModelInstructionConfiguration());
+            modelBuilder.Configurations.Add(new _Production_WorkOrderConfiguration());
+            modelBuilder.Configurations.Add(new _Production_WorkOrderRoutingConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_ProductVendorConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_PurchaseOrderDetailConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_PurchaseOrderHeaderConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_ShipMethodConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_VendorConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_VVendorWithAddressConfiguration());
+            modelBuilder.Configurations.Add(new _Purchasing_VVendorWithContactConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_CountryRegionCurrencyConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_CreditCardConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_CurrencyConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_CurrencyRateConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_CustomerConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_PersonCreditCardConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderDetailConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderHeaderConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderHeaderSalesReasonConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesPersonConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesPersonQuotaHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesReasonConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesTaxRateConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesTerritoryConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SalesTerritoryHistoryConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_ShoppingCartItemConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SpecialOfferConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_SpecialOfferProductConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_StoreConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VIndividualCustomerConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VPersonDemographicConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VSalesPersonConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VSalesPersonSalesByFiscalYearConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithAddressConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithContactConfiguration());
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithDemographicConfiguration());
 
             OnModelCreatingPartial(modelBuilder);
         }
 
         public static System.Data.Entity.DbModelBuilder CreateModel(System.Data.Entity.DbModelBuilder modelBuilder, string schema)
         {
-            modelBuilder.Configurations.Add(new AwBuildVersionConfiguration(schema));
-            modelBuilder.Configurations.Add(new DatabaseLogConfiguration(schema));
-            modelBuilder.Configurations.Add(new ErrorLogConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_DepartmentConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_EmployeeDepartmentHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_EmployeePayHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_JobCandidateConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_ShiftConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeDepartmentConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VEmployeeDepartmentHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateEducationConfiguration(schema));
-            modelBuilder.Configurations.Add(new HumanResources_VJobCandidateEmploymentConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_AddressConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_AddressTypeConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_BusinessEntityConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_BusinessEntityAddressConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_BusinessEntityContactConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_ContactTypeConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_CountryRegionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_EmailAddressConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_PasswordConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_PersonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_PersonPhoneConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_PhoneNumberTypeConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_StateProvinceConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_VAdditionalContactInfoConfiguration(schema));
-            modelBuilder.Configurations.Add(new Person_VStateProvinceCountryRegionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_BillOfMaterialConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_CultureConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_DocumentConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_IllustrationConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_LocationConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductCategoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductCostHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductDescriptionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductDocumentConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductInventoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductListPriceHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductModelConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductModelIllustrationConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductModelProductDescriptionCultureConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductPhotoConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductProductPhotoConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductReviewConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ProductSubcategoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_ScrapReasonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_TransactionHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_TransactionHistoryArchiveConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_UnitMeasureConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_VProductAndDescriptionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_VProductModelCatalogDescriptionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_VProductModelInstructionConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_WorkOrderConfiguration(schema));
-            modelBuilder.Configurations.Add(new Production_WorkOrderRoutingConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_ProductVendorConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_PurchaseOrderDetailConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_PurchaseOrderHeaderConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_ShipMethodConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_VendorConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_VVendorWithAddressConfiguration(schema));
-            modelBuilder.Configurations.Add(new Purchasing_VVendorWithContactConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_CountryRegionCurrencyConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_CreditCardConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_CurrencyConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_CurrencyRateConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_CustomerConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_PersonCreditCardConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesOrderDetailConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesOrderHeaderConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesOrderHeaderSalesReasonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesPersonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesPersonQuotaHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesReasonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesTaxRateConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesTerritoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SalesTerritoryHistoryConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_ShoppingCartItemConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SpecialOfferConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_SpecialOfferProductConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_StoreConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VIndividualCustomerConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VPersonDemographicConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VSalesPersonConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VSalesPersonSalesByFiscalYearConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VStoreWithAddressConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VStoreWithContactConfiguration(schema));
-            modelBuilder.Configurations.Add(new Sales_VStoreWithDemographicConfiguration(schema));
+            modelBuilder.Configurations.Add(new _AwBuildVersionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _DatabaseLogConfiguration(schema));
+            modelBuilder.Configurations.Add(new _ErrorLogConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_DepartmentConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeeConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeeDepartmentHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_EmployeePayHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_JobCandidateConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_ShiftConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeDepartmentConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VEmployeeDepartmentHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateEducationConfiguration(schema));
+            modelBuilder.Configurations.Add(new _HumanResources_VJobCandidateEmploymentConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_AddressConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_AddressTypeConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityAddressConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_BusinessEntityContactConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_ContactTypeConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_CountryRegionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_EmailAddressConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_PasswordConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_PersonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_PersonPhoneConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_PhoneNumberTypeConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_StateProvinceConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_VAdditionalContactInfoConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Person_VStateProvinceCountryRegionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_BillOfMaterialConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_CultureConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_DocumentConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_IllustrationConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_LocationConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductCategoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductCostHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductDescriptionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductDocumentConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductInventoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductListPriceHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductModelConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductModelIllustrationConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductModelProductDescriptionCultureConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductPhotoConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductProductPhotoConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductReviewConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ProductSubcategoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_ScrapReasonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_TransactionHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_TransactionHistoryArchiveConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_UnitMeasureConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_VProductAndDescriptionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_VProductModelCatalogDescriptionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_VProductModelInstructionConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_WorkOrderConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Production_WorkOrderRoutingConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_ProductVendorConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_PurchaseOrderDetailConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_PurchaseOrderHeaderConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_ShipMethodConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_VendorConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_VVendorWithAddressConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Purchasing_VVendorWithContactConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_CountryRegionCurrencyConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_CreditCardConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_CurrencyConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_CurrencyRateConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_CustomerConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_PersonCreditCardConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderDetailConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderHeaderConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesOrderHeaderSalesReasonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesPersonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesPersonQuotaHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesReasonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesTaxRateConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesTerritoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SalesTerritoryHistoryConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_ShoppingCartItemConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SpecialOfferConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_SpecialOfferProductConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_StoreConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VIndividualCustomerConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VPersonDemographicConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VSalesPersonConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VSalesPersonSalesByFiscalYearConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithAddressConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithContactConfiguration(schema));
+            modelBuilder.Configurations.Add(new _Sales_VStoreWithDemographicConfiguration(schema));
             return modelBuilder;
         }
 
@@ -815,7 +815,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // AWBuildVersion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class AwBuildVersion
+    public abstract partial class _AwBuildVersion
     {
 
         ///<summary>
@@ -841,7 +841,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // DatabaseLog
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class DatabaseLog
+    public abstract partial class _DatabaseLog
     {
 
         ///<summary>
@@ -887,7 +887,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ErrorLog
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class ErrorLog
+    public abstract partial class _ErrorLog
     {
 
         ///<summary>
@@ -938,7 +938,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Department
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_Department
+    public abstract partial class _HumanResources_Department
     {
 
         ///<summary>
@@ -966,12 +966,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child HumanResources_EmployeeDepartmentHistories where [EmployeeDepartmentHistory].[DepartmentID] point to this entity (FK_EmployeeDepartmentHistory_Department_DepartmentID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Department_DepartmentID
+        public virtual System.Collections.Generic.ICollection<_HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<_HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Department_DepartmentID
     }
 
     // Employee
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_Employee
+    public abstract partial class _HumanResources_Employee
     {
 
         ///<summary>
@@ -1057,41 +1057,41 @@ namespace ExtensibleAdventureWorks.Business.Entities
         // Reverse navigation
 
         /// <summary>
-        /// Parent (One-to-One) HumanResources_Employee pointed by [SalesPerson].[BusinessEntityID] (FK_SalesPerson_Employee_BusinessEntityID)
+        /// Parent (One-to-One) _HumanResources_Employee pointed by [SalesPerson].[BusinessEntityID] (FK_SalesPerson_Employee_BusinessEntityID)
         /// </summary>
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_Employee_BusinessEntityID
+        public virtual _Sales_SalesPerson Sales_SalesPerson { get; set; } // SalesPerson.FK_SalesPerson_Employee_BusinessEntityID
         /// <summary>
         /// Child HumanResources_EmployeeDepartmentHistories where [EmployeeDepartmentHistory].[BusinessEntityID] point to this entity (FK_EmployeeDepartmentHistory_Employee_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<_HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
         /// <summary>
         /// Child HumanResources_EmployeePayHistories where [EmployeePayHistory].[BusinessEntityID] point to this entity (FK_EmployeePayHistory_Employee_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } = new System.Collections.Generic.List<HumanResources_EmployeePayHistory>(); // EmployeePayHistory.FK_EmployeePayHistory_Employee_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_HumanResources_EmployeePayHistory> HumanResources_EmployeePayHistories { get; set; } = new System.Collections.Generic.List<_HumanResources_EmployeePayHistory>(); // EmployeePayHistory.FK_EmployeePayHistory_Employee_BusinessEntityID
         /// <summary>
         /// Child HumanResources_JobCandidates where [JobCandidate].[BusinessEntityID] point to this entity (FK_JobCandidate_Employee_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } = new System.Collections.Generic.List<HumanResources_JobCandidate>(); // JobCandidate.FK_JobCandidate_Employee_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_HumanResources_JobCandidate> HumanResources_JobCandidates { get; set; } = new System.Collections.Generic.List<_HumanResources_JobCandidate>(); // JobCandidate.FK_JobCandidate_Employee_BusinessEntityID
         /// <summary>
         /// Child Production_Documents where [Document].[Owner] point to this entity (FK_Document_Employee_Owner)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_Document> Production_Documents { get; set; } = new System.Collections.Generic.List<Production_Document>(); // Document.FK_Document_Employee_Owner
+        public virtual System.Collections.Generic.ICollection<_Production_Document> Production_Documents { get; set; } = new System.Collections.Generic.List<_Production_Document>(); // Document.FK_Document_Employee_Owner
         /// <summary>
         /// Child Purchasing_PurchaseOrderHeaders where [PurchaseOrderHeader].[EmployeeID] point to this entity (FK_PurchaseOrderHeader_Employee_EmployeeID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<_Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_Employee_EmployeeID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_Person pointed by [Employee].([BusinessEntityId]) (FK_Employee_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_Employee_Person_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // FK_Employee_Person_BusinessEntityID
     }
 
     // EmployeeDepartmentHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_EmployeeDepartmentHistory
+    public abstract partial class _HumanResources_EmployeeDepartmentHistory
     {
 
         ///<summary>
@@ -1129,20 +1129,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent HumanResources_Department pointed by [EmployeeDepartmentHistory].([DepartmentId]) (FK_EmployeeDepartmentHistory_Department_DepartmentID)
         /// </summary>
-        public virtual HumanResources_Department HumanResources_Department { get; set; } // FK_EmployeeDepartmentHistory_Department_DepartmentID
+        public virtual _HumanResources_Department HumanResources_Department { get; set; } // FK_EmployeeDepartmentHistory_Department_DepartmentID
         /// <summary>
         /// Parent HumanResources_Employee pointed by [EmployeeDepartmentHistory].([BusinessEntityId]) (FK_EmployeeDepartmentHistory_Employee_BusinessEntityID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_EmployeeDepartmentHistory_Employee_BusinessEntityID
         /// <summary>
         /// Parent HumanResources_Shift pointed by [EmployeeDepartmentHistory].([ShiftId]) (FK_EmployeeDepartmentHistory_Shift_ShiftID)
         /// </summary>
-        public virtual HumanResources_Shift HumanResources_Shift { get; set; } // FK_EmployeeDepartmentHistory_Shift_ShiftID
+        public virtual _HumanResources_Shift HumanResources_Shift { get; set; } // FK_EmployeeDepartmentHistory_Shift_ShiftID
     }
 
     // EmployeePayHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_EmployeePayHistory
+    public abstract partial class _HumanResources_EmployeePayHistory
     {
 
         ///<summary>
@@ -1175,12 +1175,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent HumanResources_Employee pointed by [EmployeePayHistory].([BusinessEntityId]) (FK_EmployeePayHistory_Employee_BusinessEntityID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_EmployeePayHistory_Employee_BusinessEntityID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_EmployeePayHistory_Employee_BusinessEntityID
     }
 
     // JobCandidate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_JobCandidate
+    public abstract partial class _HumanResources_JobCandidate
     {
 
         ///<summary>
@@ -1208,12 +1208,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent HumanResources_Employee pointed by [JobCandidate].([BusinessEntityId]) (FK_JobCandidate_Employee_BusinessEntityID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_JobCandidate_Employee_BusinessEntityID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_JobCandidate_Employee_BusinessEntityID
     }
 
     // Shift
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_Shift
+    public abstract partial class _HumanResources_Shift
     {
 
         ///<summary>
@@ -1246,12 +1246,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child HumanResources_EmployeeDepartmentHistories where [EmployeeDepartmentHistory].[ShiftID] point to this entity (FK_EmployeeDepartmentHistory_Shift_ShiftID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Shift_ShiftID
+        public virtual System.Collections.Generic.ICollection<_HumanResources_EmployeeDepartmentHistory> HumanResources_EmployeeDepartmentHistories { get; set; } = new System.Collections.Generic.List<_HumanResources_EmployeeDepartmentHistory>(); // EmployeeDepartmentHistory.FK_EmployeeDepartmentHistory_Shift_ShiftID
     }
 
     // vEmployee
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployee
+    public abstract partial class _HumanResources_VEmployee
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Title { get; set; } // Title (length: 8)
@@ -1275,7 +1275,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vEmployeeDepartment
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployeeDepartment
+    public abstract partial class _HumanResources_VEmployeeDepartment
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Title { get; set; } // Title (length: 8)
@@ -1291,7 +1291,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vEmployeeDepartmentHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployeeDepartmentHistory
+    public abstract partial class _HumanResources_VEmployeeDepartmentHistory
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Title { get; set; } // Title (length: 8)
@@ -1308,7 +1308,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidate
+    public abstract partial class _HumanResources_VJobCandidate
     {
         public int JobCandidateId { get; set; } // JobCandidateID (Primary key)
         public int? BusinessEntityId { get; set; } // BusinessEntityID
@@ -1330,7 +1330,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidateEducation
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidateEducation
+    public abstract partial class _HumanResources_VJobCandidateEducation
     {
         public int JobCandidateId { get; set; } // JobCandidateID (Primary key)
         public string Edu46Level { get; set; } // Edu.Level
@@ -1349,7 +1349,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidateEmployment
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidateEmployment
+    public abstract partial class _HumanResources_VJobCandidateEmployment
     {
         public int JobCandidateId { get; set; } // JobCandidateID (Primary key)
         public System.DateTime? Emp46StartDate { get; set; } // Emp.StartDate
@@ -1366,7 +1366,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Address
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_Address
+    public abstract partial class _Person_Address
     {
 
         ///<summary>
@@ -1419,27 +1419,27 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_BusinessEntityAddresses where [BusinessEntityAddress].[AddressID] point to this entity (FK_BusinessEntityAddress_Address_AddressID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_Address_AddressID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_Address_AddressID
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[BillToAddressID] point to this entity (FK_SalesOrderHeader_Address_BillToAddressID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> BillToAddress { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Address_BillToAddressID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> BillToAddress { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Address_BillToAddressID
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[ShipToAddressID] point to this entity (FK_SalesOrderHeader_Address_ShipToAddressID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> ShipToAddress { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Address_ShipToAddressID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> ShipToAddress { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Address_ShipToAddressID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_StateProvince pointed by [Address].([StateProvinceId]) (FK_Address_StateProvince_StateProvinceID)
         /// </summary>
-        public virtual Person_StateProvince Person_StateProvince { get; set; } // FK_Address_StateProvince_StateProvinceID
+        public virtual _Person_StateProvince Person_StateProvince { get; set; } // FK_Address_StateProvince_StateProvinceID
     }
 
     // AddressType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_AddressType
+    public abstract partial class _Person_AddressType
     {
 
         ///<summary>
@@ -1467,12 +1467,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_BusinessEntityAddresses where [BusinessEntityAddress].[AddressTypeID] point to this entity (FK_BusinessEntityAddress_AddressType_AddressTypeID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_AddressType_AddressTypeID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_AddressType_AddressTypeID
     }
 
     // BusinessEntity
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntity
+    public abstract partial class _Person_BusinessEntity
     {
 
         ///<summary>
@@ -1493,30 +1493,30 @@ namespace ExtensibleAdventureWorks.Business.Entities
         // Reverse navigation
 
         /// <summary>
-        /// Parent (One-to-One) Person_BusinessEntity pointed by [Person].[BusinessEntityID] (FK_Person_BusinessEntity_BusinessEntityID)
+        /// Parent (One-to-One) _Person_BusinessEntity pointed by [Person].[BusinessEntityID] (FK_Person_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // Person.FK_Person_BusinessEntity_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // Person.FK_Person_BusinessEntity_BusinessEntityID
         /// <summary>
-        /// Parent (One-to-One) Person_BusinessEntity pointed by [Vendor].[BusinessEntityID] (FK_Vendor_BusinessEntity_BusinessEntityID)
+        /// Parent (One-to-One) _Person_BusinessEntity pointed by [Vendor].[BusinessEntityID] (FK_Vendor_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Purchasing_Vendor Purchasing_Vendor { get; set; } // Vendor.FK_Vendor_BusinessEntity_BusinessEntityID
+        public virtual _Purchasing_Vendor Purchasing_Vendor { get; set; } // Vendor.FK_Vendor_BusinessEntity_BusinessEntityID
         /// <summary>
-        /// Parent (One-to-One) Person_BusinessEntity pointed by [Store].[BusinessEntityID] (FK_Store_BusinessEntity_BusinessEntityID)
+        /// Parent (One-to-One) _Person_BusinessEntity pointed by [Store].[BusinessEntityID] (FK_Store_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Sales_Store Sales_Store { get; set; } // Store.FK_Store_BusinessEntity_BusinessEntityID
+        public virtual _Sales_Store Sales_Store { get; set; } // Store.FK_Store_BusinessEntity_BusinessEntityID
         /// <summary>
         /// Child Person_BusinessEntityAddresses where [BusinessEntityAddress].[BusinessEntityID] point to this entity (FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityAddress> Person_BusinessEntityAddresses { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityAddress>(); // BusinessEntityAddress.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
         /// <summary>
         /// Child Person_BusinessEntityContacts where [BusinessEntityContact].[BusinessEntityID] point to this entity (FK_BusinessEntityContact_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID
     }
 
     // BusinessEntityAddress
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntityAddress
+    public abstract partial class _Person_BusinessEntityAddress
     {
 
         ///<summary>
@@ -1549,20 +1549,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_Address pointed by [BusinessEntityAddress].([AddressId]) (FK_BusinessEntityAddress_Address_AddressID)
         /// </summary>
-        public virtual Person_Address Person_Address { get; set; } // FK_BusinessEntityAddress_Address_AddressID
+        public virtual _Person_Address Person_Address { get; set; } // FK_BusinessEntityAddress_Address_AddressID
         /// <summary>
         /// Parent Person_AddressType pointed by [BusinessEntityAddress].([AddressTypeId]) (FK_BusinessEntityAddress_AddressType_AddressTypeID)
         /// </summary>
-        public virtual Person_AddressType Person_AddressType { get; set; } // FK_BusinessEntityAddress_AddressType_AddressTypeID
+        public virtual _Person_AddressType Person_AddressType { get; set; } // FK_BusinessEntityAddress_AddressType_AddressTypeID
         /// <summary>
         /// Parent Person_BusinessEntity pointed by [BusinessEntityAddress].([BusinessEntityId]) (FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
+        public virtual _Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID
     }
 
     // BusinessEntityContact
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntityContact
+    public abstract partial class _Person_BusinessEntityContact
     {
 
         ///<summary>
@@ -1595,20 +1595,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_BusinessEntity pointed by [BusinessEntityContact].([BusinessEntityId]) (FK_BusinessEntityContact_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_BusinessEntityContact_BusinessEntity_BusinessEntityID
+        public virtual _Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_BusinessEntityContact_BusinessEntity_BusinessEntityID
         /// <summary>
         /// Parent Person_ContactType pointed by [BusinessEntityContact].([ContactTypeId]) (FK_BusinessEntityContact_ContactType_ContactTypeID)
         /// </summary>
-        public virtual Person_ContactType Person_ContactType { get; set; } // FK_BusinessEntityContact_ContactType_ContactTypeID
+        public virtual _Person_ContactType Person_ContactType { get; set; } // FK_BusinessEntityContact_ContactType_ContactTypeID
         /// <summary>
         /// Parent Person_Person pointed by [BusinessEntityContact].([PersonId]) (FK_BusinessEntityContact_Person_PersonID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_BusinessEntityContact_Person_PersonID
+        public virtual _Person_Person Person_Person { get; set; } // FK_BusinessEntityContact_Person_PersonID
     }
 
     // ContactType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_ContactType
+    public abstract partial class _Person_ContactType
     {
 
         ///<summary>
@@ -1631,12 +1631,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_BusinessEntityContacts where [BusinessEntityContact].[ContactTypeID] point to this entity (FK_BusinessEntityContact_ContactType_ContactTypeID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_ContactType_ContactTypeID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_ContactType_ContactTypeID
     }
 
     // CountryRegion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_CountryRegion
+    public abstract partial class _Person_CountryRegion
     {
 
         ///<summary>
@@ -1659,20 +1659,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_StateProvinces where [StateProvince].[CountryRegionCode] point to this entity (FK_StateProvince_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_StateProvince> Person_StateProvinces { get; set; } = new System.Collections.Generic.List<Person_StateProvince>(); // StateProvince.FK_StateProvince_CountryRegion_CountryRegionCode
+        public virtual System.Collections.Generic.ICollection<_Person_StateProvince> Person_StateProvinces { get; set; } = new System.Collections.Generic.List<_Person_StateProvince>(); // StateProvince.FK_StateProvince_CountryRegion_CountryRegionCode
         /// <summary>
         /// Child Sales_CountryRegionCurrencies where [CountryRegionCurrency].[CountryRegionCode] point to this entity (FK_CountryRegionCurrency_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } = new System.Collections.Generic.List<Sales_CountryRegionCurrency>(); // CountryRegionCurrency.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
+        public virtual System.Collections.Generic.ICollection<_Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } = new System.Collections.Generic.List<_Sales_CountryRegionCurrency>(); // CountryRegionCurrency.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
         /// <summary>
         /// Child Sales_SalesTerritories where [SalesTerritory].[CountryRegionCode] point to this entity (FK_SalesTerritory_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesTerritory> Sales_SalesTerritories { get; set; } = new System.Collections.Generic.List<Sales_SalesTerritory>(); // SalesTerritory.FK_SalesTerritory_CountryRegion_CountryRegionCode
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesTerritory> Sales_SalesTerritories { get; set; } = new System.Collections.Generic.List<_Sales_SalesTerritory>(); // SalesTerritory.FK_SalesTerritory_CountryRegion_CountryRegionCode
     }
 
     // EmailAddress
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_EmailAddress
+    public abstract partial class _Person_EmailAddress
     {
 
         ///<summary>
@@ -1705,12 +1705,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_Person pointed by [EmailAddress].([BusinessEntityId]) (FK_EmailAddress_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_EmailAddress_Person_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // FK_EmailAddress_Person_BusinessEntityID
     }
 
     // Password
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_Password
+    public abstract partial class _Person_Password
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
 
@@ -1739,12 +1739,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_Person pointed by [Password].([BusinessEntityId]) (FK_Password_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_Password_Person_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // FK_Password_Person_BusinessEntityID
     }
 
     // Person
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_Person
+    public abstract partial class _Person_Person
     {
 
         ///<summary>
@@ -1815,45 +1815,45 @@ namespace ExtensibleAdventureWorks.Business.Entities
         // Reverse navigation
 
         /// <summary>
-        /// Parent (One-to-One) Person_Person pointed by [Employee].[BusinessEntityID] (FK_Employee_Person_BusinessEntityID)
+        /// Parent (One-to-One) _Person_Person pointed by [Employee].[BusinessEntityID] (FK_Employee_Person_BusinessEntityID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // Employee.FK_Employee_Person_BusinessEntityID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // Employee.FK_Employee_Person_BusinessEntityID
         /// <summary>
-        /// Parent (One-to-One) Person_Person pointed by [Password].[BusinessEntityID] (FK_Password_Person_BusinessEntityID)
+        /// Parent (One-to-One) _Person_Person pointed by [Password].[BusinessEntityID] (FK_Password_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Password Person_Password { get; set; } // Password.FK_Password_Person_BusinessEntityID
+        public virtual _Person_Password Person_Password { get; set; } // Password.FK_Password_Person_BusinessEntityID
         /// <summary>
         /// Child Person_BusinessEntityContacts where [BusinessEntityContact].[PersonID] point to this entity (FK_BusinessEntityContact_Person_PersonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_Person_PersonID
+        public virtual System.Collections.Generic.ICollection<_Person_BusinessEntityContact> Person_BusinessEntityContacts { get; set; } = new System.Collections.Generic.List<_Person_BusinessEntityContact>(); // BusinessEntityContact.FK_BusinessEntityContact_Person_PersonID
         /// <summary>
         /// Child Person_EmailAddresses where [EmailAddress].[BusinessEntityID] point to this entity (FK_EmailAddress_Person_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_EmailAddress> Person_EmailAddresses { get; set; } = new System.Collections.Generic.List<Person_EmailAddress>(); // EmailAddress.FK_EmailAddress_Person_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Person_EmailAddress> Person_EmailAddresses { get; set; } = new System.Collections.Generic.List<_Person_EmailAddress>(); // EmailAddress.FK_EmailAddress_Person_BusinessEntityID
         /// <summary>
         /// Child Person_PersonPhones where [PersonPhone].[BusinessEntityID] point to this entity (FK_PersonPhone_Person_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_PersonPhone> Person_PersonPhones { get; set; } = new System.Collections.Generic.List<Person_PersonPhone>(); // PersonPhone.FK_PersonPhone_Person_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Person_PersonPhone> Person_PersonPhones { get; set; } = new System.Collections.Generic.List<_Person_PersonPhone>(); // PersonPhone.FK_PersonPhone_Person_BusinessEntityID
         /// <summary>
         /// Child Sales_Customers where [Customer].[PersonID] point to this entity (FK_Customer_Person_PersonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<Sales_Customer>(); // Customer.FK_Customer_Person_PersonID
+        public virtual System.Collections.Generic.ICollection<_Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<_Sales_Customer>(); // Customer.FK_Customer_Person_PersonID
         /// <summary>
         /// Child Sales_PersonCreditCards where [PersonCreditCard].[BusinessEntityID] point to this entity (FK_PersonCreditCard_Person_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } = new System.Collections.Generic.List<Sales_PersonCreditCard>(); // PersonCreditCard.FK_PersonCreditCard_Person_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } = new System.Collections.Generic.List<_Sales_PersonCreditCard>(); // PersonCreditCard.FK_PersonCreditCard_Person_BusinessEntityID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_BusinessEntity pointed by [Person].([BusinessEntityId]) (FK_Person_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Person_BusinessEntity_BusinessEntityID
+        public virtual _Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Person_BusinessEntity_BusinessEntityID
     }
 
     // PersonPhone
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PersonPhone
+    public abstract partial class _Person_PersonPhone
     {
 
         ///<summary>
@@ -1881,16 +1881,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_Person pointed by [PersonPhone].([BusinessEntityId]) (FK_PersonPhone_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_PersonPhone_Person_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // FK_PersonPhone_Person_BusinessEntityID
         /// <summary>
         /// Parent Person_PhoneNumberType pointed by [PersonPhone].([PhoneNumberTypeId]) (FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID)
         /// </summary>
-        public virtual Person_PhoneNumberType Person_PhoneNumberType { get; set; } // FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
+        public virtual _Person_PhoneNumberType Person_PhoneNumberType { get; set; } // FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
     }
 
     // PhoneNumberType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PhoneNumberType
+    public abstract partial class _Person_PhoneNumberType
     {
 
         ///<summary>
@@ -1913,12 +1913,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_PersonPhones where [PersonPhone].[PhoneNumberTypeID] point to this entity (FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_PersonPhone> Person_PersonPhones { get; set; } = new System.Collections.Generic.List<Person_PersonPhone>(); // PersonPhone.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
+        public virtual System.Collections.Generic.ICollection<_Person_PersonPhone> Person_PersonPhones { get; set; } = new System.Collections.Generic.List<_Person_PersonPhone>(); // PersonPhone.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID
     }
 
     // StateProvince
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_StateProvince
+    public abstract partial class _Person_StateProvince
     {
 
         ///<summary>
@@ -1966,27 +1966,27 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_Addresses where [Address].[StateProvinceID] point to this entity (FK_Address_StateProvince_StateProvinceID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_Address> Person_Addresses { get; set; } = new System.Collections.Generic.List<Person_Address>(); // Address.FK_Address_StateProvince_StateProvinceID
+        public virtual System.Collections.Generic.ICollection<_Person_Address> Person_Addresses { get; set; } = new System.Collections.Generic.List<_Person_Address>(); // Address.FK_Address_StateProvince_StateProvinceID
         /// <summary>
         /// Child Sales_SalesTaxRates where [SalesTaxRate].[StateProvinceID] point to this entity (FK_SalesTaxRate_StateProvince_StateProvinceID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } = new System.Collections.Generic.List<Sales_SalesTaxRate>(); // SalesTaxRate.FK_SalesTaxRate_StateProvince_StateProvinceID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesTaxRate> Sales_SalesTaxRates { get; set; } = new System.Collections.Generic.List<_Sales_SalesTaxRate>(); // SalesTaxRate.FK_SalesTaxRate_StateProvince_StateProvinceID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_CountryRegion pointed by [StateProvince].([CountryRegionCode]) (FK_StateProvince_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual Person_CountryRegion Person_CountryRegion { get; set; } // FK_StateProvince_CountryRegion_CountryRegionCode
+        public virtual _Person_CountryRegion Person_CountryRegion { get; set; } // FK_StateProvince_CountryRegion_CountryRegionCode
         /// <summary>
         /// Parent Sales_SalesTerritory pointed by [StateProvince].([TerritoryId]) (FK_StateProvince_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_StateProvince_SalesTerritory_TerritoryID
+        public virtual _Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_StateProvince_SalesTerritory_TerritoryID
     }
 
     // vAdditionalContactInfo
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_VAdditionalContactInfo
+    public abstract partial class _Person_VAdditionalContactInfo
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string FirstName { get; set; } // FirstName (Primary key) (length: 50)
@@ -2009,7 +2009,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStateProvinceCountryRegion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_VStateProvinceCountryRegion
+    public abstract partial class _Person_VStateProvinceCountryRegion
     {
         public int StateProvinceId { get; set; } // StateProvinceID (Primary key)
         public string StateProvinceCode { get; set; } // StateProvinceCode (Primary key) (length: 3)
@@ -2022,7 +2022,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // BillOfMaterials
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_BillOfMaterial
+    public abstract partial class _Production_BillOfMaterial
     {
 
         ///<summary>
@@ -2075,20 +2075,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [BillOfMaterials].([ComponentId]) (FK_BillOfMaterials_Product_ComponentID)
         /// </summary>
-        public virtual Production_Product Component { get; set; } // FK_BillOfMaterials_Product_ComponentID
+        public virtual _Production_Product Component { get; set; } // FK_BillOfMaterials_Product_ComponentID
         /// <summary>
         /// Parent Production_Product pointed by [BillOfMaterials].([ProductAssemblyId]) (FK_BillOfMaterials_Product_ProductAssemblyID)
         /// </summary>
-        public virtual Production_Product ProductAssembly { get; set; } // FK_BillOfMaterials_Product_ProductAssemblyID
+        public virtual _Production_Product ProductAssembly { get; set; } // FK_BillOfMaterials_Product_ProductAssemblyID
         /// <summary>
         /// Parent Production_UnitMeasure pointed by [BillOfMaterials].([UnitMeasureCode]) (FK_BillOfMaterials_UnitMeasure_UnitMeasureCode)
         /// </summary>
-        public virtual Production_UnitMeasure Production_UnitMeasure { get; set; } // FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
+        public virtual _Production_UnitMeasure Production_UnitMeasure { get; set; } // FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
     }
 
     // Culture
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_Culture
+    public abstract partial class _Production_Culture
     {
 
         ///<summary>
@@ -2111,12 +2111,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductModelProductDescriptionCultures where [ProductModelProductDescriptionCulture].[CultureID] point to this entity (FK_ProductModelProductDescriptionCulture_Culture_CultureID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_Culture_CultureID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<_Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_Culture_CultureID
     }
 
     // Document
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_Document
+    public abstract partial class _Production_Document
     {
 
         ///<summary>
@@ -2194,19 +2194,19 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductDocuments where [ProductDocument].[DocumentNode] point to this entity (FK_ProductDocument_Document_DocumentNode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductDocument> Production_ProductDocuments { get; set; } = new System.Collections.Generic.List<Production_ProductDocument>(); // ProductDocument.FK_ProductDocument_Document_DocumentNode
+        public virtual System.Collections.Generic.ICollection<_Production_ProductDocument> Production_ProductDocuments { get; set; } = new System.Collections.Generic.List<_Production_ProductDocument>(); // ProductDocument.FK_ProductDocument_Document_DocumentNode
 
         // Foreign keys
 
         /// <summary>
         /// Parent HumanResources_Employee pointed by [Document].([Owner]) (FK_Document_Employee_Owner)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_Document_Employee_Owner
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_Document_Employee_Owner
     }
 
     // Illustration
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_Illustration
+    public abstract partial class _Production_Illustration
     {
 
         ///<summary>
@@ -2229,12 +2229,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductModelIllustrations where [ProductModelIllustration].[IllustrationID] point to this entity (FK_ProductModelIllustration_Illustration_IllustrationID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } = new System.Collections.Generic.List<Production_ProductModelIllustration>(); // ProductModelIllustration.FK_ProductModelIllustration_Illustration_IllustrationID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } = new System.Collections.Generic.List<_Production_ProductModelIllustration>(); // ProductModelIllustration.FK_ProductModelIllustration_Illustration_IllustrationID
     }
 
     // Location
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_Location
+    public abstract partial class _Production_Location
     {
 
         ///<summary>
@@ -2267,16 +2267,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductInventories where [ProductInventory].[LocationID] point to this entity (FK_ProductInventory_Location_LocationID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductInventory> Production_ProductInventories { get; set; } = new System.Collections.Generic.List<Production_ProductInventory>(); // ProductInventory.FK_ProductInventory_Location_LocationID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductInventory> Production_ProductInventories { get; set; } = new System.Collections.Generic.List<_Production_ProductInventory>(); // ProductInventory.FK_ProductInventory_Location_LocationID
         /// <summary>
         /// Child Production_WorkOrderRoutings where [WorkOrderRouting].[LocationID] point to this entity (FK_WorkOrderRouting_Location_LocationID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } = new System.Collections.Generic.List<Production_WorkOrderRouting>(); // WorkOrderRouting.FK_WorkOrderRouting_Location_LocationID
+        public virtual System.Collections.Generic.ICollection<_Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } = new System.Collections.Generic.List<_Production_WorkOrderRouting>(); // WorkOrderRouting.FK_WorkOrderRouting_Location_LocationID
     }
 
     // Product
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_Product
+    public abstract partial class _Production_Product
     {
 
         ///<summary>
@@ -2409,83 +2409,83 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_BillOfMaterials where [BillOfMaterials].[ComponentID] point to this entity (FK_BillOfMaterials_Product_ComponentID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_BillOfMaterial> Component { get; set; } = new System.Collections.Generic.List<Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_Product_ComponentID
+        public virtual System.Collections.Generic.ICollection<_Production_BillOfMaterial> Component { get; set; } = new System.Collections.Generic.List<_Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_Product_ComponentID
         /// <summary>
         /// Child Production_BillOfMaterials where [BillOfMaterials].[ProductAssemblyID] point to this entity (FK_BillOfMaterials_Product_ProductAssemblyID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_BillOfMaterial> ProductAssembly { get; set; } = new System.Collections.Generic.List<Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_Product_ProductAssemblyID
+        public virtual System.Collections.Generic.ICollection<_Production_BillOfMaterial> ProductAssembly { get; set; } = new System.Collections.Generic.List<_Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_Product_ProductAssemblyID
         /// <summary>
         /// Child Production_ProductCostHistories where [ProductCostHistory].[ProductID] point to this entity (FK_ProductCostHistory_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductCostHistory> Production_ProductCostHistories { get; set; } = new System.Collections.Generic.List<Production_ProductCostHistory>(); // ProductCostHistory.FK_ProductCostHistory_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductCostHistory> Production_ProductCostHistories { get; set; } = new System.Collections.Generic.List<_Production_ProductCostHistory>(); // ProductCostHistory.FK_ProductCostHistory_Product_ProductID
         /// <summary>
         /// Child Production_ProductDocuments where [ProductDocument].[ProductID] point to this entity (FK_ProductDocument_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductDocument> Production_ProductDocuments { get; set; } = new System.Collections.Generic.List<Production_ProductDocument>(); // ProductDocument.FK_ProductDocument_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductDocument> Production_ProductDocuments { get; set; } = new System.Collections.Generic.List<_Production_ProductDocument>(); // ProductDocument.FK_ProductDocument_Product_ProductID
         /// <summary>
         /// Child Production_ProductInventories where [ProductInventory].[ProductID] point to this entity (FK_ProductInventory_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductInventory> Production_ProductInventories { get; set; } = new System.Collections.Generic.List<Production_ProductInventory>(); // ProductInventory.FK_ProductInventory_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductInventory> Production_ProductInventories { get; set; } = new System.Collections.Generic.List<_Production_ProductInventory>(); // ProductInventory.FK_ProductInventory_Product_ProductID
         /// <summary>
         /// Child Production_ProductListPriceHistories where [ProductListPriceHistory].[ProductID] point to this entity (FK_ProductListPriceHistory_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } = new System.Collections.Generic.List<Production_ProductListPriceHistory>(); // ProductListPriceHistory.FK_ProductListPriceHistory_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductListPriceHistory> Production_ProductListPriceHistories { get; set; } = new System.Collections.Generic.List<_Production_ProductListPriceHistory>(); // ProductListPriceHistory.FK_ProductListPriceHistory_Product_ProductID
         /// <summary>
         /// Child Production_ProductProductPhotoes where [ProductProductPhoto].[ProductID] point to this entity (FK_ProductProductPhoto_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } = new System.Collections.Generic.List<Production_ProductProductPhoto>(); // ProductProductPhoto.FK_ProductProductPhoto_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } = new System.Collections.Generic.List<_Production_ProductProductPhoto>(); // ProductProductPhoto.FK_ProductProductPhoto_Product_ProductID
         /// <summary>
         /// Child Production_ProductReviews where [ProductReview].[ProductID] point to this entity (FK_ProductReview_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductReview> Production_ProductReviews { get; set; } = new System.Collections.Generic.List<Production_ProductReview>(); // ProductReview.FK_ProductReview_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductReview> Production_ProductReviews { get; set; } = new System.Collections.Generic.List<_Production_ProductReview>(); // ProductReview.FK_ProductReview_Product_ProductID
         /// <summary>
         /// Child Production_TransactionHistories where [TransactionHistory].[ProductID] point to this entity (FK_TransactionHistory_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_TransactionHistory> Production_TransactionHistories { get; set; } = new System.Collections.Generic.List<Production_TransactionHistory>(); // TransactionHistory.FK_TransactionHistory_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_TransactionHistory> Production_TransactionHistories { get; set; } = new System.Collections.Generic.List<_Production_TransactionHistory>(); // TransactionHistory.FK_TransactionHistory_Product_ProductID
         /// <summary>
         /// Child Production_WorkOrders where [WorkOrder].[ProductID] point to this entity (FK_WorkOrder_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_WorkOrder> Production_WorkOrders { get; set; } = new System.Collections.Generic.List<Production_WorkOrder>(); // WorkOrder.FK_WorkOrder_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Production_WorkOrder> Production_WorkOrders { get; set; } = new System.Collections.Generic.List<_Production_WorkOrder>(); // WorkOrder.FK_WorkOrder_Product_ProductID
         /// <summary>
         /// Child Purchasing_ProductVendors where [ProductVendor].[ProductID] point to this entity (FK_ProductVendor_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<_Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_Product_ProductID
         /// <summary>
         /// Child Purchasing_PurchaseOrderDetails where [PurchaseOrderDetail].[ProductID] point to this entity (FK_PurchaseOrderDetail_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } = new System.Collections.Generic.List<Purchasing_PurchaseOrderDetail>(); // PurchaseOrderDetail.FK_PurchaseOrderDetail_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } = new System.Collections.Generic.List<_Purchasing_PurchaseOrderDetail>(); // PurchaseOrderDetail.FK_PurchaseOrderDetail_Product_ProductID
         /// <summary>
         /// Child Sales_ShoppingCartItems where [ShoppingCartItem].[ProductID] point to this entity (FK_ShoppingCartItem_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } = new System.Collections.Generic.List<Sales_ShoppingCartItem>(); // ShoppingCartItem.FK_ShoppingCartItem_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Sales_ShoppingCartItem> Sales_ShoppingCartItems { get; set; } = new System.Collections.Generic.List<_Sales_ShoppingCartItem>(); // ShoppingCartItem.FK_ShoppingCartItem_Product_ProductID
         /// <summary>
         /// Child Sales_SpecialOfferProducts where [SpecialOfferProduct].[ProductID] point to this entity (FK_SpecialOfferProduct_Product_ProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } = new System.Collections.Generic.List<Sales_SpecialOfferProduct>(); // SpecialOfferProduct.FK_SpecialOfferProduct_Product_ProductID
+        public virtual System.Collections.Generic.ICollection<_Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } = new System.Collections.Generic.List<_Sales_SpecialOfferProduct>(); // SpecialOfferProduct.FK_SpecialOfferProduct_Product_ProductID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Production_ProductModel pointed by [Product].([ProductModelId]) (FK_Product_ProductModel_ProductModelID)
         /// </summary>
-        public virtual Production_ProductModel Production_ProductModel { get; set; } // FK_Product_ProductModel_ProductModelID
+        public virtual _Production_ProductModel Production_ProductModel { get; set; } // FK_Product_ProductModel_ProductModelID
         /// <summary>
         /// Parent Production_ProductSubcategory pointed by [Product].([ProductSubcategoryId]) (FK_Product_ProductSubcategory_ProductSubcategoryID)
         /// </summary>
-        public virtual Production_ProductSubcategory Production_ProductSubcategory { get; set; } // FK_Product_ProductSubcategory_ProductSubcategoryID
+        public virtual _Production_ProductSubcategory Production_ProductSubcategory { get; set; } // FK_Product_ProductSubcategory_ProductSubcategoryID
         /// <summary>
         /// Parent Production_UnitMeasure pointed by [Product].([SizeUnitMeasureCode]) (FK_Product_UnitMeasure_SizeUnitMeasureCode)
         /// </summary>
-        public virtual Production_UnitMeasure Production_UnitMeasure_SizeUnitMeasureCode { get; set; } // FK_Product_UnitMeasure_SizeUnitMeasureCode
+        public virtual _Production_UnitMeasure Production_UnitMeasure_SizeUnitMeasureCode { get; set; } // FK_Product_UnitMeasure_SizeUnitMeasureCode
         /// <summary>
         /// Parent Production_UnitMeasure pointed by [Product].([WeightUnitMeasureCode]) (FK_Product_UnitMeasure_WeightUnitMeasureCode)
         /// </summary>
-        public virtual Production_UnitMeasure Production_UnitMeasure_WeightUnitMeasureCode { get; set; } // FK_Product_UnitMeasure_WeightUnitMeasureCode
+        public virtual _Production_UnitMeasure Production_UnitMeasure_WeightUnitMeasureCode { get; set; } // FK_Product_UnitMeasure_WeightUnitMeasureCode
     }
 
     // ProductCategory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductCategory
+    public abstract partial class _Production_ProductCategory
     {
 
         ///<summary>
@@ -2513,12 +2513,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductSubcategories where [ProductSubcategory].[ProductCategoryID] point to this entity (FK_ProductSubcategory_ProductCategory_ProductCategoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductSubcategory> Production_ProductSubcategories { get; set; } = new System.Collections.Generic.List<Production_ProductSubcategory>(); // ProductSubcategory.FK_ProductSubcategory_ProductCategory_ProductCategoryID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductSubcategory> Production_ProductSubcategories { get; set; } = new System.Collections.Generic.List<_Production_ProductSubcategory>(); // ProductSubcategory.FK_ProductSubcategory_ProductCategory_ProductCategoryID
     }
 
     // ProductCostHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductCostHistory
+    public abstract partial class _Production_ProductCostHistory
     {
 
         ///<summary>
@@ -2551,12 +2551,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ProductCostHistory].([ProductId]) (FK_ProductCostHistory_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductCostHistory_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductCostHistory_Product_ProductID
     }
 
     // ProductDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductDescription
+    public abstract partial class _Production_ProductDescription
     {
 
         ///<summary>
@@ -2584,12 +2584,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductModelProductDescriptionCultures where [ProductModelProductDescriptionCulture].[ProductDescriptionID] point to this entity (FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<_Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
     }
 
     // ProductDocument
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductDocument
+    public abstract partial class _Production_ProductDocument
     {
 
         ///<summary>
@@ -2612,16 +2612,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Document pointed by [ProductDocument].([DocumentNode]) (FK_ProductDocument_Document_DocumentNode)
         /// </summary>
-        public virtual Production_Document Production_Document { get; set; } // FK_ProductDocument_Document_DocumentNode
+        public virtual _Production_Document Production_Document { get; set; } // FK_ProductDocument_Document_DocumentNode
         /// <summary>
         /// Parent Production_Product pointed by [ProductDocument].([ProductId]) (FK_ProductDocument_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductDocument_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductDocument_Product_ProductID
     }
 
     // ProductInventory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductInventory
+    public abstract partial class _Production_ProductInventory
     {
 
         ///<summary>
@@ -2664,16 +2664,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Location pointed by [ProductInventory].([LocationId]) (FK_ProductInventory_Location_LocationID)
         /// </summary>
-        public virtual Production_Location Production_Location { get; set; } // FK_ProductInventory_Location_LocationID
+        public virtual _Production_Location Production_Location { get; set; } // FK_ProductInventory_Location_LocationID
         /// <summary>
         /// Parent Production_Product pointed by [ProductInventory].([ProductId]) (FK_ProductInventory_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductInventory_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductInventory_Product_ProductID
     }
 
     // ProductListPriceHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductListPriceHistory
+    public abstract partial class _Production_ProductListPriceHistory
     {
 
         ///<summary>
@@ -2706,12 +2706,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ProductListPriceHistory].([ProductId]) (FK_ProductListPriceHistory_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductListPriceHistory_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductListPriceHistory_Product_ProductID
     }
 
     // ProductModel
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModel
+    public abstract partial class _Production_ProductModel
     {
 
         ///<summary>
@@ -2749,20 +2749,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_Products where [Product].[ProductModelID] point to this entity (FK_Product_ProductModel_ProductModelID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_Product> Production_Products { get; set; } = new System.Collections.Generic.List<Production_Product>(); // Product.FK_Product_ProductModel_ProductModelID
+        public virtual System.Collections.Generic.ICollection<_Production_Product> Production_Products { get; set; } = new System.Collections.Generic.List<_Production_Product>(); // Product.FK_Product_ProductModel_ProductModelID
         /// <summary>
         /// Child Production_ProductModelIllustrations where [ProductModelIllustration].[ProductModelID] point to this entity (FK_ProductModelIllustration_ProductModel_ProductModelID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } = new System.Collections.Generic.List<Production_ProductModelIllustration>(); // ProductModelIllustration.FK_ProductModelIllustration_ProductModel_ProductModelID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductModelIllustration> Production_ProductModelIllustrations { get; set; } = new System.Collections.Generic.List<_Production_ProductModelIllustration>(); // ProductModelIllustration.FK_ProductModelIllustration_ProductModel_ProductModelID
         /// <summary>
         /// Child Production_ProductModelProductDescriptionCultures where [ProductModelProductDescriptionCulture].[ProductModelID] point to this entity (FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductModelProductDescriptionCulture> Production_ProductModelProductDescriptionCultures { get; set; } = new System.Collections.Generic.List<_Production_ProductModelProductDescriptionCulture>(); // ProductModelProductDescriptionCulture.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
     }
 
     // ProductModelIllustration
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModelIllustration
+    public abstract partial class _Production_ProductModelIllustration
     {
 
         ///<summary>
@@ -2785,16 +2785,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Illustration pointed by [ProductModelIllustration].([IllustrationId]) (FK_ProductModelIllustration_Illustration_IllustrationID)
         /// </summary>
-        public virtual Production_Illustration Production_Illustration { get; set; } // FK_ProductModelIllustration_Illustration_IllustrationID
+        public virtual _Production_Illustration Production_Illustration { get; set; } // FK_ProductModelIllustration_Illustration_IllustrationID
         /// <summary>
         /// Parent Production_ProductModel pointed by [ProductModelIllustration].([ProductModelId]) (FK_ProductModelIllustration_ProductModel_ProductModelID)
         /// </summary>
-        public virtual Production_ProductModel Production_ProductModel { get; set; } // FK_ProductModelIllustration_ProductModel_ProductModelID
+        public virtual _Production_ProductModel Production_ProductModel { get; set; } // FK_ProductModelIllustration_ProductModel_ProductModelID
     }
 
     // ProductModelProductDescriptionCulture
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModelProductDescriptionCulture
+    public abstract partial class _Production_ProductModelProductDescriptionCulture
     {
 
         ///<summary>
@@ -2822,20 +2822,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Culture pointed by [ProductModelProductDescriptionCulture].([CultureId]) (FK_ProductModelProductDescriptionCulture_Culture_CultureID)
         /// </summary>
-        public virtual Production_Culture Production_Culture { get; set; } // FK_ProductModelProductDescriptionCulture_Culture_CultureID
+        public virtual _Production_Culture Production_Culture { get; set; } // FK_ProductModelProductDescriptionCulture_Culture_CultureID
         /// <summary>
         /// Parent Production_ProductDescription pointed by [ProductModelProductDescriptionCulture].([ProductDescriptionId]) (FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID)
         /// </summary>
-        public virtual Production_ProductDescription Production_ProductDescription { get; set; } // FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
+        public virtual _Production_ProductDescription Production_ProductDescription { get; set; } // FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID
         /// <summary>
         /// Parent Production_ProductModel pointed by [ProductModelProductDescriptionCulture].([ProductModelId]) (FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID)
         /// </summary>
-        public virtual Production_ProductModel Production_ProductModel { get; set; } // FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
+        public virtual _Production_ProductModel Production_ProductModel { get; set; } // FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID
     }
 
     // ProductPhoto
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductPhoto
+    public abstract partial class _Production_ProductPhoto
     {
 
         ///<summary>
@@ -2873,12 +2873,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_ProductProductPhotoes where [ProductProductPhoto].[ProductPhotoID] point to this entity (FK_ProductProductPhoto_ProductPhoto_ProductPhotoID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } = new System.Collections.Generic.List<Production_ProductProductPhoto>(); // ProductProductPhoto.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID
+        public virtual System.Collections.Generic.ICollection<_Production_ProductProductPhoto> Production_ProductProductPhotoes { get; set; } = new System.Collections.Generic.List<_Production_ProductProductPhoto>(); // ProductProductPhoto.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID
     }
 
     // ProductProductPhoto
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductProductPhoto
+    public abstract partial class _Production_ProductProductPhoto
     {
 
         ///<summary>
@@ -2906,16 +2906,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ProductProductPhoto].([ProductId]) (FK_ProductProductPhoto_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductProductPhoto_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductProductPhoto_Product_ProductID
         /// <summary>
         /// Parent Production_ProductPhoto pointed by [ProductProductPhoto].([ProductPhotoId]) (FK_ProductProductPhoto_ProductPhoto_ProductPhotoID)
         /// </summary>
-        public virtual Production_ProductPhoto Production_ProductPhoto { get; set; } // FK_ProductProductPhoto_ProductPhoto_ProductPhotoID
+        public virtual _Production_ProductPhoto Production_ProductPhoto { get; set; } // FK_ProductProductPhoto_ProductPhoto_ProductPhotoID
     }
 
     // ProductReview
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductReview
+    public abstract partial class _Production_ProductReview
     {
 
         ///<summary>
@@ -2963,12 +2963,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ProductReview].([ProductId]) (FK_ProductReview_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductReview_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductReview_Product_ProductID
     }
 
     // ProductSubcategory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductSubcategory
+    public abstract partial class _Production_ProductSubcategory
     {
 
         ///<summary>
@@ -3001,19 +3001,19 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_Products where [Product].[ProductSubcategoryID] point to this entity (FK_Product_ProductSubcategory_ProductSubcategoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_Product> Production_Products { get; set; } = new System.Collections.Generic.List<Production_Product>(); // Product.FK_Product_ProductSubcategory_ProductSubcategoryID
+        public virtual System.Collections.Generic.ICollection<_Production_Product> Production_Products { get; set; } = new System.Collections.Generic.List<_Production_Product>(); // Product.FK_Product_ProductSubcategory_ProductSubcategoryID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Production_ProductCategory pointed by [ProductSubcategory].([ProductCategoryId]) (FK_ProductSubcategory_ProductCategory_ProductCategoryID)
         /// </summary>
-        public virtual Production_ProductCategory Production_ProductCategory { get; set; } // FK_ProductSubcategory_ProductCategory_ProductCategoryID
+        public virtual _Production_ProductCategory Production_ProductCategory { get; set; } // FK_ProductSubcategory_ProductCategory_ProductCategoryID
     }
 
     // ScrapReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ScrapReason
+    public abstract partial class _Production_ScrapReason
     {
 
         ///<summary>
@@ -3036,12 +3036,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_WorkOrders where [WorkOrder].[ScrapReasonID] point to this entity (FK_WorkOrder_ScrapReason_ScrapReasonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_WorkOrder> Production_WorkOrders { get; set; } = new System.Collections.Generic.List<Production_WorkOrder>(); // WorkOrder.FK_WorkOrder_ScrapReason_ScrapReasonID
+        public virtual System.Collections.Generic.ICollection<_Production_WorkOrder> Production_WorkOrders { get; set; } = new System.Collections.Generic.List<_Production_WorkOrder>(); // WorkOrder.FK_WorkOrder_ScrapReason_ScrapReasonID
     }
 
     // TransactionHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_TransactionHistory
+    public abstract partial class _Production_TransactionHistory
     {
 
         ///<summary>
@@ -3094,12 +3094,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [TransactionHistory].([ProductId]) (FK_TransactionHistory_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_TransactionHistory_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_TransactionHistory_Product_ProductID
     }
 
     // TransactionHistoryArchive
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_TransactionHistoryArchive
+    public abstract partial class _Production_TransactionHistoryArchive
     {
 
         ///<summary>
@@ -3150,7 +3150,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // UnitMeasure
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_UnitMeasure
+    public abstract partial class _Production_UnitMeasure
     {
 
         ///<summary>
@@ -3173,24 +3173,24 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_BillOfMaterials where [BillOfMaterials].[UnitMeasureCode] point to this entity (FK_BillOfMaterials_UnitMeasure_UnitMeasureCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_BillOfMaterial> Production_BillOfMaterials { get; set; } = new System.Collections.Generic.List<Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
+        public virtual System.Collections.Generic.ICollection<_Production_BillOfMaterial> Production_BillOfMaterials { get; set; } = new System.Collections.Generic.List<_Production_BillOfMaterial>(); // BillOfMaterials.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode
         /// <summary>
         /// Child Production_Products where [Product].[SizeUnitMeasureCode] point to this entity (FK_Product_UnitMeasure_SizeUnitMeasureCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_Product> SizeUnitMeasureCode { get; set; } = new System.Collections.Generic.List<Production_Product>(); // Product.FK_Product_UnitMeasure_SizeUnitMeasureCode
+        public virtual System.Collections.Generic.ICollection<_Production_Product> SizeUnitMeasureCode { get; set; } = new System.Collections.Generic.List<_Production_Product>(); // Product.FK_Product_UnitMeasure_SizeUnitMeasureCode
         /// <summary>
         /// Child Production_Products where [Product].[WeightUnitMeasureCode] point to this entity (FK_Product_UnitMeasure_WeightUnitMeasureCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_Product> WeightUnitMeasureCode { get; set; } = new System.Collections.Generic.List<Production_Product>(); // Product.FK_Product_UnitMeasure_WeightUnitMeasureCode
+        public virtual System.Collections.Generic.ICollection<_Production_Product> WeightUnitMeasureCode { get; set; } = new System.Collections.Generic.List<_Production_Product>(); // Product.FK_Product_UnitMeasure_WeightUnitMeasureCode
         /// <summary>
         /// Child Purchasing_ProductVendors where [ProductVendor].[UnitMeasureCode] point to this entity (FK_ProductVendor_UnitMeasure_UnitMeasureCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_UnitMeasure_UnitMeasureCode
+        public virtual System.Collections.Generic.ICollection<_Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<_Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_UnitMeasure_UnitMeasureCode
     }
 
     // vProductAndDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductAndDescription
+    public abstract partial class _Production_VProductAndDescription
     {
         public int ProductId { get; set; } // ProductID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -3201,7 +3201,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vProductModelCatalogDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductModelCatalogDescription
+    public abstract partial class _Production_VProductModelCatalogDescription
     {
         public int ProductModelId { get; set; } // ProductModelID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -3232,7 +3232,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vProductModelInstructions
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductModelInstruction
+    public abstract partial class _Production_VProductModelInstruction
     {
         public int ProductModelId { get; set; } // ProductModelID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -3249,7 +3249,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // WorkOrder
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_WorkOrder
+    public abstract partial class _Production_WorkOrder
     {
 
         ///<summary>
@@ -3307,23 +3307,23 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Production_WorkOrderRoutings where [WorkOrderRouting].[WorkOrderID] point to this entity (FK_WorkOrderRouting_WorkOrder_WorkOrderID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } = new System.Collections.Generic.List<Production_WorkOrderRouting>(); // WorkOrderRouting.FK_WorkOrderRouting_WorkOrder_WorkOrderID
+        public virtual System.Collections.Generic.ICollection<_Production_WorkOrderRouting> Production_WorkOrderRoutings { get; set; } = new System.Collections.Generic.List<_Production_WorkOrderRouting>(); // WorkOrderRouting.FK_WorkOrderRouting_WorkOrder_WorkOrderID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Production_Product pointed by [WorkOrder].([ProductId]) (FK_WorkOrder_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_WorkOrder_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_WorkOrder_Product_ProductID
         /// <summary>
         /// Parent Production_ScrapReason pointed by [WorkOrder].([ScrapReasonId]) (FK_WorkOrder_ScrapReason_ScrapReasonID)
         /// </summary>
-        public virtual Production_ScrapReason Production_ScrapReason { get; set; } // FK_WorkOrder_ScrapReason_ScrapReasonID
+        public virtual _Production_ScrapReason Production_ScrapReason { get; set; } // FK_WorkOrder_ScrapReason_ScrapReasonID
     }
 
     // WorkOrderRouting
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_WorkOrderRouting
+    public abstract partial class _Production_WorkOrderRouting
     {
 
         ///<summary>
@@ -3391,16 +3391,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Location pointed by [WorkOrderRouting].([LocationId]) (FK_WorkOrderRouting_Location_LocationID)
         /// </summary>
-        public virtual Production_Location Production_Location { get; set; } // FK_WorkOrderRouting_Location_LocationID
+        public virtual _Production_Location Production_Location { get; set; } // FK_WorkOrderRouting_Location_LocationID
         /// <summary>
         /// Parent Production_WorkOrder pointed by [WorkOrderRouting].([WorkOrderId]) (FK_WorkOrderRouting_WorkOrder_WorkOrderID)
         /// </summary>
-        public virtual Production_WorkOrder Production_WorkOrder { get; set; } // FK_WorkOrderRouting_WorkOrder_WorkOrderID
+        public virtual _Production_WorkOrder Production_WorkOrder { get; set; } // FK_WorkOrderRouting_WorkOrder_WorkOrderID
     }
 
     // ProductVendor
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_ProductVendor
+    public abstract partial class _Purchasing_ProductVendor
     {
 
         ///<summary>
@@ -3463,20 +3463,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ProductVendor].([ProductId]) (FK_ProductVendor_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ProductVendor_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ProductVendor_Product_ProductID
         /// <summary>
         /// Parent Production_UnitMeasure pointed by [ProductVendor].([UnitMeasureCode]) (FK_ProductVendor_UnitMeasure_UnitMeasureCode)
         /// </summary>
-        public virtual Production_UnitMeasure Production_UnitMeasure { get; set; } // FK_ProductVendor_UnitMeasure_UnitMeasureCode
+        public virtual _Production_UnitMeasure Production_UnitMeasure { get; set; } // FK_ProductVendor_UnitMeasure_UnitMeasureCode
         /// <summary>
         /// Parent Purchasing_Vendor pointed by [ProductVendor].([BusinessEntityId]) (FK_ProductVendor_Vendor_BusinessEntityID)
         /// </summary>
-        public virtual Purchasing_Vendor Purchasing_Vendor { get; set; } // FK_ProductVendor_Vendor_BusinessEntityID
+        public virtual _Purchasing_Vendor Purchasing_Vendor { get; set; } // FK_ProductVendor_Vendor_BusinessEntityID
     }
 
     // PurchaseOrderDetail
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_PurchaseOrderDetail
+    public abstract partial class _Purchasing_PurchaseOrderDetail
     {
 
         ///<summary>
@@ -3539,16 +3539,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [PurchaseOrderDetail].([ProductId]) (FK_PurchaseOrderDetail_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_PurchaseOrderDetail_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_PurchaseOrderDetail_Product_ProductID
         /// <summary>
         /// Parent Purchasing_PurchaseOrderHeader pointed by [PurchaseOrderDetail].([PurchaseOrderId]) (FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID)
         /// </summary>
-        public virtual Purchasing_PurchaseOrderHeader Purchasing_PurchaseOrderHeader { get; set; } // FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
+        public virtual _Purchasing_PurchaseOrderHeader Purchasing_PurchaseOrderHeader { get; set; } // FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
     }
 
     // PurchaseOrderHeader
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_PurchaseOrderHeader
+    public abstract partial class _Purchasing_PurchaseOrderHeader
     {
 
         ///<summary>
@@ -3621,27 +3621,27 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Purchasing_PurchaseOrderDetails where [PurchaseOrderDetail].[PurchaseOrderID] point to this entity (FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } = new System.Collections.Generic.List<Purchasing_PurchaseOrderDetail>(); // PurchaseOrderDetail.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_PurchaseOrderDetail> Purchasing_PurchaseOrderDetails { get; set; } = new System.Collections.Generic.List<_Purchasing_PurchaseOrderDetail>(); // PurchaseOrderDetail.FK_PurchaseOrderDetail_PurchaseOrderHeader_PurchaseOrderID
 
         // Foreign keys
 
         /// <summary>
         /// Parent HumanResources_Employee pointed by [PurchaseOrderHeader].([EmployeeId]) (FK_PurchaseOrderHeader_Employee_EmployeeID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_PurchaseOrderHeader_Employee_EmployeeID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_PurchaseOrderHeader_Employee_EmployeeID
         /// <summary>
         /// Parent Purchasing_ShipMethod pointed by [PurchaseOrderHeader].([ShipMethodId]) (FK_PurchaseOrderHeader_ShipMethod_ShipMethodID)
         /// </summary>
-        public virtual Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } // FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
+        public virtual _Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } // FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
         /// <summary>
         /// Parent Purchasing_Vendor pointed by [PurchaseOrderHeader].([VendorId]) (FK_PurchaseOrderHeader_Vendor_VendorID)
         /// </summary>
-        public virtual Purchasing_Vendor Purchasing_Vendor { get; set; } // FK_PurchaseOrderHeader_Vendor_VendorID
+        public virtual _Purchasing_Vendor Purchasing_Vendor { get; set; } // FK_PurchaseOrderHeader_Vendor_VendorID
     }
 
     // ShipMethod
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_ShipMethod
+    public abstract partial class _Purchasing_ShipMethod
     {
 
         ///<summary>
@@ -3679,16 +3679,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Purchasing_PurchaseOrderHeaders where [PurchaseOrderHeader].[ShipMethodID] point to this entity (FK_PurchaseOrderHeader_ShipMethod_ShipMethodID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<_Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_ShipMethod_ShipMethodID
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[ShipMethodID] point to this entity (FK_SalesOrderHeader_ShipMethod_ShipMethodID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_ShipMethod_ShipMethodID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_ShipMethod_ShipMethodID
     }
 
     // Vendor
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_Vendor
+    public abstract partial class _Purchasing_Vendor
     {
 
         ///<summary>
@@ -3736,23 +3736,23 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Purchasing_ProductVendors where [ProductVendor].[BusinessEntityID] point to this entity (FK_ProductVendor_Vendor_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_Vendor_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_ProductVendor> Purchasing_ProductVendors { get; set; } = new System.Collections.Generic.List<_Purchasing_ProductVendor>(); // ProductVendor.FK_ProductVendor_Vendor_BusinessEntityID
         /// <summary>
         /// Child Purchasing_PurchaseOrderHeaders where [PurchaseOrderHeader].[VendorID] point to this entity (FK_PurchaseOrderHeader_Vendor_VendorID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_Vendor_VendorID
+        public virtual System.Collections.Generic.ICollection<_Purchasing_PurchaseOrderHeader> Purchasing_PurchaseOrderHeaders { get; set; } = new System.Collections.Generic.List<_Purchasing_PurchaseOrderHeader>(); // PurchaseOrderHeader.FK_PurchaseOrderHeader_Vendor_VendorID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_BusinessEntity pointed by [Vendor].([BusinessEntityId]) (FK_Vendor_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Vendor_BusinessEntity_BusinessEntityID
+        public virtual _Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Vendor_BusinessEntity_BusinessEntityID
     }
 
     // vVendorWithAddresses
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_VVendorWithAddress
+    public abstract partial class _Purchasing_VVendorWithAddress
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -3767,7 +3767,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vVendorWithContacts
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_VVendorWithContact
+    public abstract partial class _Purchasing_VVendorWithContact
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -3785,7 +3785,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // CountryRegionCurrency
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CountryRegionCurrency
+    public abstract partial class _Sales_CountryRegionCurrency
     {
 
         ///<summary>
@@ -3808,16 +3808,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_CountryRegion pointed by [CountryRegionCurrency].([CountryRegionCode]) (FK_CountryRegionCurrency_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual Person_CountryRegion Person_CountryRegion { get; set; } // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
+        public virtual _Person_CountryRegion Person_CountryRegion { get; set; } // FK_CountryRegionCurrency_CountryRegion_CountryRegionCode
         /// <summary>
         /// Parent Sales_Currency pointed by [CountryRegionCurrency].([CurrencyCode]) (FK_CountryRegionCurrency_Currency_CurrencyCode)
         /// </summary>
-        public virtual Sales_Currency Sales_Currency { get; set; } // FK_CountryRegionCurrency_Currency_CurrencyCode
+        public virtual _Sales_Currency Sales_Currency { get; set; } // FK_CountryRegionCurrency_Currency_CurrencyCode
     }
 
     // CreditCard
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CreditCard
+    public abstract partial class _Sales_CreditCard
     {
 
         ///<summary>
@@ -3855,16 +3855,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_PersonCreditCards where [PersonCreditCard].[CreditCardID] point to this entity (FK_PersonCreditCard_CreditCard_CreditCardID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } = new System.Collections.Generic.List<Sales_PersonCreditCard>(); // PersonCreditCard.FK_PersonCreditCard_CreditCard_CreditCardID
+        public virtual System.Collections.Generic.ICollection<_Sales_PersonCreditCard> Sales_PersonCreditCards { get; set; } = new System.Collections.Generic.List<_Sales_PersonCreditCard>(); // PersonCreditCard.FK_PersonCreditCard_CreditCard_CreditCardID
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[CreditCardID] point to this entity (FK_SalesOrderHeader_CreditCard_CreditCardID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_CreditCard_CreditCardID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_CreditCard_CreditCardID
     }
 
     // Currency
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_Currency
+    public abstract partial class _Sales_Currency
     {
 
         ///<summary>
@@ -3887,20 +3887,20 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_CountryRegionCurrencies where [CountryRegionCurrency].[CurrencyCode] point to this entity (FK_CountryRegionCurrency_Currency_CurrencyCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } = new System.Collections.Generic.List<Sales_CountryRegionCurrency>(); // CountryRegionCurrency.FK_CountryRegionCurrency_Currency_CurrencyCode
+        public virtual System.Collections.Generic.ICollection<_Sales_CountryRegionCurrency> Sales_CountryRegionCurrencies { get; set; } = new System.Collections.Generic.List<_Sales_CountryRegionCurrency>(); // CountryRegionCurrency.FK_CountryRegionCurrency_Currency_CurrencyCode
         /// <summary>
         /// Child Sales_CurrencyRates where [CurrencyRate].[FromCurrencyCode] point to this entity (FK_CurrencyRate_Currency_FromCurrencyCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_CurrencyRate> FromCurrencyCode { get; set; } = new System.Collections.Generic.List<Sales_CurrencyRate>(); // CurrencyRate.FK_CurrencyRate_Currency_FromCurrencyCode
+        public virtual System.Collections.Generic.ICollection<_Sales_CurrencyRate> FromCurrencyCode { get; set; } = new System.Collections.Generic.List<_Sales_CurrencyRate>(); // CurrencyRate.FK_CurrencyRate_Currency_FromCurrencyCode
         /// <summary>
         /// Child Sales_CurrencyRates where [CurrencyRate].[ToCurrencyCode] point to this entity (FK_CurrencyRate_Currency_ToCurrencyCode)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_CurrencyRate> ToCurrencyCode { get; set; } = new System.Collections.Generic.List<Sales_CurrencyRate>(); // CurrencyRate.FK_CurrencyRate_Currency_ToCurrencyCode
+        public virtual System.Collections.Generic.ICollection<_Sales_CurrencyRate> ToCurrencyCode { get; set; } = new System.Collections.Generic.List<_Sales_CurrencyRate>(); // CurrencyRate.FK_CurrencyRate_Currency_ToCurrencyCode
     }
 
     // CurrencyRate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CurrencyRate
+    public abstract partial class _Sales_CurrencyRate
     {
 
         ///<summary>
@@ -3943,23 +3943,23 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[CurrencyRateID] point to this entity (FK_SalesOrderHeader_CurrencyRate_CurrencyRateID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Sales_Currency pointed by [CurrencyRate].([FromCurrencyCode]) (FK_CurrencyRate_Currency_FromCurrencyCode)
         /// </summary>
-        public virtual Sales_Currency Sales_Currency_FromCurrencyCode { get; set; } // FK_CurrencyRate_Currency_FromCurrencyCode
+        public virtual _Sales_Currency Sales_Currency_FromCurrencyCode { get; set; } // FK_CurrencyRate_Currency_FromCurrencyCode
         /// <summary>
         /// Parent Sales_Currency pointed by [CurrencyRate].([ToCurrencyCode]) (FK_CurrencyRate_Currency_ToCurrencyCode)
         /// </summary>
-        public virtual Sales_Currency Sales_Currency_ToCurrencyCode { get; set; } // FK_CurrencyRate_Currency_ToCurrencyCode
+        public virtual _Sales_Currency Sales_Currency_ToCurrencyCode { get; set; } // FK_CurrencyRate_Currency_ToCurrencyCode
     }
 
     // Customer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_Customer
+    public abstract partial class _Sales_Customer
     {
 
         ///<summary>
@@ -4002,27 +4002,27 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[CustomerID] point to this entity (FK_SalesOrderHeader_Customer_CustomerID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Customer_CustomerID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_Customer_CustomerID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_Person pointed by [Customer].([PersonId]) (FK_Customer_Person_PersonID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_Customer_Person_PersonID
+        public virtual _Person_Person Person_Person { get; set; } // FK_Customer_Person_PersonID
         /// <summary>
         /// Parent Sales_SalesTerritory pointed by [Customer].([TerritoryId]) (FK_Customer_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_Customer_SalesTerritory_TerritoryID
+        public virtual _Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_Customer_SalesTerritory_TerritoryID
         /// <summary>
         /// Parent Sales_Store pointed by [Customer].([StoreId]) (FK_Customer_Store_StoreID)
         /// </summary>
-        public virtual Sales_Store Sales_Store { get; set; } // FK_Customer_Store_StoreID
+        public virtual _Sales_Store Sales_Store { get; set; } // FK_Customer_Store_StoreID
     }
 
     // PersonCreditCard
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_PersonCreditCard
+    public abstract partial class _Sales_PersonCreditCard
     {
 
         ///<summary>
@@ -4045,16 +4045,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_Person pointed by [PersonCreditCard].([BusinessEntityId]) (FK_PersonCreditCard_Person_BusinessEntityID)
         /// </summary>
-        public virtual Person_Person Person_Person { get; set; } // FK_PersonCreditCard_Person_BusinessEntityID
+        public virtual _Person_Person Person_Person { get; set; } // FK_PersonCreditCard_Person_BusinessEntityID
         /// <summary>
         /// Parent Sales_CreditCard pointed by [PersonCreditCard].([CreditCardId]) (FK_PersonCreditCard_CreditCard_CreditCardID)
         /// </summary>
-        public virtual Sales_CreditCard Sales_CreditCard { get; set; } // FK_PersonCreditCard_CreditCard_CreditCardID
+        public virtual _Sales_CreditCard Sales_CreditCard { get; set; } // FK_PersonCreditCard_CreditCard_CreditCardID
     }
 
     // SalesOrderDetail
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderDetail
+    public abstract partial class _Sales_SalesOrderDetail
     {
 
         ///<summary>
@@ -4117,16 +4117,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Sales_SalesOrderHeader pointed by [SalesOrderDetail].([SalesOrderId]) (FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID)
         /// </summary>
-        public virtual Sales_SalesOrderHeader Sales_SalesOrderHeader { get; set; } // FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
+        public virtual _Sales_SalesOrderHeader Sales_SalesOrderHeader { get; set; } // FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
         /// <summary>
         /// Parent Sales_SpecialOfferProduct pointed by [SalesOrderDetail].([SpecialOfferId], [ProductId]) (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
         /// </summary>
-        public virtual Sales_SpecialOfferProduct Sales_SpecialOfferProduct { get; set; } // FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
+        public virtual _Sales_SpecialOfferProduct Sales_SpecialOfferProduct { get; set; } // FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
     }
 
     // SalesOrderHeader
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderHeader
+    public abstract partial class _Sales_SalesOrderHeader
     {
 
         ///<summary>
@@ -4264,51 +4264,51 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderDetails where [SalesOrderDetail].[SalesOrderID] point to this entity (FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderDetail>(); // SalesOrderDetail.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderDetail>(); // SalesOrderDetail.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID
         /// <summary>
         /// Child Sales_SalesOrderHeaderSalesReasons where [SalesOrderHeaderSalesReason].[SalesOrderID] point to this entity (FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeaderSalesReason>(); // SalesOrderHeaderSalesReason.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeaderSalesReason>(); // SalesOrderHeaderSalesReason.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_Address pointed by [SalesOrderHeader].([BillToAddressId]) (FK_SalesOrderHeader_Address_BillToAddressID)
         /// </summary>
-        public virtual Person_Address BillToAddress { get; set; } // FK_SalesOrderHeader_Address_BillToAddressID
+        public virtual _Person_Address BillToAddress { get; set; } // FK_SalesOrderHeader_Address_BillToAddressID
         /// <summary>
         /// Parent Person_Address pointed by [SalesOrderHeader].([ShipToAddressId]) (FK_SalesOrderHeader_Address_ShipToAddressID)
         /// </summary>
-        public virtual Person_Address ShipToAddress { get; set; } // FK_SalesOrderHeader_Address_ShipToAddressID
+        public virtual _Person_Address ShipToAddress { get; set; } // FK_SalesOrderHeader_Address_ShipToAddressID
         /// <summary>
         /// Parent Purchasing_ShipMethod pointed by [SalesOrderHeader].([ShipMethodId]) (FK_SalesOrderHeader_ShipMethod_ShipMethodID)
         /// </summary>
-        public virtual Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } // FK_SalesOrderHeader_ShipMethod_ShipMethodID
+        public virtual _Purchasing_ShipMethod Purchasing_ShipMethod { get; set; } // FK_SalesOrderHeader_ShipMethod_ShipMethodID
         /// <summary>
         /// Parent Sales_CreditCard pointed by [SalesOrderHeader].([CreditCardId]) (FK_SalesOrderHeader_CreditCard_CreditCardID)
         /// </summary>
-        public virtual Sales_CreditCard Sales_CreditCard { get; set; } // FK_SalesOrderHeader_CreditCard_CreditCardID
+        public virtual _Sales_CreditCard Sales_CreditCard { get; set; } // FK_SalesOrderHeader_CreditCard_CreditCardID
         /// <summary>
         /// Parent Sales_CurrencyRate pointed by [SalesOrderHeader].([CurrencyRateId]) (FK_SalesOrderHeader_CurrencyRate_CurrencyRateID)
         /// </summary>
-        public virtual Sales_CurrencyRate Sales_CurrencyRate { get; set; } // FK_SalesOrderHeader_CurrencyRate_CurrencyRateID
+        public virtual _Sales_CurrencyRate Sales_CurrencyRate { get; set; } // FK_SalesOrderHeader_CurrencyRate_CurrencyRateID
         /// <summary>
         /// Parent Sales_Customer pointed by [SalesOrderHeader].([CustomerId]) (FK_SalesOrderHeader_Customer_CustomerID)
         /// </summary>
-        public virtual Sales_Customer Sales_Customer { get; set; } // FK_SalesOrderHeader_Customer_CustomerID
+        public virtual _Sales_Customer Sales_Customer { get; set; } // FK_SalesOrderHeader_Customer_CustomerID
         /// <summary>
         /// Parent Sales_SalesPerson pointed by [SalesOrderHeader].([SalesPersonId]) (FK_SalesOrderHeader_SalesPerson_SalesPersonID)
         /// </summary>
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesOrderHeader_SalesPerson_SalesPersonID
+        public virtual _Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesOrderHeader_SalesPerson_SalesPersonID
         /// <summary>
         /// Parent Sales_SalesTerritory pointed by [SalesOrderHeader].([TerritoryId]) (FK_SalesOrderHeader_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesOrderHeader_SalesTerritory_TerritoryID
+        public virtual _Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesOrderHeader_SalesTerritory_TerritoryID
     }
 
     // SalesOrderHeaderSalesReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderHeaderSalesReason
+    public abstract partial class _Sales_SalesOrderHeaderSalesReason
     {
 
         ///<summary>
@@ -4331,16 +4331,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Sales_SalesOrderHeader pointed by [SalesOrderHeaderSalesReason].([SalesOrderId]) (FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID)
         /// </summary>
-        public virtual Sales_SalesOrderHeader Sales_SalesOrderHeader { get; set; } // FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID
+        public virtual _Sales_SalesOrderHeader Sales_SalesOrderHeader { get; set; } // FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID
         /// <summary>
         /// Parent Sales_SalesReason pointed by [SalesOrderHeaderSalesReason].([SalesReasonId]) (FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID)
         /// </summary>
-        public virtual Sales_SalesReason Sales_SalesReason { get; set; } // FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID
+        public virtual _Sales_SalesReason Sales_SalesReason { get; set; } // FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID
     }
 
     // SalesPerson
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesPerson
+    public abstract partial class _Sales_SalesPerson
     {
 
         ///<summary>
@@ -4393,35 +4393,35 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[SalesPersonID] point to this entity (FK_SalesOrderHeader_SalesPerson_SalesPersonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_SalesPerson_SalesPersonID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_SalesPerson_SalesPersonID
         /// <summary>
         /// Child Sales_SalesPersonQuotaHistories where [SalesPersonQuotaHistory].[BusinessEntityID] point to this entity (FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } = new System.Collections.Generic.List<Sales_SalesPersonQuotaHistory>(); // SalesPersonQuotaHistory.FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesPersonQuotaHistory> Sales_SalesPersonQuotaHistories { get; set; } = new System.Collections.Generic.List<_Sales_SalesPersonQuotaHistory>(); // SalesPersonQuotaHistory.FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
         /// <summary>
         /// Child Sales_SalesTerritoryHistories where [SalesTerritoryHistory].[BusinessEntityID] point to this entity (FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } = new System.Collections.Generic.List<Sales_SalesTerritoryHistory>(); // SalesTerritoryHistory.FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } = new System.Collections.Generic.List<_Sales_SalesTerritoryHistory>(); // SalesTerritoryHistory.FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID
         /// <summary>
         /// Child Sales_Stores where [Store].[SalesPersonID] point to this entity (FK_Store_SalesPerson_SalesPersonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_Store> Sales_Stores { get; set; } = new System.Collections.Generic.List<Sales_Store>(); // Store.FK_Store_SalesPerson_SalesPersonID
+        public virtual System.Collections.Generic.ICollection<_Sales_Store> Sales_Stores { get; set; } = new System.Collections.Generic.List<_Sales_Store>(); // Store.FK_Store_SalesPerson_SalesPersonID
 
         // Foreign keys
 
         /// <summary>
         /// Parent HumanResources_Employee pointed by [SalesPerson].([BusinessEntityId]) (FK_SalesPerson_Employee_BusinessEntityID)
         /// </summary>
-        public virtual HumanResources_Employee HumanResources_Employee { get; set; } // FK_SalesPerson_Employee_BusinessEntityID
+        public virtual _HumanResources_Employee HumanResources_Employee { get; set; } // FK_SalesPerson_Employee_BusinessEntityID
         /// <summary>
         /// Parent Sales_SalesTerritory pointed by [SalesPerson].([TerritoryId]) (FK_SalesPerson_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesPerson_SalesTerritory_TerritoryID
+        public virtual _Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesPerson_SalesTerritory_TerritoryID
     }
 
     // SalesPersonQuotaHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesPersonQuotaHistory
+    public abstract partial class _Sales_SalesPersonQuotaHistory
     {
 
         ///<summary>
@@ -4454,12 +4454,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Sales_SalesPerson pointed by [SalesPersonQuotaHistory].([BusinessEntityId]) (FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID)
         /// </summary>
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
+        public virtual _Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID
     }
 
     // SalesReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesReason
+    public abstract partial class _Sales_SalesReason
     {
 
         ///<summary>
@@ -4487,12 +4487,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderHeaderSalesReasons where [SalesOrderHeaderSalesReason].[SalesReasonID] point to this entity (FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeaderSalesReason>(); // SalesOrderHeaderSalesReason.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeaderSalesReason> Sales_SalesOrderHeaderSalesReasons { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeaderSalesReason>(); // SalesOrderHeaderSalesReason.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID
     }
 
     // SalesTaxRate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTaxRate
+    public abstract partial class _Sales_SalesTaxRate
     {
 
         ///<summary>
@@ -4535,12 +4535,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Person_StateProvince pointed by [SalesTaxRate].([StateProvinceId]) (FK_SalesTaxRate_StateProvince_StateProvinceID)
         /// </summary>
-        public virtual Person_StateProvince Person_StateProvince { get; set; } // FK_SalesTaxRate_StateProvince_StateProvinceID
+        public virtual _Person_StateProvince Person_StateProvince { get; set; } // FK_SalesTaxRate_StateProvince_StateProvinceID
     }
 
     // SalesTerritory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTerritory
+    public abstract partial class _Sales_SalesTerritory
     {
 
         ///<summary>
@@ -4598,35 +4598,35 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Person_StateProvinces where [StateProvince].[TerritoryID] point to this entity (FK_StateProvince_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Person_StateProvince> Person_StateProvinces { get; set; } = new System.Collections.Generic.List<Person_StateProvince>(); // StateProvince.FK_StateProvince_SalesTerritory_TerritoryID
+        public virtual System.Collections.Generic.ICollection<_Person_StateProvince> Person_StateProvinces { get; set; } = new System.Collections.Generic.List<_Person_StateProvince>(); // StateProvince.FK_StateProvince_SalesTerritory_TerritoryID
         /// <summary>
         /// Child Sales_Customers where [Customer].[TerritoryID] point to this entity (FK_Customer_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<Sales_Customer>(); // Customer.FK_Customer_SalesTerritory_TerritoryID
+        public virtual System.Collections.Generic.ICollection<_Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<_Sales_Customer>(); // Customer.FK_Customer_SalesTerritory_TerritoryID
         /// <summary>
         /// Child Sales_SalesOrderHeaders where [SalesOrderHeader].[TerritoryID] point to this entity (FK_SalesOrderHeader_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_SalesTerritory_TerritoryID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderHeader> Sales_SalesOrderHeaders { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderHeader>(); // SalesOrderHeader.FK_SalesOrderHeader_SalesTerritory_TerritoryID
         /// <summary>
         /// Child Sales_SalesPersons where [SalesPerson].[TerritoryID] point to this entity (FK_SalesPerson_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesPerson> Sales_SalesPersons { get; set; } = new System.Collections.Generic.List<Sales_SalesPerson>(); // SalesPerson.FK_SalesPerson_SalesTerritory_TerritoryID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesPerson> Sales_SalesPersons { get; set; } = new System.Collections.Generic.List<_Sales_SalesPerson>(); // SalesPerson.FK_SalesPerson_SalesTerritory_TerritoryID
         /// <summary>
         /// Child Sales_SalesTerritoryHistories where [SalesTerritoryHistory].[TerritoryID] point to this entity (FK_SalesTerritoryHistory_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } = new System.Collections.Generic.List<Sales_SalesTerritoryHistory>(); // SalesTerritoryHistory.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesTerritoryHistory> Sales_SalesTerritoryHistories { get; set; } = new System.Collections.Generic.List<_Sales_SalesTerritoryHistory>(); // SalesTerritoryHistory.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_CountryRegion pointed by [SalesTerritory].([CountryRegionCode]) (FK_SalesTerritory_CountryRegion_CountryRegionCode)
         /// </summary>
-        public virtual Person_CountryRegion Person_CountryRegion { get; set; } // FK_SalesTerritory_CountryRegion_CountryRegionCode
+        public virtual _Person_CountryRegion Person_CountryRegion { get; set; } // FK_SalesTerritory_CountryRegion_CountryRegionCode
     }
 
     // SalesTerritoryHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTerritoryHistory
+    public abstract partial class _Sales_SalesTerritoryHistory
     {
 
         ///<summary>
@@ -4664,16 +4664,16 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Sales_SalesPerson pointed by [SalesTerritoryHistory].([BusinessEntityId]) (FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID)
         /// </summary>
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID
+        public virtual _Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID
         /// <summary>
         /// Parent Sales_SalesTerritory pointed by [SalesTerritoryHistory].([TerritoryId]) (FK_SalesTerritoryHistory_SalesTerritory_TerritoryID)
         /// </summary>
-        public virtual Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesTerritoryHistory_SalesTerritory_TerritoryID
+        public virtual _Sales_SalesTerritory Sales_SalesTerritory { get; set; } // FK_SalesTerritoryHistory_SalesTerritory_TerritoryID
     }
 
     // ShoppingCartItem
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_ShoppingCartItem
+    public abstract partial class _Sales_ShoppingCartItem
     {
 
         ///<summary>
@@ -4711,12 +4711,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Parent Production_Product pointed by [ShoppingCartItem].([ProductId]) (FK_ShoppingCartItem_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_ShoppingCartItem_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_ShoppingCartItem_Product_ProductID
     }
 
     // SpecialOffer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SpecialOffer
+    public abstract partial class _Sales_SpecialOffer
     {
 
         ///<summary>
@@ -4779,12 +4779,12 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SpecialOfferProducts where [SpecialOfferProduct].[SpecialOfferID] point to this entity (FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } = new System.Collections.Generic.List<Sales_SpecialOfferProduct>(); // SpecialOfferProduct.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
+        public virtual System.Collections.Generic.ICollection<_Sales_SpecialOfferProduct> Sales_SpecialOfferProducts { get; set; } = new System.Collections.Generic.List<_Sales_SpecialOfferProduct>(); // SpecialOfferProduct.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
     }
 
     // SpecialOfferProduct
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SpecialOfferProduct
+    public abstract partial class _Sales_SpecialOfferProduct
     {
 
         ///<summary>
@@ -4812,23 +4812,23 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_SalesOrderDetails where [SalesOrderDetail].([ProductID], [SpecialOfferID]) point to this entity (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } = new System.Collections.Generic.List<Sales_SalesOrderDetail>(); // SalesOrderDetail.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
+        public virtual System.Collections.Generic.ICollection<_Sales_SalesOrderDetail> Sales_SalesOrderDetails { get; set; } = new System.Collections.Generic.List<_Sales_SalesOrderDetail>(); // SalesOrderDetail.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Production_Product pointed by [SpecialOfferProduct].([ProductId]) (FK_SpecialOfferProduct_Product_ProductID)
         /// </summary>
-        public virtual Production_Product Production_Product { get; set; } // FK_SpecialOfferProduct_Product_ProductID
+        public virtual _Production_Product Production_Product { get; set; } // FK_SpecialOfferProduct_Product_ProductID
         /// <summary>
         /// Parent Sales_SpecialOffer pointed by [SpecialOfferProduct].([SpecialOfferId]) (FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID)
         /// </summary>
-        public virtual Sales_SpecialOffer Sales_SpecialOffer { get; set; } // FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
+        public virtual _Sales_SpecialOffer Sales_SpecialOffer { get; set; } // FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID
     }
 
     // Store
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_Store
+    public abstract partial class _Sales_Store
     {
 
         ///<summary>
@@ -4866,23 +4866,23 @@ namespace ExtensibleAdventureWorks.Business.Entities
         /// <summary>
         /// Child Sales_Customers where [Customer].[StoreID] point to this entity (FK_Customer_Store_StoreID)
         /// </summary>
-        public virtual System.Collections.Generic.ICollection<Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<Sales_Customer>(); // Customer.FK_Customer_Store_StoreID
+        public virtual System.Collections.Generic.ICollection<_Sales_Customer> Sales_Customers { get; set; } = new System.Collections.Generic.List<_Sales_Customer>(); // Customer.FK_Customer_Store_StoreID
 
         // Foreign keys
 
         /// <summary>
         /// Parent Person_BusinessEntity pointed by [Store].([BusinessEntityId]) (FK_Store_BusinessEntity_BusinessEntityID)
         /// </summary>
-        public virtual Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Store_BusinessEntity_BusinessEntityID
+        public virtual _Person_BusinessEntity Person_BusinessEntity { get; set; } // FK_Store_BusinessEntity_BusinessEntityID
         /// <summary>
         /// Parent Sales_SalesPerson pointed by [Store].([SalesPersonId]) (FK_Store_SalesPerson_SalesPersonID)
         /// </summary>
-        public virtual Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_Store_SalesPerson_SalesPersonID
+        public virtual _Sales_SalesPerson Sales_SalesPerson { get; set; } // FK_Store_SalesPerson_SalesPersonID
     }
 
     // vIndividualCustomer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VIndividualCustomer
+    public abstract partial class _Sales_VIndividualCustomer
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Title { get; set; } // Title (length: 8)
@@ -4906,7 +4906,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vPersonDemographics
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VPersonDemographic
+    public abstract partial class _Sales_VPersonDemographic
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public decimal? TotalPurchaseYtd { get; set; } // TotalPurchaseYTD
@@ -4925,7 +4925,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vSalesPerson
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VSalesPerson
+    public abstract partial class _Sales_VSalesPerson
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Title { get; set; } // Title (length: 8)
@@ -4953,7 +4953,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vSalesPersonSalesByFiscalYears
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VSalesPersonSalesByFiscalYear
+    public abstract partial class _Sales_VSalesPersonSalesByFiscalYear
     {
         public int? SalesPersonId { get; set; } // SalesPersonID
         public string FullName { get; set; } // FullName (length: 152)
@@ -4966,7 +4966,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithAddresses
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithAddress
+    public abstract partial class _Sales_VStoreWithAddress
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -4981,7 +4981,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithContacts
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithContact
+    public abstract partial class _Sales_VStoreWithContact
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -4999,7 +4999,7 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithDemographics
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithDemographic
+    public abstract partial class _Sales_VStoreWithDemographic
     {
         public int BusinessEntityId { get; set; } // BusinessEntityID (Primary key)
         public string Name { get; set; } // Name (Primary key) (length: 50)
@@ -5021,14 +5021,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // AWBuildVersion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class AwBuildVersionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<AwBuildVersion>
+    public partial class _AwBuildVersionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_AwBuildVersion>
     {
-        public AwBuildVersionConfiguration()
+        public _AwBuildVersionConfiguration()
             : this("dbo")
         {
         }
 
-        public AwBuildVersionConfiguration(string schema)
+        public _AwBuildVersionConfiguration(string schema)
         {
             ToTable("AWBuildVersion", schema);
             HasKey(x => x.SystemInformationId);
@@ -5044,14 +5044,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // DatabaseLog
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class DatabaseLogConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<DatabaseLog>
+    public partial class _DatabaseLogConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_DatabaseLog>
     {
-        public DatabaseLogConfiguration()
+        public _DatabaseLogConfiguration()
             : this("dbo")
         {
         }
 
-        public DatabaseLogConfiguration(string schema)
+        public _DatabaseLogConfiguration(string schema)
         {
             ToTable("DatabaseLog", schema);
             HasKey(x => x.DatabaseLogId);
@@ -5071,14 +5071,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ErrorLog
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class ErrorLogConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<ErrorLog>
+    public partial class _ErrorLogConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_ErrorLog>
     {
-        public ErrorLogConfiguration()
+        public _ErrorLogConfiguration()
             : this("dbo")
         {
         }
 
-        public ErrorLogConfiguration(string schema)
+        public _ErrorLogConfiguration(string schema)
         {
             ToTable("ErrorLog", schema);
             HasKey(x => x.ErrorLogId);
@@ -5099,14 +5099,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Department
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_DepartmentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_Department>
+    public partial class _HumanResources_DepartmentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_Department>
     {
-        public HumanResources_DepartmentConfiguration()
+        public _HumanResources_DepartmentConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_DepartmentConfiguration(string schema)
+        public _HumanResources_DepartmentConfiguration(string schema)
         {
             ToTable("Department", schema);
             HasKey(x => x.DepartmentId);
@@ -5122,14 +5122,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Employee
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_EmployeeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_Employee>
+    public partial class _HumanResources_EmployeeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_Employee>
     {
-        public HumanResources_EmployeeConfiguration()
+        public _HumanResources_EmployeeConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_EmployeeConfiguration(string schema)
+        public _HumanResources_EmployeeConfiguration(string schema)
         {
             ToTable("Employee", schema);
             HasKey(x => x.BusinessEntityId);
@@ -5160,14 +5160,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // EmployeeDepartmentHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_EmployeeDepartmentHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_EmployeeDepartmentHistory>
+    public partial class _HumanResources_EmployeeDepartmentHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_EmployeeDepartmentHistory>
     {
-        public HumanResources_EmployeeDepartmentHistoryConfiguration()
+        public _HumanResources_EmployeeDepartmentHistoryConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_EmployeeDepartmentHistoryConfiguration(string schema)
+        public _HumanResources_EmployeeDepartmentHistoryConfiguration(string schema)
         {
             ToTable("EmployeeDepartmentHistory", schema);
             HasKey(x => new { x.BusinessEntityId, x.StartDate, x.DepartmentId, x.ShiftId });
@@ -5190,14 +5190,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // EmployeePayHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_EmployeePayHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_EmployeePayHistory>
+    public partial class _HumanResources_EmployeePayHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_EmployeePayHistory>
     {
-        public HumanResources_EmployeePayHistoryConfiguration()
+        public _HumanResources_EmployeePayHistoryConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_EmployeePayHistoryConfiguration(string schema)
+        public _HumanResources_EmployeePayHistoryConfiguration(string schema)
         {
             ToTable("EmployeePayHistory", schema);
             HasKey(x => new { x.BusinessEntityId, x.RateChangeDate });
@@ -5217,14 +5217,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // JobCandidate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_JobCandidateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_JobCandidate>
+    public partial class _HumanResources_JobCandidateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_JobCandidate>
     {
-        public HumanResources_JobCandidateConfiguration()
+        public _HumanResources_JobCandidateConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_JobCandidateConfiguration(string schema)
+        public _HumanResources_JobCandidateConfiguration(string schema)
         {
             ToTable("JobCandidate", schema);
             HasKey(x => x.JobCandidateId);
@@ -5243,14 +5243,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Shift
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_ShiftConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_Shift>
+    public partial class _HumanResources_ShiftConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_Shift>
     {
-        public HumanResources_ShiftConfiguration()
+        public _HumanResources_ShiftConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_ShiftConfiguration(string schema)
+        public _HumanResources_ShiftConfiguration(string schema)
         {
             ToTable("Shift", schema);
             HasKey(x => x.ShiftId);
@@ -5267,14 +5267,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vEmployee
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployeeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VEmployee>
+    public partial class _HumanResources_VEmployeeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VEmployee>
     {
-        public HumanResources_VEmployeeConfiguration()
+        public _HumanResources_VEmployeeConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VEmployeeConfiguration(string schema)
+        public _HumanResources_VEmployeeConfiguration(string schema)
         {
             ToTable("vEmployee", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.JobTitle, x.EmailPromotion, x.AddressLine1, x.City, x.StateProvinceName, x.PostalCode, x.CountryRegionName });
@@ -5304,14 +5304,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vEmployeeDepartment
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployeeDepartmentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VEmployeeDepartment>
+    public partial class _HumanResources_VEmployeeDepartmentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VEmployeeDepartment>
     {
-        public HumanResources_VEmployeeDepartmentConfiguration()
+        public _HumanResources_VEmployeeDepartmentConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VEmployeeDepartmentConfiguration(string schema)
+        public _HumanResources_VEmployeeDepartmentConfiguration(string schema)
         {
             ToTable("vEmployeeDepartment", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.JobTitle, x.Department, x.GroupName, x.StartDate });
@@ -5333,14 +5333,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vEmployeeDepartmentHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VEmployeeDepartmentHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VEmployeeDepartmentHistory>
+    public partial class _HumanResources_VEmployeeDepartmentHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VEmployeeDepartmentHistory>
     {
-        public HumanResources_VEmployeeDepartmentHistoryConfiguration()
+        public _HumanResources_VEmployeeDepartmentHistoryConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VEmployeeDepartmentHistoryConfiguration(string schema)
+        public _HumanResources_VEmployeeDepartmentHistoryConfiguration(string schema)
         {
             ToTable("vEmployeeDepartmentHistory", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.Shift, x.Department, x.GroupName, x.StartDate });
@@ -5363,14 +5363,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VJobCandidate>
+    public partial class _HumanResources_VJobCandidateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VJobCandidate>
     {
-        public HumanResources_VJobCandidateConfiguration()
+        public _HumanResources_VJobCandidateConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VJobCandidateConfiguration(string schema)
+        public _HumanResources_VJobCandidateConfiguration(string schema)
         {
             ToTable("vJobCandidate", schema);
             HasKey(x => new { x.JobCandidateId, x.ModifiedDate });
@@ -5398,14 +5398,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidateEducation
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidateEducationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VJobCandidateEducation>
+    public partial class _HumanResources_VJobCandidateEducationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VJobCandidateEducation>
     {
-        public HumanResources_VJobCandidateEducationConfiguration()
+        public _HumanResources_VJobCandidateEducationConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VJobCandidateEducationConfiguration(string schema)
+        public _HumanResources_VJobCandidateEducationConfiguration(string schema)
         {
             ToTable("vJobCandidateEducation", schema);
             HasKey(x => x.JobCandidateId);
@@ -5430,14 +5430,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vJobCandidateEmployment
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class HumanResources_VJobCandidateEmploymentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<HumanResources_VJobCandidateEmployment>
+    public partial class _HumanResources_VJobCandidateEmploymentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_HumanResources_VJobCandidateEmployment>
     {
-        public HumanResources_VJobCandidateEmploymentConfiguration()
+        public _HumanResources_VJobCandidateEmploymentConfiguration()
             : this("HumanResources")
         {
         }
 
-        public HumanResources_VJobCandidateEmploymentConfiguration(string schema)
+        public _HumanResources_VJobCandidateEmploymentConfiguration(string schema)
         {
             ToTable("vJobCandidateEmployment", schema);
             HasKey(x => x.JobCandidateId);
@@ -5460,14 +5460,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Address
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_AddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_Address>
+    public partial class _Person_AddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_Address>
     {
-        public Person_AddressConfiguration()
+        public _Person_AddressConfiguration()
             : this("Person")
         {
         }
 
-        public Person_AddressConfiguration(string schema)
+        public _Person_AddressConfiguration(string schema)
         {
             ToTable("Address", schema);
             HasKey(x => x.AddressId);
@@ -5491,14 +5491,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // AddressType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_AddressTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_AddressType>
+    public partial class _Person_AddressTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_AddressType>
     {
-        public Person_AddressTypeConfiguration()
+        public _Person_AddressTypeConfiguration()
             : this("Person")
         {
         }
 
-        public Person_AddressTypeConfiguration(string schema)
+        public _Person_AddressTypeConfiguration(string schema)
         {
             ToTable("AddressType", schema);
             HasKey(x => x.AddressTypeId);
@@ -5514,14 +5514,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // BusinessEntity
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntityConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_BusinessEntity>
+    public partial class _Person_BusinessEntityConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_BusinessEntity>
     {
-        public Person_BusinessEntityConfiguration()
+        public _Person_BusinessEntityConfiguration()
             : this("Person")
         {
         }
 
-        public Person_BusinessEntityConfiguration(string schema)
+        public _Person_BusinessEntityConfiguration(string schema)
         {
             ToTable("BusinessEntity", schema);
             HasKey(x => x.BusinessEntityId);
@@ -5536,14 +5536,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // BusinessEntityAddress
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntityAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_BusinessEntityAddress>
+    public partial class _Person_BusinessEntityAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_BusinessEntityAddress>
     {
-        public Person_BusinessEntityAddressConfiguration()
+        public _Person_BusinessEntityAddressConfiguration()
             : this("Person")
         {
         }
 
-        public Person_BusinessEntityAddressConfiguration(string schema)
+        public _Person_BusinessEntityAddressConfiguration(string schema)
         {
             ToTable("BusinessEntityAddress", schema);
             HasKey(x => new { x.BusinessEntityId, x.AddressId, x.AddressTypeId });
@@ -5565,14 +5565,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // BusinessEntityContact
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_BusinessEntityContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_BusinessEntityContact>
+    public partial class _Person_BusinessEntityContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_BusinessEntityContact>
     {
-        public Person_BusinessEntityContactConfiguration()
+        public _Person_BusinessEntityContactConfiguration()
             : this("Person")
         {
         }
 
-        public Person_BusinessEntityContactConfiguration(string schema)
+        public _Person_BusinessEntityContactConfiguration(string schema)
         {
             ToTable("BusinessEntityContact", schema);
             HasKey(x => new { x.BusinessEntityId, x.PersonId, x.ContactTypeId });
@@ -5594,14 +5594,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ContactType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_ContactTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_ContactType>
+    public partial class _Person_ContactTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_ContactType>
     {
-        public Person_ContactTypeConfiguration()
+        public _Person_ContactTypeConfiguration()
             : this("Person")
         {
         }
 
-        public Person_ContactTypeConfiguration(string schema)
+        public _Person_ContactTypeConfiguration(string schema)
         {
             ToTable("ContactType", schema);
             HasKey(x => x.ContactTypeId);
@@ -5616,14 +5616,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // CountryRegion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_CountryRegionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_CountryRegion>
+    public partial class _Person_CountryRegionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_CountryRegion>
     {
-        public Person_CountryRegionConfiguration()
+        public _Person_CountryRegionConfiguration()
             : this("Person")
         {
         }
 
-        public Person_CountryRegionConfiguration(string schema)
+        public _Person_CountryRegionConfiguration(string schema)
         {
             ToTable("CountryRegion", schema);
             HasKey(x => x.CountryRegionCode);
@@ -5638,14 +5638,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // EmailAddress
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_EmailAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_EmailAddress>
+    public partial class _Person_EmailAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_EmailAddress>
     {
-        public Person_EmailAddressConfiguration()
+        public _Person_EmailAddressConfiguration()
             : this("Person")
         {
         }
 
-        public Person_EmailAddressConfiguration(string schema)
+        public _Person_EmailAddressConfiguration(string schema)
         {
             ToTable("EmailAddress", schema);
             HasKey(x => new { x.BusinessEntityId, x.EmailAddressId });
@@ -5665,14 +5665,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Password
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PasswordConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_Password>
+    public partial class _Person_PasswordConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_Password>
     {
-        public Person_PasswordConfiguration()
+        public _Person_PasswordConfiguration()
             : this("Person")
         {
         }
 
-        public Person_PasswordConfiguration(string schema)
+        public _Person_PasswordConfiguration(string schema)
         {
             ToTable("Password", schema);
             HasKey(x => x.BusinessEntityId);
@@ -5692,14 +5692,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Person
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_Person>
+    public partial class _Person_PersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_Person>
     {
-        public Person_PersonConfiguration()
+        public _Person_PersonConfiguration()
             : this("Person")
         {
         }
 
-        public Person_PersonConfiguration(string schema)
+        public _Person_PersonConfiguration(string schema)
         {
             ToTable("Person", schema);
             HasKey(x => x.BusinessEntityId);
@@ -5727,14 +5727,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // PersonPhone
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PersonPhoneConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_PersonPhone>
+    public partial class _Person_PersonPhoneConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_PersonPhone>
     {
-        public Person_PersonPhoneConfiguration()
+        public _Person_PersonPhoneConfiguration()
             : this("Person")
         {
         }
 
-        public Person_PersonPhoneConfiguration(string schema)
+        public _Person_PersonPhoneConfiguration(string schema)
         {
             ToTable("PersonPhone", schema);
             HasKey(x => new { x.BusinessEntityId, x.PhoneNumber, x.PhoneNumberTypeId });
@@ -5754,14 +5754,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // PhoneNumberType
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_PhoneNumberTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_PhoneNumberType>
+    public partial class _Person_PhoneNumberTypeConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_PhoneNumberType>
     {
-        public Person_PhoneNumberTypeConfiguration()
+        public _Person_PhoneNumberTypeConfiguration()
             : this("Person")
         {
         }
 
-        public Person_PhoneNumberTypeConfiguration(string schema)
+        public _Person_PhoneNumberTypeConfiguration(string schema)
         {
             ToTable("PhoneNumberType", schema);
             HasKey(x => x.PhoneNumberTypeId);
@@ -5776,14 +5776,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // StateProvince
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_StateProvinceConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_StateProvince>
+    public partial class _Person_StateProvinceConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_StateProvince>
     {
-        public Person_StateProvinceConfiguration()
+        public _Person_StateProvinceConfiguration()
             : this("Person")
         {
         }
 
-        public Person_StateProvinceConfiguration(string schema)
+        public _Person_StateProvinceConfiguration(string schema)
         {
             ToTable("StateProvince", schema);
             HasKey(x => x.StateProvinceId);
@@ -5807,14 +5807,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vAdditionalContactInfo
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_VAdditionalContactInfoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_VAdditionalContactInfo>
+    public partial class _Person_VAdditionalContactInfoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_VAdditionalContactInfo>
     {
-        public Person_VAdditionalContactInfoConfiguration()
+        public _Person_VAdditionalContactInfoConfiguration()
             : this("Person")
         {
         }
 
-        public Person_VAdditionalContactInfoConfiguration(string schema)
+        public _Person_VAdditionalContactInfoConfiguration(string schema)
         {
             ToTable("vAdditionalContactInfo", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.Rowguid, x.ModifiedDate });
@@ -5843,14 +5843,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStateProvinceCountryRegion
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Person_VStateProvinceCountryRegionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Person_VStateProvinceCountryRegion>
+    public partial class _Person_VStateProvinceCountryRegionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Person_VStateProvinceCountryRegion>
     {
-        public Person_VStateProvinceCountryRegionConfiguration()
+        public _Person_VStateProvinceCountryRegionConfiguration()
             : this("Person")
         {
         }
 
-        public Person_VStateProvinceCountryRegionConfiguration(string schema)
+        public _Person_VStateProvinceCountryRegionConfiguration(string schema)
         {
             ToTable("vStateProvinceCountryRegion", schema);
             HasKey(x => new { x.StateProvinceId, x.StateProvinceCode, x.IsOnlyStateProvinceFlag, x.StateProvinceName, x.TerritoryId, x.CountryRegionCode, x.CountryRegionName });
@@ -5869,14 +5869,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // BillOfMaterials
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_BillOfMaterialConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_BillOfMaterial>
+    public partial class _Production_BillOfMaterialConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_BillOfMaterial>
     {
-        public Production_BillOfMaterialConfiguration()
+        public _Production_BillOfMaterialConfiguration()
             : this("Production")
         {
         }
 
-        public Production_BillOfMaterialConfiguration(string schema)
+        public _Production_BillOfMaterialConfiguration(string schema)
         {
             ToTable("BillOfMaterials", schema);
             HasKey(x => x.BillOfMaterialsId);
@@ -5902,14 +5902,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Culture
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_CultureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_Culture>
+    public partial class _Production_CultureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_Culture>
     {
-        public Production_CultureConfiguration()
+        public _Production_CultureConfiguration()
             : this("Production")
         {
         }
 
-        public Production_CultureConfiguration(string schema)
+        public _Production_CultureConfiguration(string schema)
         {
             ToTable("Culture", schema);
             HasKey(x => x.CultureId);
@@ -5924,14 +5924,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Document
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_DocumentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_Document>
+    public partial class _Production_DocumentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_Document>
     {
-        public Production_DocumentConfiguration()
+        public _Production_DocumentConfiguration()
             : this("Production")
         {
         }
 
-        public Production_DocumentConfiguration(string schema)
+        public _Production_DocumentConfiguration(string schema)
         {
             ToTable("Document", schema);
             HasKey(x => x.DocumentNode);
@@ -5960,14 +5960,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Illustration
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_IllustrationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_Illustration>
+    public partial class _Production_IllustrationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_Illustration>
     {
-        public Production_IllustrationConfiguration()
+        public _Production_IllustrationConfiguration()
             : this("Production")
         {
         }
 
-        public Production_IllustrationConfiguration(string schema)
+        public _Production_IllustrationConfiguration(string schema)
         {
             ToTable("Illustration", schema);
             HasKey(x => x.IllustrationId);
@@ -5982,14 +5982,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Location
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_LocationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_Location>
+    public partial class _Production_LocationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_Location>
     {
-        public Production_LocationConfiguration()
+        public _Production_LocationConfiguration()
             : this("Production")
         {
         }
 
-        public Production_LocationConfiguration(string schema)
+        public _Production_LocationConfiguration(string schema)
         {
             ToTable("Location", schema);
             HasKey(x => x.LocationId);
@@ -6006,14 +6006,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Product
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_Product>
+    public partial class _Production_ProductConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_Product>
     {
-        public Production_ProductConfiguration()
+        public _Production_ProductConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductConfiguration(string schema)
+        public _Production_ProductConfiguration(string schema)
         {
             ToTable("Product", schema);
             HasKey(x => x.ProductId);
@@ -6056,14 +6056,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductCategory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductCategoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductCategory>
+    public partial class _Production_ProductCategoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductCategory>
     {
-        public Production_ProductCategoryConfiguration()
+        public _Production_ProductCategoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductCategoryConfiguration(string schema)
+        public _Production_ProductCategoryConfiguration(string schema)
         {
             ToTable("ProductCategory", schema);
             HasKey(x => x.ProductCategoryId);
@@ -6079,14 +6079,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductCostHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductCostHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductCostHistory>
+    public partial class _Production_ProductCostHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductCostHistory>
     {
-        public Production_ProductCostHistoryConfiguration()
+        public _Production_ProductCostHistoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductCostHistoryConfiguration(string schema)
+        public _Production_ProductCostHistoryConfiguration(string schema)
         {
             ToTable("ProductCostHistory", schema);
             HasKey(x => new { x.ProductId, x.StartDate });
@@ -6106,14 +6106,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductDescription>
+    public partial class _Production_ProductDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductDescription>
     {
-        public Production_ProductDescriptionConfiguration()
+        public _Production_ProductDescriptionConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductDescriptionConfiguration(string schema)
+        public _Production_ProductDescriptionConfiguration(string schema)
         {
             ToTable("ProductDescription", schema);
             HasKey(x => x.ProductDescriptionId);
@@ -6129,14 +6129,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductDocument
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductDocumentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductDocument>
+    public partial class _Production_ProductDocumentConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductDocument>
     {
-        public Production_ProductDocumentConfiguration()
+        public _Production_ProductDocumentConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductDocumentConfiguration(string schema)
+        public _Production_ProductDocumentConfiguration(string schema)
         {
             ToTable("ProductDocument", schema);
             HasKey(x => new { x.ProductId, x.DocumentNode });
@@ -6155,14 +6155,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductInventory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductInventoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductInventory>
+    public partial class _Production_ProductInventoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductInventory>
     {
-        public Production_ProductInventoryConfiguration()
+        public _Production_ProductInventoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductInventoryConfiguration(string schema)
+        public _Production_ProductInventoryConfiguration(string schema)
         {
             ToTable("ProductInventory", schema);
             HasKey(x => new { x.ProductId, x.LocationId });
@@ -6185,14 +6185,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductListPriceHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductListPriceHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductListPriceHistory>
+    public partial class _Production_ProductListPriceHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductListPriceHistory>
     {
-        public Production_ProductListPriceHistoryConfiguration()
+        public _Production_ProductListPriceHistoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductListPriceHistoryConfiguration(string schema)
+        public _Production_ProductListPriceHistoryConfiguration(string schema)
         {
             ToTable("ProductListPriceHistory", schema);
             HasKey(x => new { x.ProductId, x.StartDate });
@@ -6212,14 +6212,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductModel
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModelConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductModel>
+    public partial class _Production_ProductModelConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductModel>
     {
-        public Production_ProductModelConfiguration()
+        public _Production_ProductModelConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductModelConfiguration(string schema)
+        public _Production_ProductModelConfiguration(string schema)
         {
             ToTable("ProductModel", schema);
             HasKey(x => x.ProductModelId);
@@ -6237,14 +6237,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductModelIllustration
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModelIllustrationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductModelIllustration>
+    public partial class _Production_ProductModelIllustrationConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductModelIllustration>
     {
-        public Production_ProductModelIllustrationConfiguration()
+        public _Production_ProductModelIllustrationConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductModelIllustrationConfiguration(string schema)
+        public _Production_ProductModelIllustrationConfiguration(string schema)
         {
             ToTable("ProductModelIllustration", schema);
             HasKey(x => new { x.ProductModelId, x.IllustrationId });
@@ -6263,14 +6263,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductModelProductDescriptionCulture
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductModelProductDescriptionCultureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductModelProductDescriptionCulture>
+    public partial class _Production_ProductModelProductDescriptionCultureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductModelProductDescriptionCulture>
     {
-        public Production_ProductModelProductDescriptionCultureConfiguration()
+        public _Production_ProductModelProductDescriptionCultureConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductModelProductDescriptionCultureConfiguration(string schema)
+        public _Production_ProductModelProductDescriptionCultureConfiguration(string schema)
         {
             ToTable("ProductModelProductDescriptionCulture", schema);
             HasKey(x => new { x.ProductModelId, x.ProductDescriptionId, x.CultureId });
@@ -6291,14 +6291,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductPhoto
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductPhotoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductPhoto>
+    public partial class _Production_ProductPhotoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductPhoto>
     {
-        public Production_ProductPhotoConfiguration()
+        public _Production_ProductPhotoConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductPhotoConfiguration(string schema)
+        public _Production_ProductPhotoConfiguration(string schema)
         {
             ToTable("ProductPhoto", schema);
             HasKey(x => x.ProductPhotoId);
@@ -6316,14 +6316,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductProductPhoto
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductProductPhotoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductProductPhoto>
+    public partial class _Production_ProductProductPhotoConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductProductPhoto>
     {
-        public Production_ProductProductPhotoConfiguration()
+        public _Production_ProductProductPhotoConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductProductPhotoConfiguration(string schema)
+        public _Production_ProductProductPhotoConfiguration(string schema)
         {
             ToTable("ProductProductPhoto", schema);
             HasKey(x => new { x.ProductId, x.ProductPhotoId });
@@ -6343,14 +6343,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductReview
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductReviewConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductReview>
+    public partial class _Production_ProductReviewConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductReview>
     {
-        public Production_ProductReviewConfiguration()
+        public _Production_ProductReviewConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductReviewConfiguration(string schema)
+        public _Production_ProductReviewConfiguration(string schema)
         {
             ToTable("ProductReview", schema);
             HasKey(x => x.ProductReviewId);
@@ -6373,14 +6373,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductSubcategory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ProductSubcategoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ProductSubcategory>
+    public partial class _Production_ProductSubcategoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ProductSubcategory>
     {
-        public Production_ProductSubcategoryConfiguration()
+        public _Production_ProductSubcategoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ProductSubcategoryConfiguration(string schema)
+        public _Production_ProductSubcategoryConfiguration(string schema)
         {
             ToTable("ProductSubcategory", schema);
             HasKey(x => x.ProductSubcategoryId);
@@ -6400,14 +6400,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ScrapReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_ScrapReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_ScrapReason>
+    public partial class _Production_ScrapReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_ScrapReason>
     {
-        public Production_ScrapReasonConfiguration()
+        public _Production_ScrapReasonConfiguration()
             : this("Production")
         {
         }
 
-        public Production_ScrapReasonConfiguration(string schema)
+        public _Production_ScrapReasonConfiguration(string schema)
         {
             ToTable("ScrapReason", schema);
             HasKey(x => x.ScrapReasonId);
@@ -6422,14 +6422,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // TransactionHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_TransactionHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_TransactionHistory>
+    public partial class _Production_TransactionHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_TransactionHistory>
     {
-        public Production_TransactionHistoryConfiguration()
+        public _Production_TransactionHistoryConfiguration()
             : this("Production")
         {
         }
 
-        public Production_TransactionHistoryConfiguration(string schema)
+        public _Production_TransactionHistoryConfiguration(string schema)
         {
             ToTable("TransactionHistory", schema);
             HasKey(x => x.TransactionId);
@@ -6453,14 +6453,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // TransactionHistoryArchive
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_TransactionHistoryArchiveConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_TransactionHistoryArchive>
+    public partial class _Production_TransactionHistoryArchiveConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_TransactionHistoryArchive>
     {
-        public Production_TransactionHistoryArchiveConfiguration()
+        public _Production_TransactionHistoryArchiveConfiguration()
             : this("Production")
         {
         }
 
-        public Production_TransactionHistoryArchiveConfiguration(string schema)
+        public _Production_TransactionHistoryArchiveConfiguration(string schema)
         {
             ToTable("TransactionHistoryArchive", schema);
             HasKey(x => x.TransactionId);
@@ -6481,14 +6481,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // UnitMeasure
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_UnitMeasureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_UnitMeasure>
+    public partial class _Production_UnitMeasureConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_UnitMeasure>
     {
-        public Production_UnitMeasureConfiguration()
+        public _Production_UnitMeasureConfiguration()
             : this("Production")
         {
         }
 
-        public Production_UnitMeasureConfiguration(string schema)
+        public _Production_UnitMeasureConfiguration(string schema)
         {
             ToTable("UnitMeasure", schema);
             HasKey(x => x.UnitMeasureCode);
@@ -6503,14 +6503,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vProductAndDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductAndDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_VProductAndDescription>
+    public partial class _Production_VProductAndDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_VProductAndDescription>
     {
-        public Production_VProductAndDescriptionConfiguration()
+        public _Production_VProductAndDescriptionConfiguration()
             : this("Production")
         {
         }
 
-        public Production_VProductAndDescriptionConfiguration(string schema)
+        public _Production_VProductAndDescriptionConfiguration(string schema)
         {
             ToTable("vProductAndDescription", schema);
             HasKey(x => new { x.ProductId, x.Name, x.ProductModel, x.CultureId, x.Description });
@@ -6527,14 +6527,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vProductModelCatalogDescription
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductModelCatalogDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_VProductModelCatalogDescription>
+    public partial class _Production_VProductModelCatalogDescriptionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_VProductModelCatalogDescription>
     {
-        public Production_VProductModelCatalogDescriptionConfiguration()
+        public _Production_VProductModelCatalogDescriptionConfiguration()
             : this("Production")
         {
         }
 
-        public Production_VProductModelCatalogDescriptionConfiguration(string schema)
+        public _Production_VProductModelCatalogDescriptionConfiguration(string schema)
         {
             ToTable("vProductModelCatalogDescription", schema);
             HasKey(x => new { x.ProductModelId, x.Name, x.Rowguid, x.ModifiedDate });
@@ -6571,14 +6571,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vProductModelInstructions
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_VProductModelInstructionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_VProductModelInstruction>
+    public partial class _Production_VProductModelInstructionConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_VProductModelInstruction>
     {
-        public Production_VProductModelInstructionConfiguration()
+        public _Production_VProductModelInstructionConfiguration()
             : this("Production")
         {
         }
 
-        public Production_VProductModelInstructionConfiguration(string schema)
+        public _Production_VProductModelInstructionConfiguration(string schema)
         {
             ToTable("vProductModelInstructions", schema);
             HasKey(x => new { x.ProductModelId, x.Name, x.Rowguid, x.ModifiedDate });
@@ -6601,14 +6601,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // WorkOrder
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_WorkOrderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_WorkOrder>
+    public partial class _Production_WorkOrderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_WorkOrder>
     {
-        public Production_WorkOrderConfiguration()
+        public _Production_WorkOrderConfiguration()
             : this("Production")
         {
         }
 
-        public Production_WorkOrderConfiguration(string schema)
+        public _Production_WorkOrderConfiguration(string schema)
         {
             ToTable("WorkOrder", schema);
             HasKey(x => x.WorkOrderId);
@@ -6634,14 +6634,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // WorkOrderRouting
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Production_WorkOrderRoutingConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Production_WorkOrderRouting>
+    public partial class _Production_WorkOrderRoutingConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Production_WorkOrderRouting>
     {
-        public Production_WorkOrderRoutingConfiguration()
+        public _Production_WorkOrderRoutingConfiguration()
             : this("Production")
         {
         }
 
-        public Production_WorkOrderRoutingConfiguration(string schema)
+        public _Production_WorkOrderRoutingConfiguration(string schema)
         {
             ToTable("WorkOrderRouting", schema);
             HasKey(x => new { x.WorkOrderId, x.ProductId, x.OperationSequence });
@@ -6669,14 +6669,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ProductVendor
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_ProductVendorConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_ProductVendor>
+    public partial class _Purchasing_ProductVendorConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_ProductVendor>
     {
-        public Purchasing_ProductVendorConfiguration()
+        public _Purchasing_ProductVendorConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_ProductVendorConfiguration(string schema)
+        public _Purchasing_ProductVendorConfiguration(string schema)
         {
             ToTable("ProductVendor", schema);
             HasKey(x => new { x.ProductId, x.BusinessEntityId });
@@ -6704,14 +6704,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // PurchaseOrderDetail
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_PurchaseOrderDetailConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_PurchaseOrderDetail>
+    public partial class _Purchasing_PurchaseOrderDetailConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_PurchaseOrderDetail>
     {
-        public Purchasing_PurchaseOrderDetailConfiguration()
+        public _Purchasing_PurchaseOrderDetailConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_PurchaseOrderDetailConfiguration(string schema)
+        public _Purchasing_PurchaseOrderDetailConfiguration(string schema)
         {
             ToTable("PurchaseOrderDetail", schema);
             HasKey(x => new { x.PurchaseOrderId, x.PurchaseOrderDetailId });
@@ -6738,14 +6738,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // PurchaseOrderHeader
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_PurchaseOrderHeaderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_PurchaseOrderHeader>
+    public partial class _Purchasing_PurchaseOrderHeaderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_PurchaseOrderHeader>
     {
-        public Purchasing_PurchaseOrderHeaderConfiguration()
+        public _Purchasing_PurchaseOrderHeaderConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_PurchaseOrderHeaderConfiguration(string schema)
+        public _Purchasing_PurchaseOrderHeaderConfiguration(string schema)
         {
             ToTable("PurchaseOrderHeader", schema);
             HasKey(x => x.PurchaseOrderId);
@@ -6775,14 +6775,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ShipMethod
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_ShipMethodConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_ShipMethod>
+    public partial class _Purchasing_ShipMethodConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_ShipMethod>
     {
-        public Purchasing_ShipMethodConfiguration()
+        public _Purchasing_ShipMethodConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_ShipMethodConfiguration(string schema)
+        public _Purchasing_ShipMethodConfiguration(string schema)
         {
             ToTable("ShipMethod", schema);
             HasKey(x => x.ShipMethodId);
@@ -6800,14 +6800,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Vendor
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_VendorConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_Vendor>
+    public partial class _Purchasing_VendorConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_Vendor>
     {
-        public Purchasing_VendorConfiguration()
+        public _Purchasing_VendorConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_VendorConfiguration(string schema)
+        public _Purchasing_VendorConfiguration(string schema)
         {
             ToTable("Vendor", schema);
             HasKey(x => x.BusinessEntityId);
@@ -6830,14 +6830,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vVendorWithAddresses
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_VVendorWithAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_VVendorWithAddress>
+    public partial class _Purchasing_VVendorWithAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_VVendorWithAddress>
     {
-        public Purchasing_VVendorWithAddressConfiguration()
+        public _Purchasing_VVendorWithAddressConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_VVendorWithAddressConfiguration(string schema)
+        public _Purchasing_VVendorWithAddressConfiguration(string schema)
         {
             ToTable("vVendorWithAddresses", schema);
             HasKey(x => new { x.BusinessEntityId, x.Name, x.AddressType, x.AddressLine1, x.City, x.StateProvinceName, x.PostalCode, x.CountryRegionName });
@@ -6858,14 +6858,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vVendorWithContacts
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Purchasing_VVendorWithContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Purchasing_VVendorWithContact>
+    public partial class _Purchasing_VVendorWithContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Purchasing_VVendorWithContact>
     {
-        public Purchasing_VVendorWithContactConfiguration()
+        public _Purchasing_VVendorWithContactConfiguration()
             : this("Purchasing")
         {
         }
 
-        public Purchasing_VVendorWithContactConfiguration(string schema)
+        public _Purchasing_VVendorWithContactConfiguration(string schema)
         {
             ToTable("vVendorWithContacts", schema);
             HasKey(x => new { x.BusinessEntityId, x.Name, x.ContactType, x.FirstName, x.LastName, x.EmailPromotion });
@@ -6889,14 +6889,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // CountryRegionCurrency
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CountryRegionCurrencyConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_CountryRegionCurrency>
+    public partial class _Sales_CountryRegionCurrencyConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_CountryRegionCurrency>
     {
-        public Sales_CountryRegionCurrencyConfiguration()
+        public _Sales_CountryRegionCurrencyConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_CountryRegionCurrencyConfiguration(string schema)
+        public _Sales_CountryRegionCurrencyConfiguration(string schema)
         {
             ToTable("CountryRegionCurrency", schema);
             HasKey(x => new { x.CountryRegionCode, x.CurrencyCode });
@@ -6915,14 +6915,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // CreditCard
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CreditCardConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_CreditCard>
+    public partial class _Sales_CreditCardConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_CreditCard>
     {
-        public Sales_CreditCardConfiguration()
+        public _Sales_CreditCardConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_CreditCardConfiguration(string schema)
+        public _Sales_CreditCardConfiguration(string schema)
         {
             ToTable("CreditCard", schema);
             HasKey(x => x.CreditCardId);
@@ -6940,14 +6940,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Currency
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CurrencyConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_Currency>
+    public partial class _Sales_CurrencyConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_Currency>
     {
-        public Sales_CurrencyConfiguration()
+        public _Sales_CurrencyConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_CurrencyConfiguration(string schema)
+        public _Sales_CurrencyConfiguration(string schema)
         {
             ToTable("Currency", schema);
             HasKey(x => x.CurrencyCode);
@@ -6962,14 +6962,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // CurrencyRate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CurrencyRateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_CurrencyRate>
+    public partial class _Sales_CurrencyRateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_CurrencyRate>
     {
-        public Sales_CurrencyRateConfiguration()
+        public _Sales_CurrencyRateConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_CurrencyRateConfiguration(string schema)
+        public _Sales_CurrencyRateConfiguration(string schema)
         {
             ToTable("CurrencyRate", schema);
             HasKey(x => x.CurrencyRateId);
@@ -6992,14 +6992,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Customer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_CustomerConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_Customer>
+    public partial class _Sales_CustomerConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_Customer>
     {
-        public Sales_CustomerConfiguration()
+        public _Sales_CustomerConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_CustomerConfiguration(string schema)
+        public _Sales_CustomerConfiguration(string schema)
         {
             ToTable("Customer", schema);
             HasKey(x => x.CustomerId);
@@ -7023,14 +7023,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // PersonCreditCard
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_PersonCreditCardConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_PersonCreditCard>
+    public partial class _Sales_PersonCreditCardConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_PersonCreditCard>
     {
-        public Sales_PersonCreditCardConfiguration()
+        public _Sales_PersonCreditCardConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_PersonCreditCardConfiguration(string schema)
+        public _Sales_PersonCreditCardConfiguration(string schema)
         {
             ToTable("PersonCreditCard", schema);
             HasKey(x => new { x.BusinessEntityId, x.CreditCardId });
@@ -7049,14 +7049,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesOrderDetail
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderDetailConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesOrderDetail>
+    public partial class _Sales_SalesOrderDetailConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesOrderDetail>
     {
-        public Sales_SalesOrderDetailConfiguration()
+        public _Sales_SalesOrderDetailConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesOrderDetailConfiguration(string schema)
+        public _Sales_SalesOrderDetailConfiguration(string schema)
         {
             ToTable("SalesOrderDetail", schema);
             HasKey(x => new { x.SalesOrderId, x.SalesOrderDetailId });
@@ -7083,14 +7083,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesOrderHeader
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderHeaderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesOrderHeader>
+    public partial class _Sales_SalesOrderHeaderConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesOrderHeader>
     {
-        public Sales_SalesOrderHeaderConfiguration()
+        public _Sales_SalesOrderHeaderConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesOrderHeaderConfiguration(string schema)
+        public _Sales_SalesOrderHeaderConfiguration(string schema)
         {
             ToTable("SalesOrderHeader", schema);
             HasKey(x => x.SalesOrderId);
@@ -7138,14 +7138,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesOrderHeaderSalesReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesOrderHeaderSalesReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesOrderHeaderSalesReason>
+    public partial class _Sales_SalesOrderHeaderSalesReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesOrderHeaderSalesReason>
     {
-        public Sales_SalesOrderHeaderSalesReasonConfiguration()
+        public _Sales_SalesOrderHeaderSalesReasonConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesOrderHeaderSalesReasonConfiguration(string schema)
+        public _Sales_SalesOrderHeaderSalesReasonConfiguration(string schema)
         {
             ToTable("SalesOrderHeaderSalesReason", schema);
             HasKey(x => new { x.SalesOrderId, x.SalesReasonId });
@@ -7164,14 +7164,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesPerson
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesPersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesPerson>
+    public partial class _Sales_SalesPersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesPerson>
     {
-        public Sales_SalesPersonConfiguration()
+        public _Sales_SalesPersonConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesPersonConfiguration(string schema)
+        public _Sales_SalesPersonConfiguration(string schema)
         {
             ToTable("SalesPerson", schema);
             HasKey(x => x.BusinessEntityId);
@@ -7196,14 +7196,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesPersonQuotaHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesPersonQuotaHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesPersonQuotaHistory>
+    public partial class _Sales_SalesPersonQuotaHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesPersonQuotaHistory>
     {
-        public Sales_SalesPersonQuotaHistoryConfiguration()
+        public _Sales_SalesPersonQuotaHistoryConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesPersonQuotaHistoryConfiguration(string schema)
+        public _Sales_SalesPersonQuotaHistoryConfiguration(string schema)
         {
             ToTable("SalesPersonQuotaHistory", schema);
             HasKey(x => new { x.BusinessEntityId, x.QuotaDate });
@@ -7223,14 +7223,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesReason
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesReason>
+    public partial class _Sales_SalesReasonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesReason>
     {
-        public Sales_SalesReasonConfiguration()
+        public _Sales_SalesReasonConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesReasonConfiguration(string schema)
+        public _Sales_SalesReasonConfiguration(string schema)
         {
             ToTable("SalesReason", schema);
             HasKey(x => x.SalesReasonId);
@@ -7246,14 +7246,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesTaxRate
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTaxRateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesTaxRate>
+    public partial class _Sales_SalesTaxRateConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesTaxRate>
     {
-        public Sales_SalesTaxRateConfiguration()
+        public _Sales_SalesTaxRateConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesTaxRateConfiguration(string schema)
+        public _Sales_SalesTaxRateConfiguration(string schema)
         {
             ToTable("SalesTaxRate", schema);
             HasKey(x => x.SalesTaxRateId);
@@ -7275,14 +7275,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesTerritory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTerritoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesTerritory>
+    public partial class _Sales_SalesTerritoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesTerritory>
     {
-        public Sales_SalesTerritoryConfiguration()
+        public _Sales_SalesTerritoryConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesTerritoryConfiguration(string schema)
+        public _Sales_SalesTerritoryConfiguration(string schema)
         {
             ToTable("SalesTerritory", schema);
             HasKey(x => x.TerritoryId);
@@ -7307,14 +7307,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SalesTerritoryHistory
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SalesTerritoryHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SalesTerritoryHistory>
+    public partial class _Sales_SalesTerritoryHistoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SalesTerritoryHistory>
     {
-        public Sales_SalesTerritoryHistoryConfiguration()
+        public _Sales_SalesTerritoryHistoryConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SalesTerritoryHistoryConfiguration(string schema)
+        public _Sales_SalesTerritoryHistoryConfiguration(string schema)
         {
             ToTable("SalesTerritoryHistory", schema);
             HasKey(x => new { x.BusinessEntityId, x.StartDate, x.TerritoryId });
@@ -7336,14 +7336,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // ShoppingCartItem
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_ShoppingCartItemConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_ShoppingCartItem>
+    public partial class _Sales_ShoppingCartItemConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_ShoppingCartItem>
     {
-        public Sales_ShoppingCartItemConfiguration()
+        public _Sales_ShoppingCartItemConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_ShoppingCartItemConfiguration(string schema)
+        public _Sales_ShoppingCartItemConfiguration(string schema)
         {
             ToTable("ShoppingCartItem", schema);
             HasKey(x => x.ShoppingCartItemId);
@@ -7364,14 +7364,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SpecialOffer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SpecialOfferConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SpecialOffer>
+    public partial class _Sales_SpecialOfferConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SpecialOffer>
     {
-        public Sales_SpecialOfferConfiguration()
+        public _Sales_SpecialOfferConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SpecialOfferConfiguration(string schema)
+        public _Sales_SpecialOfferConfiguration(string schema)
         {
             ToTable("SpecialOffer", schema);
             HasKey(x => x.SpecialOfferId);
@@ -7394,14 +7394,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // SpecialOfferProduct
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_SpecialOfferProductConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_SpecialOfferProduct>
+    public partial class _Sales_SpecialOfferProductConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_SpecialOfferProduct>
     {
-        public Sales_SpecialOfferProductConfiguration()
+        public _Sales_SpecialOfferProductConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_SpecialOfferProductConfiguration(string schema)
+        public _Sales_SpecialOfferProductConfiguration(string schema)
         {
             ToTable("SpecialOfferProduct", schema);
             HasKey(x => new { x.SpecialOfferId, x.ProductId });
@@ -7421,14 +7421,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // Store
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_StoreConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_Store>
+    public partial class _Sales_StoreConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_Store>
     {
-        public Sales_StoreConfiguration()
+        public _Sales_StoreConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_StoreConfiguration(string schema)
+        public _Sales_StoreConfiguration(string schema)
         {
             ToTable("Store", schema);
             HasKey(x => x.BusinessEntityId);
@@ -7450,14 +7450,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vIndividualCustomer
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VIndividualCustomerConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VIndividualCustomer>
+    public partial class _Sales_VIndividualCustomerConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VIndividualCustomer>
     {
-        public Sales_VIndividualCustomerConfiguration()
+        public _Sales_VIndividualCustomerConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VIndividualCustomerConfiguration(string schema)
+        public _Sales_VIndividualCustomerConfiguration(string schema)
         {
             ToTable("vIndividualCustomer", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.EmailPromotion, x.AddressType, x.AddressLine1, x.City, x.StateProvinceName, x.PostalCode, x.CountryRegionName });
@@ -7487,14 +7487,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vPersonDemographics
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VPersonDemographicConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VPersonDemographic>
+    public partial class _Sales_VPersonDemographicConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VPersonDemographic>
     {
-        public Sales_VPersonDemographicConfiguration()
+        public _Sales_VPersonDemographicConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VPersonDemographicConfiguration(string schema)
+        public _Sales_VPersonDemographicConfiguration(string schema)
         {
             ToTable("vPersonDemographics", schema);
             HasKey(x => x.BusinessEntityId);
@@ -7519,14 +7519,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vSalesPerson
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VSalesPersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VSalesPerson>
+    public partial class _Sales_VSalesPersonConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VSalesPerson>
     {
-        public Sales_VSalesPersonConfiguration()
+        public _Sales_VSalesPersonConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VSalesPersonConfiguration(string schema)
+        public _Sales_VSalesPersonConfiguration(string schema)
         {
             ToTable("vSalesPerson", schema);
             HasKey(x => new { x.BusinessEntityId, x.FirstName, x.LastName, x.JobTitle, x.EmailPromotion, x.AddressLine1, x.City, x.StateProvinceName, x.PostalCode, x.CountryRegionName, x.SalesYtd, x.SalesLastYear });
@@ -7560,14 +7560,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vSalesPersonSalesByFiscalYears
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VSalesPersonSalesByFiscalYearConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VSalesPersonSalesByFiscalYear>
+    public partial class _Sales_VSalesPersonSalesByFiscalYearConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VSalesPersonSalesByFiscalYear>
     {
-        public Sales_VSalesPersonSalesByFiscalYearConfiguration()
+        public _Sales_VSalesPersonSalesByFiscalYearConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VSalesPersonSalesByFiscalYearConfiguration(string schema)
+        public _Sales_VSalesPersonSalesByFiscalYearConfiguration(string schema)
         {
             ToTable("vSalesPersonSalesByFiscalYears", schema);
             HasKey(x => new { x.JobTitle, x.SalesTerritory });
@@ -7586,14 +7586,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithAddresses
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VStoreWithAddress>
+    public partial class _Sales_VStoreWithAddressConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VStoreWithAddress>
     {
-        public Sales_VStoreWithAddressConfiguration()
+        public _Sales_VStoreWithAddressConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VStoreWithAddressConfiguration(string schema)
+        public _Sales_VStoreWithAddressConfiguration(string schema)
         {
             ToTable("vStoreWithAddresses", schema);
             HasKey(x => new { x.BusinessEntityId, x.Name, x.AddressType, x.AddressLine1, x.City, x.StateProvinceName, x.PostalCode, x.CountryRegionName });
@@ -7614,14 +7614,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithContacts
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VStoreWithContact>
+    public partial class _Sales_VStoreWithContactConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VStoreWithContact>
     {
-        public Sales_VStoreWithContactConfiguration()
+        public _Sales_VStoreWithContactConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VStoreWithContactConfiguration(string schema)
+        public _Sales_VStoreWithContactConfiguration(string schema)
         {
             ToTable("vStoreWithContacts", schema);
             HasKey(x => new { x.BusinessEntityId, x.Name, x.ContactType, x.FirstName, x.LastName, x.EmailPromotion });
@@ -7645,14 +7645,14 @@ namespace ExtensibleAdventureWorks.Business.Entities
 
     // vStoreWithDemographics
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.28.0.0")]
-    public partial class Sales_VStoreWithDemographicConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Sales_VStoreWithDemographic>
+    public partial class _Sales_VStoreWithDemographicConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<_Sales_VStoreWithDemographic>
     {
-        public Sales_VStoreWithDemographicConfiguration()
+        public _Sales_VStoreWithDemographicConfiguration()
             : this("Sales")
         {
         }
 
-        public Sales_VStoreWithDemographicConfiguration(string schema)
+        public _Sales_VStoreWithDemographicConfiguration(string schema)
         {
             ToTable("vStoreWithDemographics", schema);
             HasKey(x => new { x.BusinessEntityId, x.Name });

@@ -963,7 +963,7 @@ if (IncludeTableValuedFunctions)
 foreach(Table tbl in from t in tables.Where(t => !t.IsMapping).OrderBy(x => x.NameHumanCase) select t)
 {
 #>
-<# fileManager.StartNewFile(tbl.NameHumanCaseWithSuffix + FileExtension);
+<# fileManager.StartNewFile(tbl.NameHumanCaseWithSuffix.TrimStart('_') + FileExtension);
 if(!tbl.HasPrimaryKey) { #>
     // The table '<#=tbl.Name#>' is not usable by entity framework because it
     // does not have a primary key. It is listed here for completeness.
@@ -975,7 +975,7 @@ if(!tbl.HasPrimaryKey) { #>
     WritePocoClassAttributes(tbl);#>
 <#if(IncludeCodeGeneratedAttribute){#>    <#=CodeGeneratedAttribute#>
 <#}#>
-    public <# if(MakeClassesPartial) { #>partial <# } #>class <#=tbl.NameHumanCaseWithSuffix#><#=WritePocoBaseClasses != null ? WritePocoBaseClasses(tbl) : "" #>
+    public abstract <# if(MakeClassesPartial) { #>partial <# } #>class <#=tbl.NameHumanCaseWithSuffix#><#=WritePocoBaseClasses != null ? WritePocoBaseClasses(tbl) : "" #>
     {
 <# WritePocoBaseClassBody(tbl); #>
 <# int DataMemberOrder = 1;
