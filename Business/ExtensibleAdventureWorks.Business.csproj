@@ -55,11 +55,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\AdventureWorksDB.cs" />
+    <Compile Include="Entities\Custom\Sales_SalesPerson.cs" />
+    <Compile Include="Entities\Custom\Sales_Store.cs" />
     <Compile Include="Entities\Generated\AdventureWorksDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AdventureWorksDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Sales_SalesPerson.cs" />
+    <Compile Include="Entities\Sales_Store.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
