@@ -7733,3 +7733,549 @@ namespace ExtensibleAdventureWorks.Business.Entities
 }
 // </auto-generated>
 
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class AwBuildVersion : _AwBuildVersion
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class DatabaseLog : _DatabaseLog
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class ErrorLog : _ErrorLog
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_Department : _HumanResources_Department
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_Employee : _HumanResources_Employee
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_EmployeeDepartmentHistory : _HumanResources_EmployeeDepartmentHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_EmployeePayHistory : _HumanResources_EmployeePayHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_JobCandidate : _HumanResources_JobCandidate
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_Shift : _HumanResources_Shift
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VEmployee : _HumanResources_VEmployee
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VEmployeeDepartment : _HumanResources_VEmployeeDepartment
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VEmployeeDepartmentHistory : _HumanResources_VEmployeeDepartmentHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VJobCandidate : _HumanResources_VJobCandidate
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VJobCandidateEducation : _HumanResources_VJobCandidateEducation
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class HumanResources_VJobCandidateEmployment : _HumanResources_VJobCandidateEmployment
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_Address : _Person_Address
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_AddressType : _Person_AddressType
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_BusinessEntity : _Person_BusinessEntity
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_BusinessEntityAddress : _Person_BusinessEntityAddress
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_BusinessEntityContact : _Person_BusinessEntityContact
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_ContactType : _Person_ContactType
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_CountryRegion : _Person_CountryRegion
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_EmailAddress : _Person_EmailAddress
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_Password : _Person_Password
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_Person : _Person_Person
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_PersonPhone : _Person_PersonPhone
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_PhoneNumberType : _Person_PhoneNumberType
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_StateProvince : _Person_StateProvince
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_VAdditionalContactInfo : _Person_VAdditionalContactInfo
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Person_VStateProvinceCountryRegion : _Person_VStateProvinceCountryRegion
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_BillOfMaterial : _Production_BillOfMaterial
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_Culture : _Production_Culture
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_Document : _Production_Document
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_Illustration : _Production_Illustration
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_Location : _Production_Location
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_Product : _Production_Product
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductCategory : _Production_ProductCategory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductCostHistory : _Production_ProductCostHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductDescription : _Production_ProductDescription
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductDocument : _Production_ProductDocument
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductInventory : _Production_ProductInventory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductListPriceHistory : _Production_ProductListPriceHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductModel : _Production_ProductModel
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductModelIllustration : _Production_ProductModelIllustration
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductModelProductDescriptionCulture : _Production_ProductModelProductDescriptionCulture
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductPhoto : _Production_ProductPhoto
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductProductPhoto : _Production_ProductProductPhoto
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductReview : _Production_ProductReview
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ProductSubcategory : _Production_ProductSubcategory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_ScrapReason : _Production_ScrapReason
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_TransactionHistory : _Production_TransactionHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_TransactionHistoryArchive : _Production_TransactionHistoryArchive
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_UnitMeasure : _Production_UnitMeasure
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_VProductAndDescription : _Production_VProductAndDescription
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_VProductModelCatalogDescription : _Production_VProductModelCatalogDescription
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_VProductModelInstruction : _Production_VProductModelInstruction
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_WorkOrder : _Production_WorkOrder
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Production_WorkOrderRouting : _Production_WorkOrderRouting
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_ProductVendor : _Purchasing_ProductVendor
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_PurchaseOrderDetail : _Purchasing_PurchaseOrderDetail
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_PurchaseOrderHeader : _Purchasing_PurchaseOrderHeader
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_ShipMethod : _Purchasing_ShipMethod
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_Vendor : _Purchasing_Vendor
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_VVendorWithAddress : _Purchasing_VVendorWithAddress
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Purchasing_VVendorWithContact : _Purchasing_VVendorWithContact
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_CountryRegionCurrency : _Sales_CountryRegionCurrency
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_CreditCard : _Sales_CreditCard
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_Currency : _Sales_Currency
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_CurrencyRate : _Sales_CurrencyRate
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_Customer : _Sales_Customer
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_PersonCreditCard : _Sales_PersonCreditCard
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesOrderDetail : _Sales_SalesOrderDetail
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesOrderHeader : _Sales_SalesOrderHeader
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesOrderHeaderSalesReason : _Sales_SalesOrderHeaderSalesReason
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesPerson : _Sales_SalesPerson
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesPersonQuotaHistory : _Sales_SalesPersonQuotaHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesReason : _Sales_SalesReason
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesTaxRate : _Sales_SalesTaxRate
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesTerritory : _Sales_SalesTerritory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SalesTerritoryHistory : _Sales_SalesTerritoryHistory
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_ShoppingCartItem : _Sales_ShoppingCartItem
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SpecialOffer : _Sales_SpecialOffer
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_SpecialOfferProduct : _Sales_SpecialOfferProduct
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_Store : _Sales_Store
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VIndividualCustomer : _Sales_VIndividualCustomer
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VPersonDemographic : _Sales_VPersonDemographic
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VSalesPerson : _Sales_VSalesPerson
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VSalesPersonSalesByFiscalYear : _Sales_VSalesPersonSalesByFiscalYear
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VStoreWithAddress : _Sales_VStoreWithAddress
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VStoreWithContact : _Sales_VStoreWithContact
+    {
+    }
+}
+namespace ExtensibleAdventureWorks.Business.Entities
+{
+    public partial class Sales_VStoreWithDemographic : _Sales_VStoreWithDemographic
+    {
+    }
+}

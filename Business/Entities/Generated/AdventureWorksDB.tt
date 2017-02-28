@@ -456,3 +456,15 @@
 <#@ include file="EF.Reverse.POCO.ttinclude" #>
 <#@ import namespace="System.Xml.Schema" #>
 <# } #>
+<#
+    foreach(Table tbl in from t in tables.Where(t => !t.IsMapping).OrderBy(x => x.NameHumanCase) select t)
+    {#>
+namespace <#=Namespace#>
+{
+    public <# if(MakeClassesPartial) { #>partial <# } #>class <#=tbl.NameHumanCaseWithSuffix.TrimStart('_')#> : <#=tbl.NameHumanCaseWithSuffix#>
+    {
+    }
+}
+<#
+    }
+#>
