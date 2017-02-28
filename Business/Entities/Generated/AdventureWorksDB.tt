@@ -6,28 +6,32 @@
     // A course for this generator is available on Pluralsight at https://www.pluralsight.com/courses/code-first-entity-framework-legacy-databases
 
     // Main settings **********************************************************************************************************************
-    ConnectionStringName = "MyDbContext";   // Searches for this connection string in config files listed below in the ConfigFilenameSearchOrder setting
+    ConnectionStringName = "DefaultConnection";   // Searches for this connection string in config files listed below in the ConfigFilenameSearchOrder setting
     // ConnectionStringName is the only required setting.
     // As an alternative to ConnectionStringName above, which must match your app/web.config connection string name, you can override them below
     //ConnectionString = "Data Source=(local);Initial Catalog=Northwind;Integrated Security=True;Application Name=EntityFramework Reverse POCO Generator";
     //ProviderName = "System.Data.SqlClient";
 
     // Namespace = ""; // Override the default namespace here
-    DbContextName = "MyDbContext";
+    DbContextName = "AdventureWorksDB";
+    Namespace = new CodeGenerationTools(this).VsNamespaceSuggestion() ?? "DebugMode";
+    if (Namespace.EndsWith(".Generated") || Namespace.Contains(".Generated.")) 
+        Namespace = Namespace.Substring(0, Namespace.IndexOf(".Generated"));
+
     //DbContextInterfaceName = "IMyDbContext"; // Defaults to "I" + DbContextName or set string empty to not implement any interface.
     DbContextInterfaceBaseClasses = "System.IDisposable";    // Specify what the base classes are for your database context interface
     DbContextBaseClass = "System.Data.Entity.DbContext";   // Specify what the base class is for your DbContext. For ASP.NET Identity use "IdentityDbContext<ApplicationUser>"
     //DefaultConstructorArgument = "EnvironmentConnectionStrings.MyDbContext"; //defaults to "Name=" + ConnectionStringName
     ConfigurationClassName = "Configuration"; // Configuration, Mapping, Map, etc. This is appended to the Poco class name to configure the mappings.
     ConfigFilenameSearchOrder = new[] { "app.config", "web.config", "app.config.transform", "web.config.transform" }; // Add more here if required. The config files are searched for in the local project first, then the whole solution second.
-    MakeClassesPartial = false;
-    MakeDbContextInterfacePartial = false;
+    MakeClassesPartial = true;
+    MakeDbContextInterfacePartial = true;
     GenerateSeparateFiles = false;
     UseMappingTables = true; // If true, mapping will be used and no mapping tables will be generated. If false, all tables will be generated.
     UsePascalCase = true;    // This will rename the generated C# tables & properties to use PascalCase. If false table & property names will be left alone.
     UseDataAnnotations = false; // If true, will add data annotations to the poco classes.
     UseDataAnnotationsSchema = false; // UseDataAnnotations must also be true. If true, will add data annotations schema to the poco classes.
-    UsePropertyInitializers = false; // Removes POCO constructor and instead uses C# 6 property initialisers to set defaults
+    UsePropertyInitializers = true; // Removes POCO constructor and instead uses C# 6 property initialisers to set defaults
     IncludeComments = CommentsStyle.AtEndOfField; // Adds comments to the generated code
     IncludeExtendedPropertyComments = CommentsStyle.InSummaryBlock; // Adds extended properties as comments to the generated code
     IncludeViews = true;
@@ -37,7 +41,7 @@
     DisableGeographyTypes = false; // Turns off use of System.Data.Entity.Spatial.DbGeography and System.Data.Entity.Spatial.DbGeometry as OData doesn't support entities with geometry/geography types.
     CollectionType = "System.Collections.Generic.List";  // Determines the type of collection for the Navigation Properties. "ObservableCollection" for example. Add "System.Collections.ObjectModel" to AdditionalNamespaces if setting the CollectionType = "ObservableCollection".
     NullableShortHand = true; //true => T?, false => Nullable<T>
-    AddUnitTestingDbContext = true; // Will add a FakeDbContext and FakeDbSet for easy unit testing
+    AddUnitTestingDbContext = false; // Will add a FakeDbContext and FakeDbSet for easy unit testing
     IncludeQueryTraceOn9481Flag = false; // If SqlServer 2014 appears frozen / take a long time when this file is saved, try setting this to true (you will also need elevated privileges).
     IncludeCodeGeneratedAttribute = true; // If true, will include the GeneratedCode attribute, false to remove it.
     UsePrivateSetterForComputedColumns = true; // If the columns is computed, use a private setter.
